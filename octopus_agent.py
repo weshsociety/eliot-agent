@@ -28,6 +28,10 @@ import requests
 
 OCTOPUS_PATH = "/var/www/octopus/octopus_data.json"
 BACKUP_PATH  = "/var/www/octopus/octopus_data_BACKUP_{}.json"
+import dotenv
+dotenv.load_dotenv()
+import dotenv
+dotenv.load_dotenv()
 ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 
 RSS_FEEDS = [
@@ -249,7 +253,7 @@ Nœuds existants : {ids_str}
 Articles récents :
 {hits_text}
 Réponds en JSON strict :
-{{"nouveaux_noeuds": [{{"id": "snake_case", "label": "LABEL", "name": "Nom complet", "date": "période", "desc": "description", "src": "sources", "conn": ["id_existant"], "status": "validé|en_fermentation", "type": "central|institution|acteur|kompromat|media"}}], "synthese": "2-3 phrases"}}"""
+{{"nouveaux_noeuds": [{{"id": "snake_case", "label": "LABEL", "name": "Nom complet", "date": "période", "desc": "description", "src": "sources", "conn": ["id_existant"], "status": "en_fermentation", "type": "central|institution|acteur|kompromat|media"}}], "synthese": "2-3 phrases"}}"""
     response = requests.post(
         "https://api.anthropic.com/v1/messages",
         headers={
@@ -276,13 +280,23 @@ Réponds en JSON strict :
         print(f"[ERREUR JSON] {e}")
         return
     print(f"\n[SYNTHÈSE] {result.get('synthese', '')}\n")
-    added = 0
-    for node in result.get("nouveaux_noeuds", []):
-        if add_node(data, node):
-            added += 1
-    if added:
-        save_octopus(data)
-        print(f"[OK] {added} nouveaux nœuds ajoutés.")
+    # Écrire dans la queue plutôt qu'ajouter directement
+    nouveaux = result.get("nouveaux_noeuds", [])
+    if nouveaux:
+        queue_path = "/home/eliot/octopus-agent/queue.json"
+        try:
+            with open(queue_path, "r", encoding="utf-8") as f:
+                queue = json.load(f)
+        except Exception:
+            queue = []
+        for node in nouveaux:
+            node["_synthese"] = result.get("synthese", "")
+            node["_date_proposition"] = datetime.datetime.now().isoformat()
+            queue.append(node)
+        with open(queue_path, "w", encoding="utf-8") as f:
+            json.dump(queue, f, ensure_ascii=False, indent=2)
+        print(f"[QUEUE] {len(nouveaux)} nœuds en attente de validation.")
+        print(f"[INFO] Lance: python3 octopus_agent.py --review")
 
 def cmd_enquete():
     if not ANTHROPIC_KEY:
@@ -334,12 +348,66 @@ Carte OCTOPUS actuelle ({len(nodes)} nœuds) :
         history.append({"role": "assistant", "content": reply})
         print(f"\nEliot > {reply}\n")
 
+
+def cmd_review():
+    queue_path = "/home/eliot/octopus-agent/queue.json"
+    try:
+        with open(queue_path, "r", encoding="utf-8") as f:
+            queue = json.load(f)
+    except Exception:
+        print("[INFO] Queue vide — aucun nœud en attente.")
+        return
+
+    if not queue:
+        print("[INFO] Queue vide — aucun nœud en attente.")
+        return
+
+    data = load_octopus()
+    validated = []
+    remaining = []
+
+    print(f"\n// OCTOPUS REVIEW — {len(queue)} nœuds en attente\n")
+
+    for node in queue:
+        print(f"ID      : {node.get('id')}")
+        print(f"Nom     : {node.get('name')}")
+        print(f"Date    : {node.get('date')}")
+        print(f"Desc    : {node.get('desc','')[:200]}")
+        print(f"Source  : {node.get('src')}")
+        print(f"Connexions : {node.get('conn')}")
+        print(f"Synthèse : {node.get('_synthese','')[:150]}")
+        print()
+        rep = input("Valider ce nœud ? (o=valider / f=fermentation / n=rejeter / s=stop) : ").strip().lower()
+        if rep == 'o':
+            add_node(data, node)
+            validated.append(node['id'])
+        elif rep == 'f':
+            node['status'] = 'fermentation'
+            add_node(data, node)
+            validated.append(node['id'])
+            print(f"[FERMENTATION] '{node['id']}' ajouté en fermentation.")
+        elif rep == 's':
+            remaining.extend(queue[queue.index(node):])
+            break
+        else:
+            remaining.append(node)
+        print()
+
+    if validated:
+        save_octopus(data)
+        print(f"[OK] {len(validated)} nœuds validés : {validated}")
+
+    with open(queue_path, "w", encoding="utf-8") as f:
+        json.dump(remaining, f, ensure_ascii=False, indent=2)
+    print(f"[QUEUE] {len(remaining)} nœuds restants en attente.")
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="OCTOPUS_AGENT — WeshSociety")
     parser.add_argument("--status",     action="store_true", help="État de la map")
     parser.add_argument("--add-crypto", action="store_true", help="Ajoute la couche crypto")
     parser.add_argument("--watch",      action="store_true", help="Surveillance RSS")
     parser.add_argument("--enquete",    action="store_true", help="Mode enquête interactif")
+    parser.add_argument("--review",     action="store_true", help="Valider les noeuds en queue")
     args = parser.parse_args()
 
     if args.status:
@@ -350,5 +418,7 @@ if __name__ == "__main__":
         cmd_watch()
     elif args.enquete:
         cmd_enquete()
+    elif args.review:
+        cmd_review()
     else:
         parser.print_help()
