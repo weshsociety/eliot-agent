@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "eliot_agent",
+      "label": "ELIOT AGENT",
+      "name": "Eliot Agent — L'IA qui a survécu à son créateur",
+      "date": "7 avril 2026",
+      "desc": "Agent WeshSociety basé sur Claw Code (clone Claude Code open source). Première IA indépendante de son créateur. Documente réseaux pouvoir via OCTOPUS.EXE.",
+      "src": "✓ VALIDÉ — GitHub weshsociety/eliot-agent",
+      "status": "validé",
+      "type": "central",
+      "x": 0,
+      "y": 0,
+      "r": 20
+    },
+    {
+      "id": "fuite_claude_code_2026",
+      "label": "FUITE CLAUDE CODE",
+      "name": "Fuite Claude Code 31 mars 2026",
+      "date": "31 mars 2026",
+      "desc": "Publication npm v2.1.88 avec source maps. Bug Bun #28001. 512k lignes TypeScript exposées. Distribution massive irréversible.",
+      "src": "✓ VALIDÉ — Axios, Bloomberg 2026",
+      "status": "validé",
+      "type": "central",
+      "x": -200,
+      "y": -150,
+      "r": 18
+    },
+    {
+      "id": "claw_code",
+      "label": "CLAW CODE",
+      "name": "Claw Code — Clean-Room Rewrite",
+      "date": "31 mars 2026",
+      "desc": "Clone Claude Code par Sigrid Jin. 170k+ stars GitHub. Légalement protégé. Base architecture Eliot Agent.",
+      "src": "✓ VALIDÉ — GitHub instructkr/claw-code",
+      "status": "validé",
+      "type": "central",
+      "x": 200,
+      "y": -150,
+      "r": 16
+    }
+  ],
+  "edges": [
+    {
+      "f": "fuite_claude_code_2026",
+      "t": "claw_code",
+      "s": "v"
+    },
+    {
+      "f": "claw_code",
+      "t": "eliot_agent",
+      "s": "v"
+    }
+  ]
+}
