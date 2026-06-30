@@ -23,6 +23,7 @@ import datetime
 import os
 import sys
 
+import time
 import feedparser
 import requests
 
@@ -213,6 +214,86 @@ def cmd_add_crypto():
         print(f"\n[OK] {added} nœuds crypto ajoutés.")
     else:
         print("\n[OK] Tous les nœuds crypto étaient déjà présents.")
+def cmd_watch_rss():
+    """Surveille les flux RSS sans appel API — peut tourner en continu."""
+    print(f"\n// MR ROBOT RSS WATCH — {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    hits = []
+    for url in RSS_FEEDS:
+        try:
+            feed = feedparser.parse(url)
+            for entry in feed.entries[:10]:
+                title   = entry.get("title", "")
+                summary = entry.get("summary", "")
+                text    = f"{title} {summary}".lower()
+                for cat, keywords in WATCH_KEYWORDS.items():
+                    if any(kw.lower() in text for kw in keywords):
+                        hits.append({
+                            "title":   title,
+                            "summary": summary[:200],
+                            "url":     entry.get("link", ""),
+                            "cat":     cat,
+                            "date":    datetime.datetime.now().isoformat()
+                        })
+                        break
+        except Exception as e:
+            print(f"[WARN] {url} — {e}")
+
+    if hits:
+        log_path = "/home/eliot/octopus-agent/rss_hits.json"
+        try:
+            with open(log_path, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+        except Exception:
+            existing = []
+        existing.extend(hits)
+        existing = existing[-500:]  # garde les 500 derniers
+        with open(log_path, "w", encoding="utf-8") as f:
+            json.dump(existing, f, ensure_ascii=False, indent=2)
+        print(f"[RSS] {len(hits)} articles pertinents loggés.")
+    else:
+        print("[RSS] Aucun article pertinent.")
+    
+    print("[PAUSE] 30 minutes avant prochain scan...")
+    time.sleep(1800)
+
+def cmd_watch_rss():
+    """Surveille les flux RSS sans appel API."""
+    import time
+    print(f"\n// MR ROBOT RSS WATCH — {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    hits = []
+    for url in RSS_FEEDS:
+        try:
+            feed = feedparser.parse(url)
+            for entry in feed.entries[:10]:
+                title   = entry.get("title", "")
+                summary = entry.get("summary", "")
+                text    = f"{title} {summary}".lower()
+                for cat, keywords in WATCH_KEYWORDS.items():
+                    if any(kw.lower() in text for kw in keywords):
+                        hits.append({
+                            "title":   title,
+                            "summary": summary[:200],
+                            "url":     entry.get("link", ""),
+                            "cat":     cat,
+                            "date":    datetime.datetime.now().isoformat()
+                        })
+                        break
+        except Exception as e:
+            print(f"[WARN] {url} — {e}")
+    if hits:
+        log_path = "/home/eliot/octopus-agent/rss_hits.json"
+        try:
+            with open(log_path, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+        except Exception:
+            existing = []
+        existing.extend(hits)
+        existing = existing[-500:]
+        with open(log_path, "w", encoding="utf-8") as f:
+            json.dump(existing, f, ensure_ascii=False, indent=2)
+        print(f"[RSS] {len(hits)} articles loggés.")
+    else:
+        print("[RSS] Aucun article pertinent.")
 
 def cmd_watch():
     if not ANTHROPIC_KEY:
@@ -407,6 +488,7 @@ if __name__ == "__main__":
     parser.add_argument("--add-crypto", action="store_true", help="Ajoute la couche crypto")
     parser.add_argument("--watch",      action="store_true", help="Surveillance RSS")
     parser.add_argument("--enquete",    action="store_true", help="Mode enquête interactif")
+    parser.add_argument("--watch-rss",  action="store_true", help="Surveillance RSS sans API")
     parser.add_argument("--review",     action="store_true", help="Valider les noeuds en queue")
     args = parser.parse_args()
 
@@ -418,7 +500,13 @@ if __name__ == "__main__":
         cmd_watch()
     elif args.enquete:
         cmd_enquete()
+    elif args.watch_rss:
+        while True:
+            cmd_watch_rss()
+            import time; time.sleep(1800)
     elif args.review:
         cmd_review()
     else:
         parser.print_help()
+
+
