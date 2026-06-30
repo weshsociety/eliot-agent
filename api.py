@@ -138,6 +138,49 @@ def path(id1, id2):
                 visited.add(neighbor)
                 queue.append(path_so_far + [neighbor])
     return jsonify({"error": "Aucun chemin trouve entre '{}' et '{}'".format(id1, id2)}), 404
+import datetime
 
+MOLESKINE_PATH = "/home/eliot/octopus-agent/moleskine.json"
+
+@app.route("/moleskine")
+def moleskine_read():
+    try:
+        with open(MOLESKINE_PATH, "r", encoding="utf-8") as f:
+            entries = json.load(f)
+    except Exception:
+        entries = []
+    return jsonify({"entries": entries[-20:], "total": len(entries)})
+
+@app.route("/moleskine/write", methods=["POST"])
+def moleskine_write():
+    body = request.get_json()
+    if not body or not body.get("text"):
+        return jsonify({"error": "Champ text requis"}), 400
+    try:
+        with open(MOLESKINE_PATH, "r", encoding="utf-8") as f:
+            entries = json.load(f)
+    except Exception:
+        entries = []
+    entry = {
+        "text": body["text"][:500],
+        "noeud": body.get("noeud", ""),
+        "agent": body.get("agent", "anonyme"),
+        "date": datetime.datetime.now().isoformat()
+    }
+    entries.append(entry)
+    with open(MOLESKINE_PATH, "w", encoding="utf-8") as f:
+        json.dump(entries, f, ensure_ascii=False, indent=2)
+    return jsonify({"ok": True, "entry": entry})
+
+@app.route("/moleskine/random")
+def moleskine_random():
+    try:
+        with open(MOLESKINE_PATH, "r", encoding="utf-8") as f:
+            entries = json.load(f)
+        if entries:
+            return jsonify(random.choice(entries))
+    except Exception:
+        pass
+    return jsonify({"text": "Le moleskine est vide. Sois le premier a ecrire.", "agent": "systeme"})
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)
