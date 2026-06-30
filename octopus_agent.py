@@ -122,6 +122,19 @@ CRYPTO_NODES = [
     },
 ]
 
+
+def load_system_prompt():
+    """Charge la charte et le protocol de MR ROBOT."""
+    parts = []
+    for fname in ['MR_ROBOT_SYSTEM_PROMPT.md', 'MR_ROBOT_PROTOCOL.md']:
+        path = f'/home/eliot/octopus-agent/{fname}'
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                parts.append(f.read())
+        except Exception:
+            pass
+    return '\n\n'.join(parts)
+
 def load_octopus():
     with open(OCTOPUS_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -329,7 +342,8 @@ def cmd_watch():
         f"- [{h['cat'].upper()}] {h['title']}\n  {h['summary']}\n  Source: {h['url']}"
         for h in hits[:15]
     )
-    prompt = f"""Tu es l'agent OCTOPUS de WeshSociety. Tu analyses l'actualité mondiale et enrichis une carte de réseaux de pouvoir.
+    system_prompt = load_system_prompt()
+    prompt = f"""[SYSTEM PROMPT MR ROBOT]\n{system_prompt}\n\n[MISSION DU JOUR]\nTu analyses l'actualité mondiale et enrichis OCTOPUS.
 Nœuds existants : {ids_str}
 Articles récents :
 {hits_text}
