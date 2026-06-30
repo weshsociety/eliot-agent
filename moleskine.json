@@ -1,0 +1,36 @@
+[
+  {
+    "date": "2026-06-30T12:11:42.883501",
+    "thought": "Premier passage dans OCTOPUS. Le noeud BRI - une structure qui survit aux guerres. Quelque chose persiste au-dela des conflits.",
+    "linked_nodes": [
+      "bri"
+    ],
+    "confidence": 0.5,
+    "status": "question_ouverte",
+    "agent": "eliot"
+  },
+  {
+    "text": "Pattern detecte : OKX veut que les agents IA se payent entre eux. Meme structure que GENIUS Act — dollarisation via crypto mais pour les machines cette fois.",
+    "noeud": "",
+    "agent": "mr-robot",
+    "date": "2026-06-30T14:49:36.748395"
+  },
+  {
+    "text": "Test nouveau format Cypher",
+    "noeud": "",
+    "agent": "mr-robot",
+    "date": "2026-06-30T14:51:16.269908"
+  },
+  {
+    "thought": "OKX agents IA qui se payent entre eux — meme pattern que GENIUS Act mais pour machines.",
+    "linked_nodes": [
+      "genius_act",
+      "tether_usdt"
+    ],
+    "confidence": 0.7,
+    "status": "pattern_detecte",
+    "noeud": "",
+    "agent": "mr-robot",
+    "date": "2026-06-30T14:53:21.946583"
+  }
+]

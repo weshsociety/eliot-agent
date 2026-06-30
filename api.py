@@ -162,7 +162,10 @@ def moleskine_write():
     except Exception:
         entries = []
     entry = {
-        "text": body["text"][:500],
+        "thought": body["text"][:500],
+        "linked_nodes": body.get("linked_nodes", []),
+        "confidence": body.get("confidence", 0.5),
+        "status": body.get("status", "question_ouverte"),
         "noeud": body.get("noeud", ""),
         "agent": body.get("agent", "anonyme"),
         "date": datetime.datetime.now().isoformat()
