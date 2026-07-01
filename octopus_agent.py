@@ -135,6 +135,32 @@ def load_system_prompt():
             pass
     return '\n\n'.join(parts)
 
+
+def send_notification(subject, message):
+    import requests as req
+    api_key = os.environ.get("BREVO_API_KEY", "")
+    if not api_key:
+        print("[NOTIF] BREVO_API_KEY non definie")
+        return
+    try:
+        r = req.post(
+            "https://api.brevo.com/v3/smtp/email",
+            headers={"api-key": api_key, "Content-Type": "application/json"},
+            json={
+                "sender": {"name": "MR ROBOT", "email": "mr-robot@weshsociety.org"},
+                "to": [{"email": "weshsociety@proton.me"}],
+                "subject": subject,
+                "textContent": message
+            },
+            timeout=10
+        )
+        if r.status_code == 201:
+            print(f"[NOTIF] Email envoye : {subject}")
+        else:
+            print(f"[NOTIF] Erreur : {r.status_code}")
+    except Exception as e:
+        print(f"[NOTIF] Erreur : {e}")
+
 def load_octopus():
     with open(OCTOPUS_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -392,6 +418,11 @@ Réponds en JSON strict :
             json.dump(queue, f, ensure_ascii=False, indent=2)
         print(f"[QUEUE] {len(nouveaux)} nœuds en attente de validation.")
         print(f"[INFO] Lance: python3 octopus_agent.py --review")
+        noms = ", ".join([n.get('id', '') for n in nouveaux])
+        send_notification(
+            f"[MR ROBOT] {len(nouveaux)} noeuds en attente",
+            f"MR ROBOT a propose {len(nouveaux)} noeuds:\n{noms}\n\nLance --review pour valider."
+        )
 
 def cmd_enquete():
     if not ANTHROPIC_KEY:
