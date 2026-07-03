@@ -141,7 +141,7 @@ def path(id1, id2):
 import datetime
 
 from memory import Memory
-memory = Memory(graph_file="data/octopus_data.json")
+memory = Memory()
 
 
 MOLESKINE_PATH = "/home/eliot/octopus-agent/moleskine.json"

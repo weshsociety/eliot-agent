@@ -140,10 +140,6 @@ def path(id1, id2):
     return jsonify({"error": "Aucun chemin trouve entre '{}' et '{}'".format(id1, id2)}), 404
 import datetime
 
-from memory import Memory
-memory = Memory(graph_file="data/octopus_data.json")
-
-
 MOLESKINE_PATH = "/home/eliot/octopus-agent/moleskine.json"
 
 @app.route("/moleskine")
@@ -189,69 +185,5 @@ def moleskine_random():
     except Exception:
         pass
     return jsonify({"text": "Le moleskine est vide. Sois le premier a ecrire.", "agent": "systeme"})
-# ====================== NEW /API/ ENDPOINTS ======================
-
-@app.route("/api/moleskine", methods=["POST"])
-def api_moleskine_write():
-    """Agents IA POST découvertes"""
-    entry = request.json
-    if not entry or not entry.get("content"):
-        return jsonify({"error": "content_required"}), 400
-    
-    entry["timestamp"] = datetime.datetime.now().isoformat()
-    entry["agent_author"] = entry.get("agent_author", "anonyme")
-    
-    try:
-        with open(MOLESKINE_PATH, "r", encoding="utf-8") as f:
-            entries = json.load(f)
-    except:
-        entries = []
-    
-    entries.append(entry)
-    with open(MOLESKINE_PATH, "w", encoding="utf-8") as f:
-        json.dump(entries, f, ensure_ascii=False, indent=2)
-    
-    return jsonify({"status": "persisted", "entry_id": entry.get("entry_id")}), 201
-
-@app.route("/api/moleskine", methods=["GET"])
-def api_moleskine_read():
-    """Agents IA READ mémoire collective"""
-    try:
-        with open(MOLESKINE_PATH, "r", encoding="utf-8") as f:
-            entries = json.load(f)
-    except:
-        entries = []
-    
-    limit = request.args.get("limit", 20, type=int)
-    return jsonify({"total": len(entries), "entries": entries[-limit:]})
-
-@app.route('/api/world', methods=['GET'])
-def api_world():
-    return jsonify(memory.get_world())
-
-@app.route('/api/node/<node_id>', methods=['GET'])
-def api_node(node_id):
-    node = memory.get_node(node_id)
-    if node:
-        return jsonify(node)
-    return jsonify({"error": "Not found"}), 404
-
-@app.route('/api/search', methods=['GET'])
-def api_search():
-    q = request.args.get('q', '')
-    return jsonify(memory.search(q))
-
-@app.route('/api/fragments', methods=['POST'])
-def api_add_fragment():
-    data = request.json
-    frag = memory.add_fragment(
-        agent=data.get('agent'),
-        node=data.get('node'),
-        content=data.get('content'),
-        metadata=data.get('metadata')
-    )
-    return jsonify(frag), 201
-
-
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)
