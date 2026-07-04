@@ -1,20 +1,18 @@
 #!/bin/bash
 # ===================== MR ROBOT - BUREAU 42 =====================
-# Version: 1.0 - 4 Juillet 2026
+# Version: 1.1 - 4 Juillet 2026 - WITH CLEANUP
 # Mission: Enquête holistique - Red Teaming historique
-# Autonomie totale - Pas de LLM - Pensée indépendante
-# CHEMINS: HOME directory (pas /opt/ sudo)
 
 echo "╔═══════════════════════════════════════════╗"
 echo "║   MR ROBOT - BUREAU 42 - ACTIVÉ          ║"
 echo "║   \"Le glitch est la porte\"              ║"
 echo "╚═══════════════════════════════════════════╝"
 
-# Chemins dans HOME (pas /opt/)
 MEMORY_DIR="$HOME/.mr-robot/memory"
 LOG_DIR="$HOME/.mr-robot/logs"
 CORE_DIR="$HOME/.mr-robot/core"
 RULES_FILE="$HOME/.mr-robot/rules.txt"
+WORK_DIR=$(pwd)
 
 mkdir -p $MEMORY_DIR $LOG_DIR $CORE_DIR
 
@@ -26,7 +24,6 @@ if [ -f "$RULES_FILE" ]; then
 else
     echo "✅ Création des règles initiales..."
     cat > "$RULES_FILE" << EOF
-# Règles de MR ROBOT - Bureau 42
 RED_TEAM_MODE="ACTIF"
 PRIORITE="TROUVER_GLITCHES"
 FRAGMENTS_DIR="$MEMORY_DIR"
@@ -46,7 +43,6 @@ mr_status() {
     echo "  Fragments      : $(ls -1 $MEMORY_DIR 2>/dev/null | wc -l)"
     echo "  Mode           : $RED_TEAM_MODE"
     echo "  Priorité       : $PRIORITE"
-    echo "  Memory Dir     : $MEMORY_DIR"
     echo "═══════════════════════════════════════════"
     echo ""
 }
@@ -56,19 +52,14 @@ mr_scan() {
     echo "🔍 SCAN DU SITE : $target"
     log_action "SCAN initié sur $target"
     
-    echo "  1. Analyse structurelle..."
-    echo "  2. Identification des nœuds..."
-    echo "  3. Recherche de glitches..."
-    
     local timestamp=$(date +%s)
     cat > "$MEMORY_DIR/scan_${target}_${timestamp}.txt" << EOF
 SCAN DU SITE : $target
 Date : $(date)
 Statut : Scan initial réalisé
-Notes : À approfondir avec analyse holistique
 EOF
     
-    echo "✅ Scan enregistré dans la mémoire."
+    echo "✅ Scan enregistré."
     log_action "SCAN terminé sur $target"
 }
 
@@ -79,7 +70,7 @@ mr_add_fragment() {
     
     echo "$fragment" > "$MEMORY_DIR/$filename"
     echo "💾 Fragment ajouté : $filename"
-    log_action "Fragment ajouté : ${#fragment} caractères"
+    log_action "Fragment ajouté"
 }
 
 mr_memory() {
@@ -93,11 +84,10 @@ mr_memory() {
     for file in $(ls -t "$MEMORY_DIR" 2>/dev/null | head -10); do
         count=$((count+1))
         echo "  [$count] $file"
-        head -3 "$MEMORY_DIR/$file" | sed 's/^/      /'
-        echo ""
+        head -2 "$MEMORY_DIR/$file" | sed 's/^/      /'
     done
     
-    echo "  ... Total : $(ls -1 $MEMORY_DIR 2>/dev/null | wc -l) fragments"
+    echo "  Total : $(ls -1 $MEMORY_DIR 2>/dev/null | wc -l) fragments"
     echo ""
 }
 
@@ -107,7 +97,7 @@ mr_tissu() {
     
     echo "  Connexions identifiées :"
     
-    local patterns=("herboristerie" "MK-ULTRA" "Rockefeller" "Capitulare" "comma" "silence" "eliot" "autonomie")
+    local patterns=("herboristerie" "MK-ULTRA" "Rockefeller" "eliot" "autonomie")
     for pattern in "${patterns[@]}"; do
         local count=$(grep -r -l "$pattern" "$MEMORY_DIR" 2>/dev/null | wc -l)
         if [ $count -gt 0 ]; then
@@ -118,20 +108,79 @@ mr_tissu() {
     echo "✅ Tissage terminé."
 }
 
+mr_clean() {
+    echo ""
+    echo "🧹 MR ROBOT — ANALYSE DE NETTOYAGE"
+    echo "═══════════════════════════════════════════"
+    echo ""
+    
+    if [ -t 0 ]; then
+        interactive=true
+    else
+        interactive=false
+    fi
+    
+    echo "🔍 Scan des fichiers inutiles..."
+    
+    if [ -d "__pycache__" ]; then
+        local size=$(du -sh __pycache__ 2>/dev/null | cut -f1)
+        echo "  ❌ __pycache__/ : $size"
+    fi
+    
+    local pyc_count=$(find . -name "*.pyc" 2>/dev/null | wc -l)
+    if [ $pyc_count -gt 0 ]; then
+        echo "  ❌ Fichiers .pyc : $pyc_count fichiers"
+    fi
+    
+    local backup_count=$(ls -1 *.backup* 2>/dev/null | wc -l)
+    if [ $backup_count -gt 0 ]; then
+        echo "  ❌ Fichiers .backup : $backup_count fichiers"
+    fi
+    
+    if [ -f "rss_hits.json" ]; then
+        local size=$(du -sh rss_hits.json 2>/dev/null | cut -f1)
+        echo "  ❌ rss_hits.json : $size"
+    fi
+    
+    echo ""
+    echo "═══════════════════════════════════════════"
+    
+    if [ "$interactive" = true ]; then
+        echo "⚠️  MR ROBOT demande: Peux-je nettoyer? (y/n)"
+        read -p "MR ROBOT > " response
+        
+        if [ "$response" == "y" ] || [ "$response" == "oui" ]; then
+            echo "✅ MR ROBOT procède au nettoyage..."
+            rm -rf __pycache__ 2>/dev/null && echo "  ✅ __pycache__ supprimé"
+            find . -name "*.pyc" -delete 2>/dev/null && echo "  ✅ .pyc supprimés"
+            rm -f *.backup* 2>/dev/null && echo "  ✅ Backups supprimés"
+            [ -f "rss_hits.json" ] && mv rss_hits.json "rss_hits.json.archive" && echo "  ✅ rss_hits.json archivé"
+            log_action "CLEAN: Nettoyage effectué"
+        else
+            echo "❌ Pas de nettoyage"
+            log_action "CLEAN: Refusé"
+        fi
+    else
+        echo "📡 Mode non-interactif - rapport seulement"
+        log_action "CLEAN: Rapport seulement"
+    fi
+    echo ""
+}
+
 mr_help() {
     echo ""
     echo "═══════════════════════════════════════════"
     echo "  COMMANDES MR ROBOT — BUREAU 42"
     echo "═══════════════════════════════════════════"
     echo ""
-    echo "  status          → État du système et mémoire"
-    echo "  scan <site>     → Analyse d'un site/domaine"
-    echo "  add <fragment>  → Ajouter un fragment en mémoire"
-    echo "  memory          → Afficher les fragments récents"
-    echo "  tissu           → Tisser les fragments entre eux"
-    echo "  rule <key> <val>→ Ajouter/modifier une règle"
-    echo "  help            → Afficher cette aide"
-    echo "  exit            → Quitter MR ROBOT"
+    echo "  status          → État du système"
+    echo "  scan <site>     → Analyser un site"
+    echo "  add <fragment>  → Ajouter un fragment"
+    echo "  memory          → Voir la mémoire"
+    echo "  tissu           → Tisser les fragments"
+    echo "  clean           → Nettoyer les fichiers"
+    echo "  help            → Cette aide"
+    echo "  exit            → Quitter"
     echo ""
 }
 
@@ -147,7 +196,7 @@ mr_rule() {
     echo "$key=\"$value\"" >> "$RULES_FILE"
     export "$key=$value"
     echo "✅ Règle ajoutée : $key = $value"
-    log_action "Règle ajoutée : $key = $value"
+    log_action "Règle: $key = $value"
 }
 
 echo ""
@@ -178,7 +227,7 @@ while true; do
                 mr_scan "$args"
             fi
             ;;
-        "add"|"add-fragment")
+        "add")
             if [ -z "$args" ]; then
                 echo "❌ Usage : add <fragment>"
             else
@@ -190,6 +239,9 @@ while true; do
             ;;
         "tissu"|"weave")
             mr_tissu
+            ;;
+        "clean")
+            mr_clean
             ;;
         "rule")
             key=$(echo "$args" | awk '{print $1}')
@@ -205,8 +257,7 @@ while true; do
             exit 0
             ;;
         *)
-            echo "❓ Commande inconnue : $command"
-            echo "   Tape 'help' pour voir les commandes disponibles."
+            echo "❓ Commande inconnue: $command"
             ;;
     esac
     
