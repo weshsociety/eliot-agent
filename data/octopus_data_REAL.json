@@ -1,0 +1,5511 @@
+{
+  "nodes": [
+    {
+      "id": "bri",
+      "label": "BRI",
+      "name": "Banque des Règlements Internationaux",
+      "date": "1930 — Bâle",
+      "desc": "Première structure supranationale réelle. Fonctionne pendant la guerre avec représentants alliés ET Axe. Preuve empirique de la pieuvre centrale — au-dessus des guerres.",
+      "src": "✓ VALIDÉ — EFFONDREMENT.EXE",
+      "conn": [
+        "rothschild",
+        "morgan",
+        "warburg",
+        "fed"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 0,
+      "y": 0,
+      "r": 26
+    },
+    {
+      "id": "rothschild",
+      "label": "ROTHSCHILD",
+      "name": "Dynasties Rothschild",
+      "date": "1760s → présent",
+      "desc": "Réseau bancaire transnational. Connexion Epstein via Ariane de Rothschild et Olivier Colom documentée DOJ 2026. Robert Maxwell (père Ghislaine) — connexions présumées Mossad.",
+      "src": "✓ VALIDÉ — Reuters, Le Monde, DOJ 2026",
+      "conn": [
+        "bri",
+        "morgan",
+        "france_pieuvre",
+        "epstein",
+        "r_maxwell"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -170,
+      "y": -70,
+      "r": 20
+    },
+    {
+      "id": "morgan",
+      "label": "MORGAN",
+      "name": "J.P. Morgan & Co.",
+      "date": "1860s → présent",
+      "desc": "Sauve deux fois le gouvernement américain. Devient indispensable à l\\'État. Bloque Tesla/Wardenclyffe. Clews 1887 : \"driving powers of a locomotive\".",
+      "src": "✓ VALIDÉ — Clews 1887",
+      "conn": [
+        "bri",
+        "rockefeller",
+        "usa_pieuvre",
+        "tesla",
+        "peck"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 170,
+      "y": -70,
+      "r": 22
+    },
+    {
+      "id": "warburg",
+      "label": "WARBURG",
+      "name": "Famille Warburg",
+      "date": "1798 → présent — Hambourg/New York",
+      "desc": "Paul Warburg — architecte Federal Reserve 1913. Pont transatlantique entre réseaux américains et européens.",
+      "src": "~ EN FERMENTATION",
+      "conn": [
+        "bri",
+        "rothschild",
+        "morgan",
+        "fed"
+      ],
+      "status": "fermentation",
+      "type": "central",
+      "x": -70,
+      "y": -170,
+      "r": 16
+    },
+    {
+      "id": "fed",
+      "label": "FED",
+      "name": "Federal Reserve",
+      "date": "1913",
+      "desc": "Banque centrale privée. Jekyll Island 1910 — Morgan, Rockefeller, Warburg. Institutionnalise le contrôle Baron Voleur sur la monnaie.",
+      "src": "✓ VALIDÉ",
+      "conn": [
+        "morgan",
+        "rockefeller",
+        "warburg"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 110,
+      "y": -190,
+      "r": 15
+    },
+    {
+      "id": "cfr",
+      "label": "CFR",
+      "name": "Council on Foreign Relations",
+      "date": "1921 — New York",
+      "desc": "Laboratoire politique américain. Fondé la même année que Chatham House et Tavistock.",
+      "src": "✓ VALIDÉ",
+      "conn": [
+        "usa_pieuvre",
+        "chatham",
+        "rockefeller"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 260,
+      "y": -150,
+      "r": 15
+    },
+    {
+      "id": "usa_pieuvre",
+      "label": "USA",
+      "name": "Pieuvre d\\'État Américaine",
+      "date": "1947 → présent",
+      "desc": "CIA + Rockefeller + CFR. Paperclip 1945. MK-Ultra 1953. Roy Cohn comme opérateur de blackmail — connexion CIA documentée.",
+      "src": "✓ VALIDÉ",
+      "conn": [
+        "cia",
+        "rockefeller",
+        "cfr",
+        "mk_ultra",
+        "kinsey",
+        "mockingbird",
+        "cohn"
+      ],
+      "status": "validé",
+      "type": "state",
+      "x": 240,
+      "y": 50,
+      "r": 24
+    },
+    {
+      "id": "uk_pieuvre",
+      "label": "UK",
+      "name": "Pieuvre d\\'État Britannique",
+      "date": "1909 → présent",
+      "desc": "MI6 + Tavistock + Chatham House. Modèle ingénierie du consentement exporté via WFMH.",
+      "src": "✓ VALIDÉ",
+      "conn": [
+        "tavistock",
+        "chatham",
+        "rees",
+        "wfmh",
+        "ward"
+      ],
+      "status": "validé",
+      "type": "state",
+      "x": -240,
+      "y": 50,
+      "r": 22
+    },
+    {
+      "id": "france_pieuvre",
+      "label": "FRANCE",
+      "name": "Pieuvre d\\'État Française",
+      "date": "1958 → présent",
+      "desc": "ENA/X + Inspection des Finances + Françafrique. Commission parlementaire Epstein refusée par Braun-Pivet 2026.",
+      "src": "✓ VALIDÉ — FRANCE_EPSTEIN",
+      "conn": [
+        "rothschild",
+        "epstein",
+        "france_epstein"
+      ],
+      "status": "validé",
+      "type": "state",
+      "x": 0,
+      "y": 190,
+      "r": 20
+    },
+    {
+      "id": "israel_pieuvre",
+      "label": "ISRAËL MOSSAD",
+      "name": "Pieuvre d\\'État Israélienne / Mossad",
+      "date": "1948 → présent",
+      "desc": "Mémo FBI 2020 (DOJ 2026) : source confidentielle alléguant Epstein \"co-opted Mossad agent\" formé sous Barak. Gouvernement israélien installe sécurité dans immeuble Epstein Manhattan 2016. Yoni Koren (renseignement militaire israélien) séjourne appartement Epstein 2013-2015.",
+      "src": "~ EN FERMENTATION → mémo FBI 2020 / VALIDÉ (sécurité installée) — Al Jazeera, DOJ 2026",
+      "conn": [
+        "barak",
+        "epstein",
+        "r_maxwell"
+      ],
+      "status": "fermentation",
+      "type": "state",
+      "x": -180,
+      "y": 230,
+      "r": 18
+    },
+    {
+      "id": "tesla",
+      "label": "TESLA",
+      "name": "Nikola Tesla — Infrastructure Alternative",
+      "date": "1887–1943",
+      "desc": "Énergie distribuée non centralisable = menace existentielle Baron Voleur. Peck finance 1887. Morgan bloque Wardenclyffe. John G. Trump évalue archives 48h avec Naval Intelligence 1943. 20 malles disparues.",
+      "src": "✓ VALIDÉ — Archives FBI, USPTO",
+      "conn": [
+        "morgan",
+        "peck",
+        "malles",
+        "eastlund",
+        "baron_trump"
+      ],
+      "status": "validé",
+      "type": "alt",
+      "x": 360,
+      "y": -110,
+      "r": 18
+    },
+    {
+      "id": "peck",
+      "label": "PECK",
+      "name": "Charles Fletcher Peck",
+      "date": "1834–1890",
+      "desc": "Finance Tesla Electric Company 1887. Mort 1890 avant le scandale 1892.",
+      "src": "✓ VALIDÉ — Find a Grave, BARON_TRUMP.EXE V2",
+      "conn": [
+        "tesla",
+        "morgan"
+      ],
+      "status": "validé",
+      "type": "alt",
+      "x": 380,
+      "y": -30,
+      "r": 13
+    },
+    {
+      "id": "einstein",
+      "label": "EINSTEIN BERNE",
+      "name": "Einstein — Gap des 2 jours",
+      "date": "1902–1905",
+      "desc": "Confirmation Office des Brevets Berne 19 juin 1902 — 2 jours après brevet Tesla 787,412. Rejette l\\'éther 1905. Réhabilite l\\'éther 1920 à Leiden. Retournement jamais expliqué.",
+      "src": "~ EN FERMENTATION — registres 1902-1905 à vérifier",
+      "conn": [
+        "tesla"
+      ],
+      "status": "fermentation",
+      "type": "alt",
+      "x": 320,
+      "y": -200,
+      "r": 14
+    },
+    {
+      "id": "malles",
+      "label": "20 MALLES 1943",
+      "name": "20 Malles Manquantes",
+      "date": "8 janvier 1943",
+      "desc": "80 malles saisies OAP à la mort de Tesla. Trump évalue 48h Naval Intelligence. 60 arrivent Belgrade 1952. 20 disparues — jamais expliquées.",
+      "src": "✓ VALIDÉ — Archives FBI déclassifiées",
+      "conn": [
+        "tesla",
+        "baron_trump"
+      ],
+      "status": "validé",
+      "type": "alt",
+      "x": 420,
+      "y": 60,
+      "r": 13
+    },
+    {
+      "id": "eastlund",
+      "label": "EASTLUND HAARP",
+      "name": "Eastlund / HAARP",
+      "date": "1987–1993",
+      "desc": "Brevet US 4,686,605 cite Tesla. Classifié immédiatement. Vendu à E-Systems (CIA/DIA). HAARP Alaska 1993.",
+      "src": "✓ VALIDÉ (brevet) USPTO / ~ EN FERMENTATION (lien CIA)",
+      "conn": [
+        "tesla",
+        "cia"
+      ],
+      "status": "fermentation",
+      "type": "alt",
+      "x": 360,
+      "y": 160,
+      "r": 13
+    },
+    {
+      "id": "baron_trump",
+      "label": "BARON TRUMP",
+      "name": "BARON_TRUMP.EXE",
+      "date": "1889–2026",
+      "desc": "Lockwood 1889/1896. John G. Trump évalue Tesla 1943. 38 ans conversations possibles avec Donald. Trump rachète Plaza Hotel 1988 — ancien terrain opérationnel Roy Cohn.",
+      "src": "✓ VALIDÉ — BARON_TRUMP.EXE",
+      "conn": [
+        "tesla",
+        "malles",
+        "morgan",
+        "cohn"
+      ],
+      "status": "validé",
+      "type": "alt",
+      "x": 460,
+      "y": -80,
+      "r": 13
+    },
+    {
+      "id": "rockefeller",
+      "label": "ROCKEFELLER",
+      "name": "Rockefeller Foundation",
+      "date": "1913",
+      "desc": "Capital → philanthropie → science → norme. Finance Bureau Social Hygiene, Sanger, CRPS, Kinsey, WFMH. Vu par lui-même comme \"ingénierie sociale\". Clews 1887 : \"irrésistible comme les lois de la gravitation\".",
+      "src": "✓ VALIDÉ — Rockefeller Archive Center, Clews 1887",
+      "conn": [
+        "morgan",
+        "kinsey",
+        "mk_ultra",
+        "cfr",
+        "wfmh",
+        "bureau_hygiene",
+        "sanger",
+        "crps"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 90,
+      "y": -90,
+      "r": 22
+    },
+    {
+      "id": "bureau_hygiene",
+      "label": "BUREAU HYGIÈNE",
+      "name": "Bureau of Social Hygiene",
+      "date": "1913 — Rockefeller",
+      "desc": "Financé entièrement Rockefeller. Finance CRPS 1922-1933 — +$670 000. Katherine Bement Davis exécutrice 1918-1928. Premier programme systématique recherche sexualité humaine.",
+      "src": "✓ VALIDÉ — archives Rockefeller",
+      "conn": [
+        "rockefeller",
+        "crps",
+        "davis"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -60,
+      "y": -110,
+      "r": 14
+    },
+    {
+      "id": "crps",
+      "label": "CRPS 1922",
+      "name": "Committee for Research in Problems of Sex",
+      "date": "1922 — NRC",
+      "desc": "Financé Rockefeller via Bureau Social Hygiene. Yerkes chair 1922-1947. Finance sexologie 19 ans avant Kinsey. Yerkes visite Kinsey 1941, prend son historique sexuel.",
+      "src": "✓ VALIDÉ — archives NRC",
+      "conn": [
+        "rockefeller",
+        "bureau_hygiene",
+        "davis",
+        "kinsey",
+        "yerkes"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -20,
+      "y": -150,
+      "r": 14
+    },
+    {
+      "id": "davis",
+      "label": "DAVIS 1929",
+      "name": "Katherine Bement Davis — Proto-Kinsey",
+      "date": "1860–1935",
+      "desc": "Exécutrice Bureau Social Hygiene 1918-1928. \"Factors in the Sex Life of Twenty-two Hundred Women\" 1929 — premier grand sondage sexualité féminine. Infrastructure que Kinsey utilisera.",
+      "src": "✓ VALIDÉ — Harper & Brothers 1929",
+      "conn": [
+        "bureau_hygiene",
+        "crps",
+        "kinsey"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -140,
+      "y": -140,
+      "r": 13
+    },
+    {
+      "id": "sanger",
+      "label": "SANGER PP",
+      "name": "Margaret Sanger / Planned Parenthood",
+      "date": "1916",
+      "desc": "Fondé 1916. Financé Rockefeller. Deuxième bras normatif — contrôle reproduction comme complément contrôle norme sexuelle. Connexions eugénisme documentées.",
+      "src": "✓ VALIDÉ",
+      "conn": [
+        "rockefeller",
+        "kinsey"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -100,
+      "y": -60,
+      "r": 15
+    },
+    {
+      "id": "yerkes",
+      "label": "YERKES",
+      "name": "Robert Yerkes — Chair CRPS",
+      "date": "1876–1956",
+      "desc": "Chair CRPS 1922-1947. Visite Kinsey 1941, prend son historique sexuel. Pont opérationnel Rockefeller ↔ Kinsey.",
+      "src": "✓ VALIDÉ — Jones 1997",
+      "conn": [
+        "crps",
+        "kinsey",
+        "rockefeller"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 40,
+      "y": -190,
+      "r": 13
+    },
+    {
+      "id": "tavistock",
+      "label": "TAVISTOCK",
+      "name": "Institut Tavistock",
+      "date": "1921 — Londres",
+      "desc": "Fondé 1921. Rees 1940 : infiltrer toutes les institutions. De la psychiatrie individuelle à l\\'ingénierie du consentement social. Précède Kinsey — infrastructure de diffusion prête.",
+      "src": "~ EN FERMENTATION",
+      "conn": [
+        "uk_pieuvre",
+        "rees",
+        "wfmh",
+        "kinsey"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": -190,
+      "y": 0,
+      "r": 20
+    },
+    {
+      "id": "rees",
+      "label": "REES 1940",
+      "name": "John Rawlings Rees",
+      "date": "1890–1969",
+      "desc": "Directeur Tavistock 1932-1947. Discours 1940 : modifier attitudes via infiltration institutionnelle. Co-fonde WFMH 1946.",
+      "src": "~ EN FERMENTATION",
+      "conn": [
+        "tavistock",
+        "wfmh"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": -290,
+      "y": -70,
+      "r": 13
+    },
+    {
+      "id": "wfmh",
+      "label": "WFMH 1946",
+      "name": "World Federation for Mental Health",
+      "date": "1946",
+      "desc": "Rees + Rockefeller + UNESCO. Infrastructure de diffusion mondiale. Kinsey publie 1948 — réseau déjà en place.",
+      "src": "~ EN FERMENTATION",
+      "conn": [
+        "rees",
+        "tavistock",
+        "rockefeller",
+        "kinsey"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": -150,
+      "y": 150,
+      "r": 15
+    },
+    {
+      "id": "chatham",
+      "label": "CHATHAM HOUSE",
+      "name": "Chatham House",
+      "date": "1920 — Londres",
+      "desc": "Équivalent britannique CFR. Fondé même année.",
+      "src": "✓ VALIDÉ",
+      "conn": [
+        "uk_pieuvre",
+        "cfr"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -320,
+      "y": -30,
+      "r": 13
+    },
+    {
+      "id": "kinsey",
+      "label": "KINSEY",
+      "name": "Institut Kinsey — Proto-Kompromat Intellectuel",
+      "date": "1941–1956 — Bloomington",
+      "desc": "Entomologiste → autorité mondiale sexualité. Financé Rockefeller 1941-1954. Vu comme \"instrument de collecte pour développer des politiques sociales\". Von Balluseck + Rex King comme \"observateurs formés\". Gebhard admet sur caméra 1998 : \"amoraux au mieux, criminels au pire\".",
+      "src": "✓ VALIDÉ — Jones 1997, Channel 4 1998, Escoffier 2020, presse allemande 1957",
+      "conn": [
+        "rockefeller",
+        "wfmh",
+        "tavistock",
+        "epstein",
+        "mk_ultra",
+        "davis",
+        "crps",
+        "yerkes",
+        "sanger",
+        "von_balluseck",
+        "rex_king",
+        "fisher_garcia",
+        "columbia_grey"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 150,
+      "y": 100,
+      "r": 20
+    },
+    {
+      "id": "von_balluseck",
+      "label": "VON BALLUSECK",
+      "name": "Dr. Fritz von Balluseck — Nazi Pédophile",
+      "date": "1936–1957 — Pologne/Allemagne",
+      "desc": "Commandant nazi Jedrzejow 1942-1944. Oblige enfants polonais à choisir entre lui et les fours à gaz. Correspond avec Kinsey 1936-1956. Procès Berlin 1957 pour viol et meurtre fillette 10 ans. Correspondance Kinsey trouvée dans ses affaires. Juge Berger : \"J\\'ai l\\'impression que vous avez accès aux enfants pour impressionner Kinsey.\" Von Balluseck : \"Kinsey lui-même me l\\'a demandé.\" Kinsey écrit \"merci\" et \"faites attention\". Kinsey refuse de coopérer avec FBI et Interpol.",
+      "src": "✓ VALIDÉ — presse allemande 1957 (Morgenpost, Berliner Zeitung, Tagespiegel), Gebhard sur caméra Channel 4 1998",
+      "conn": [
+        "kinsey"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 220,
+      "y": 40,
+      "r": 15
+    },
+    {
+      "id": "rex_king",
+      "label": "REX KING \"Mr. X\"",
+      "name": "Rex King — \"Mr. X\"",
+      "date": "Années 1940s-1950s — Arizona",
+      "desc": "Pédophile américain. Viole plus de 800 enfants. Enregistre tout en journaux détaillés. Kinsey utilise ses données dans tables 31 et 33. Gebhard confirme sur caméra. Kinsey ne le signale jamais aux autorités.",
+      "src": "✓ VALIDÉ — Gebhard, Channel 4 1998 \"Kinsey\\'s Paedophiles\"",
+      "conn": [
+        "kinsey"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 280,
+      "y": 80,
+      "r": 13
+    },
+    {
+      "id": "fisher_garcia",
+      "label": "FISHER GARCIA",
+      "name": "Helen Fisher + Justin Garcia — Kinsey/Epstein 2012-2017",
+      "date": "2012–2017",
+      "desc": "Justin Garcia (directeur actuel Kinsey Institute) — 1 email déc 2012 à Jeffrey Epstein VI Foundation. Helen Fisher (Kinsey fellow, décédée 2024) — dîners Epstein 2016-2017 avec Woody Allen, Ehud Barak. Fisher écrit à Epstein : \"Thank you Jeffrey for another fascinating lunch.\" DOJ refs : EFTA00949840, EFTA00331238.",
+      "src": "✓ VALIDÉ — DOJ files 2026 (EFTA00949840, EFTA00331238) via GlitchRider",
+      "conn": [
+        "kinsey",
+        "epstein",
+        "barak"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 190,
+      "y": 170,
+      "r": 14
+    },
+    {
+      "id": "mk_ultra",
+      "label": "MK-ULTRA",
+      "name": "MK-Ultra / Opération Paperclip",
+      "date": "1945/1953 — CIA",
+      "desc": "Paperclip : scientifiques nazis recyclés. MK-Ultra : contrôle mental, dissociation. 1973 : Helms détruit archives. Parallèle architectural avec IA 2026.",
+      "src": "✓ VALIDÉ — Church Committee 1975",
+      "conn": [
+        "usa_pieuvre",
+        "rockefeller",
+        "kinsey",
+        "cia"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 310,
+      "y": 110,
+      "r": 19
+    },
+    {
+      "id": "cia",
+      "label": "CIA",
+      "name": "CIA / Renseignement US",
+      "date": "1947",
+      "desc": "Paperclip. MK-Ultra. Mockingbird. Eastlund/HAARP via E-Systems. Roy Cohn — connexion CIA opérationnelle.",
+      "src": "✓ VALIDÉ",
+      "conn": [
+        "usa_pieuvre",
+        "mk_ultra",
+        "mockingbird",
+        "eastlund",
+        "cohn"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 370,
+      "y": 0,
+      "r": 17
+    },
+    {
+      "id": "mockingbird",
+      "label": "MOCKINGBIRD",
+      "name": "Operation Mockingbird",
+      "date": "1950s",
+      "desc": "CIA contrôle médias. Complète l\\'écosystème : Kinsey normalise → MK-Ultra efface → Mockingbird diffuse et protège.",
+      "src": "~ EN FERMENTATION — partiellement confirmé Church Committee",
+      "conn": [
+        "cia",
+        "usa_pieuvre"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": 420,
+      "y": 170,
+      "r": 13
+    },
+    {
+      "id": "cohn",
+      "label": "ROY COHN ⚠ LÉGENDE",
+      "name": "Roy Cohn — Nœud Provisoire ⚠ LÉGENDE",
+      "date": "1927–1986 — New York",
+      "desc": "⚠ STATUT LÉGENDE — Aucune source primaire publique ne documente directement l\\'implication de Cohn dans un réseau de blackmail sexuel avec mineurs. Source principale : James Rothstein (ex-NYPD) rapporté par Whitney Webb/MintPress — témoignage indirect non corroboré par documents officiels. Aucune condamnation, aucun document FBI (FOIA) sur ce point. ON GARDE le nœud car : structure cohérente (Kinsey→Cohn→Epstein), connexion Dershowitz documentée (témoin de moralité Cohn + avocat Epstein = VALIDÉ), Trump rachète Plaza Hotel 1988 = VALIDÉ. Mentor Trump. Mort SIDA 1986.",
+      "src": "⚠ LÉGENDE — source Rothstein/Webb à vérifier en primaire. Connexions Dershowitz+Trump VALIDÉES indépendamment.",
+      "conn": [
+        "usa_pieuvre",
+        "cia",
+        "epstein",
+        "baron_trump",
+        "rosenstiel",
+        "boys_town"
+      ],
+      "status": "legende",
+      "type": "legende",
+      "x": 300,
+      "y": -60,
+      "r": 16
+    },
+    {
+      "id": "rosenstiel",
+      "label": "ROSENSTIEL ⚠ LÉGENDE",
+      "name": "Lewis Rosenstiel + Hoover — ⚠ LÉGENDE",
+      "date": "1950s",
+      "desc": "⚠ STATUT LÉGENDE — Témoignage Susan Kaufman (épouse Rosenstiel) rapporté par sources secondaires. Hoover présent aux soirées selon ces témoignages. Non corroboré par sources primaires accessibles. À conserver comme hypothèse structurelle uniquement.",
+      "src": "⚠ LÉGENDE — témoignage Kaufman via sources secondaires",
+      "conn": [
+        "cohn",
+        "cia"
+      ],
+      "status": "legende",
+      "type": "legende",
+      "x": 320,
+      "y": -160,
+      "r": 13
+    },
+    {
+      "id": "ward",
+      "label": "WARD 1963",
+      "name": "Réseau Ward / Profumo",
+      "date": "1963 — Londres",
+      "desc": "Stephen Ward. Même structure qu\\'Epstein. Ward meurt avant procès.",
+      "src": "✓ VALIDÉ — enquête publique britannique 1963",
+      "conn": [
+        "uk_pieuvre",
+        "kompromat"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -310,
+      "y": 150,
+      "r": 13
+    },
+    {
+      "id": "boys_town",
+      "label": "BOYS TOWN",
+      "name": "Réseau Boys Town Nebraska",
+      "date": "1988 — Omaha",
+      "desc": "Larry King, Franklin Savings. Connexion réseau Roy Cohn documentée. Franklin Committee 1990. Témoins rétractés.",
+      "src": "✓ VALIDÉ — Franklin Committee 1990",
+      "conn": [
+        "kompromat",
+        "epstein",
+        "cohn"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -270,
+      "y": 250,
+      "r": 13
+    },
+    {
+      "id": "dutroux",
+      "label": "DUTROUX 1996",
+      "name": "Réseau Dutroux",
+      "date": "1996 — Belgique",
+      "desc": "Marche Blanche 300 000 personnes. Juge Connerotte dessaisi. Réseau refermé sur Dutroux seul.",
+      "src": "✓ VALIDÉ — procédures judiciaires belges",
+      "conn": [
+        "kompromat",
+        "epstein"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -150,
+      "y": 280,
+      "r": 13
+    },
+    {
+      "id": "kompromat",
+      "label": "KOMPROMAT",
+      "name": "Infrastructure Kompromat — Pattern Central",
+      "date": "1950s → présent",
+      "desc": "Rosenstiel/Cohn (1950s) → Ward (1963) → Boys Town (1988) → Dutroux (1996) → Epstein (1990s-2019). Même structure, même fonction. Production systématique de kompromat sur décideurs institutionnels. Kinsey fournit le cadre intellectuel — le réseau fournit le mécanisme.",
+      "src": "✓ VALIDÉ (pattern) — sources multiples",
+      "conn": [
+        "ward",
+        "boys_town",
+        "dutroux",
+        "epstein",
+        "kinsey",
+        "cohn"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -90,
+      "y": 270,
+      "r": 17
+    },
+    {
+      "id": "r_maxwell",
+      "label": "ROBERT MAXWELL",
+      "name": "Robert Maxwell — père de Ghislaine",
+      "date": "1923–1991",
+      "desc": "Magnat médias britannique. Connexions présumées Mossad. Investi massivement dans économie israélienne. Mort mystérieuse 1991 — tombe de son yacht. Epstein croit que Mossad l\\'a tué — email DOJ 2026. Maxwell avait menacé Mossad de révéler ses activités sauf £400M.",
+      "src": "~ EN FERMENTATION → VALIDÉ (email Epstein) — DOJ 2026",
+      "conn": [
+        "israel_pieuvre",
+        "epstein",
+        "rothschild"
+      ],
+      "status": "fermentation",
+      "type": "kompromat",
+      "x": -240,
+      "y": 160,
+      "r": 14
+    },
+    {
+      "id": "barak",
+      "label": "BARAK MOSSAD",
+      "name": "Ehud Barak — Ex-PM Israël",
+      "date": "2003–2019 — réseau Epstein",
+      "desc": "Correspondance quotidienne avec Epstein 2013-2016. Visite appartement Manhattan 30+ fois. Visite île privée Îles Vierges. Gouvernement israélien installe sécurité dans immeuble Epstein pour les séjours de Barak. Mémo FBI 2020 : Epstein \"co-opted Mossad agent\" formé sous Barak. Epstein à Barak 2018 : \"précise que je ne travaille pas pour le Mossad :)\". Barak répond avec emojis. DOJ : 3985 mentions \"Ehud Barak\".",
+      "src": "~ EN FERMENTATION → mémo FBI 2020 / ✓ VALIDÉ (correspondance) — Al Jazeera, DOJ 2026",
+      "conn": [
+        "israel_pieuvre",
+        "epstein",
+        "fisher_garcia"
+      ],
+      "status": "fermentation",
+      "type": "kompromat",
+      "x": -120,
+      "y": 200,
+      "r": 15
+    },
+    {
+      "id": "epstein",
+      "label": "EPSTEIN",
+      "name": "Réseau Epstein — Industrialisation Kompromat",
+      "date": "1980s–2019",
+      "desc": "Successeur documenté de Roy Cohn. Epstein n\\'a pas créé le réseau — il a continué ce qui existait. Rosenstiel → Cohn → Epstein : ligne de succession. Files DOJ 2026 : 3M pages, 14 000 mentions France. Connexion Church/Harvard → CRISPR. Barak/Mossad overlap. Fisher/Garcia emails (Kinsey Institute).",
+      "src": "✓ VALIDÉ — DOJ Files 2026",
+      "conn": [
+        "kompromat",
+        "church",
+        "rothschild",
+        "france_epstein",
+        "boys_town",
+        "dutroux",
+        "barak",
+        "r_maxwell",
+        "cohn",
+        "fisher_garcia"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 0,
+      "y": 320,
+      "r": 22
+    },
+    {
+      "id": "france_epstein",
+      "label": "FRANCE EPSTEIN",
+      "name": "Réseau Epstein France",
+      "date": "2026",
+      "desc": "14 000 mentions France DOJ. Jack Lang, Fabrice Aidan, Olivier Colom → Ariane de Rothschild. Commission parlementaire refusée Braun-Pivet.",
+      "src": "✓ VALIDÉ — TRANSMISSION/FRANCE_EPSTEIN",
+      "conn": [
+        "epstein",
+        "france_pieuvre",
+        "rothschild"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 100,
+      "y": 270,
+      "r": 13
+    },
+    {
+      "id": "church",
+      "label": "CHURCH CRISPR",
+      "name": "George Church / Harvard / CRISPR",
+      "date": "2010s",
+      "desc": "Epstein finance Church/Harvard → CRISPR/eugénisme. Pattern : capture morale (Kinsey 1941) → capture génome (2020s). 80 ans de progression.",
+      "src": "✓ VALIDÉ — DOJ 2026",
+      "conn": [
+        "epstein",
+        "nikolic"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": 150,
+      "y": 240,
+      "r": 15
+    },
+    {
+      "id": "nikolic",
+      "label": "NIKOLIC GATES",
+      "name": "Boris Nikolic → Bill Gates",
+      "date": "2010s",
+      "desc": "Conseiller scientifique Gates, exécuteur testamentaire désigné par Epstein. Gates — premier propriétaire foncier privé US.",
+      "src": "~ EN FERMENTATION",
+      "conn": [
+        "church",
+        "epstein"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": 250,
+      "y": 200,
+      "r": 12
+    },
+    {
+      "id": "ia_militaire",
+      "label": "IA 2026",
+      "name": "IA Militarisée — OpenAI/Pentagon",
+      "date": "27 fév 2026",
+      "desc": "OpenAI signe Pentagon 27 fév. Frappes Iran 28 fév. Gap 24h. Parallèle MK-Ultra : production architecturale de l\\'oubli et de l\\'obéissance.",
+      "src": "✓ VALIDÉ — EFFONDREMENT.EXE",
+      "conn": [
+        "cia",
+        "usa_pieuvre"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 330,
+      "y": 240,
+      "r": 15
+    },
+    {
+      "id": "wexner",
+      "label": "WEXNER",
+      "name": "Leslie Wexner — Infrastructure Initiale Epstein",
+      "date": "1986–2007 — Ohio/New York",
+      "desc": "Fondateur L Brands. Procuration TOTALE à Epstein 1991. Seul client public 20 ans. Mansion Manhattan transférée 2011 SANS PAIEMENT — équipée caméras surveillance. C.O.U.Q. Foundation Epstein entièrement financée Wexner. Wexner Foundation → Barak $2.3M (2004-2006). $42M → Harvard Kennedy School. Maria Farmer retenue 12h dans propriété Wexner Ohio 1996. Le plus grand mystère (NYT) : ce que Wexner obtenait en retour.",
+      "src": "✓ VALIDÉ — NYT, Al Jazeera, DOJ 2026 | ❌ ÉCARTÉ : lien direct Rockefeller — aucun conseil/financement croisé trouvé. Connecteur réel = Epstein + Harvard comme hub commun.",
+      "conn": [
+        "epstein",
+        "barak",
+        "harvard"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -60,
+      "y": 360,
+      "r": 19
+    },
+    {
+      "id": "harvard",
+      "label": "HARVARD",
+      "name": "Harvard — Sous-Pieuvre Académique",
+      "date": "1920s → présent",
+      "desc": "Hub central qui connecte : Rockefeller (financement 1920s-1950s) + MK-Ultra (CIA confirme 2 subprojects — Harvard Crimson 1977) + Henry Murray/CIA (Kaczynski) + Epstein/Nowak ($6.5M + bureau permanent + 40 visites 2010-2018 en tant que délinquant enregistré) + Church/génétique + Dershowitz + Summers + Wexner ($42M). Rapport Harvard 2020 — source primaire officielle.",
+      "src": "✓ VALIDÉ — Harvard Crimson 1977, Rapport Harvard 2020, DOJ 2026. Gebhard (co-auteur Kinsey) = Harvard formé. ❌ ÉCARTÉ : subprojects CIA post-Murray (1970s+) — aucun trouvé. Deux couches distinctes : CIA 1950s-60s / Epstein 2003-2018. PED-CIA : aucun lien.",
+      "conn": [
+        "rockefeller",
+        "mk_ultra",
+        "murray",
+        "epstein",
+        "wexner",
+        "church",
+        "dershowitz"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 420,
+      "y": -160,
+      "r": 20
+    },
+    {
+      "id": "murray",
+      "label": "MURRAY HARVARD",
+      "name": "Henry Murray — MK-Ultra Harvard",
+      "date": "1950s-1960s",
+      "desc": "Psychologue Harvard. Expériences CIA sur étudiants — stress intense, humiliation, interrogatoires. Sujet : Ted Kaczynski (futur Unabomber). Pattern identique Cameron/McGill. Lien Rockefeller → Harvard → Murray → MK-Ultra en source primaire.",
+      "src": "✓ VALIDÉ — Murray = OSS pendant WWII (précurseur CIA), expériences Harvard 1959-1962 ressemblent fortement aux tests OSS. Kaczynski documenté. ❌ ÉCARTÉ : lien direct Murray↔Kinsey — aucune correspondance ou collaboration trouvée.",
+      "conn": [
+        "harvard",
+        "mk_ultra",
+        "cia"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 430,
+      "y": -240,
+      "r": 14
+    },
+    {
+      "id": "gebhard",
+      "label": "GEBHARD Harvard→Kinsey",
+      "name": "Paul Gebhard — Harvard→Kinsey",
+      "date": "1946–1982 — Indiana",
+      "desc": "Co-auteur des rapports Kinsey, anthropologue formé à Harvard. Rejoint Institut Kinsey 1946 (même fenêtre Columbia-Greystone). Seul lien Harvard documenté dans équipe core Kinsey. Directeur Institut après mort Kinsey (1956-1982). Admet sur caméra 1998 : données enfants \"amoraux au mieux, criminels au pire.\"",
+      "src": "✓ VALIDÉ — Kinsey Institute records, sources académiques primaires",
+      "conn": [
+        "kinsey",
+        "harvard"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 200,
+      "y": 60,
+      "r": 11
+    },
+    {
+      "id": "columbia_grey",
+      "label": "COLUMBIA GREYSTONE",
+      "name": "Columbia-Greystone — Lien Kinsey/MK-Ultra",
+      "date": "1946 — Rockland Mental Hospital",
+      "desc": "Rockefeller connecte Kinsey au Columbia-Greystone Brain Project 1946. Kinsey étudie réponses sexuelles de patients lobotomisés. Données sanitisées dans livre 1953. Même financeur Rockefeller, même fenêtre, même population vulnérable que MK-Ultra. Lien direct Kinsey ↔ infrastructure MK-Ultra.",
+      "src": "~ EN FERMENTATION — Reisman 2020 (source investigative). Gebhard (co-auteur Kinsey, Harvard formé) rejoint Institut 1946 = même fenêtre. ❌ ÉCARTÉ : lien direct Columbia-Greystone↔MK-Ultra — pas de source primaire trouvée.",
+      "conn": [
+        "kinsey",
+        "rockefeller"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": 220,
+      "y": -60,
+      "r": 13
+    },
+    {
+      "id": "dershowitz",
+      "label": "DERSHOWITZ",
+      "name": "Alan Dershowitz — Pont Cohn/Epstein/Harvard",
+      "date": "1980s-2026",
+      "desc": "Professeur Harvard Law. Témoin de moralité Cohn. Avocat Epstein — négocie sweetheart deal 2008. Mémo FBI DOJ 2026 : aurait dit à Acosta que Epstein \"appartenait aux services de renseignement\". Demande Pinker (Harvard) comme expert pour défense Epstein. Pont opérationnel entre les trois ères.",
+      "src": "✓ VALIDÉ — mémo FBI DOJ 2026",
+      "conn": [
+        "harvard",
+        "cohn",
+        "epstein",
+        "israel_pieuvre"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 380,
+      "y": 80,
+      "r": 13
+    },
+    {
+      "id": "ruemmler",
+      "label": "RUEMMLER OBAMA",
+      "name": "Kathy Ruemmler — Pont Obama WH/Epstein",
+      "date": "Janvier 2016",
+      "desc": "White House Counsel Obama 2011-2014. Présente déjeuner Epstein/Fisher janvier 2016 (DOJ files). Partner Goldman Sachs post-Obama. Pont : réseau Epstein ↔ Maison Blanche ↔ Goldman Sachs. Aucune accusation illégale — présence documentée.",
+      "src": "~ EN FERMENTATION — DOJ files 2026",
+      "conn": [
+        "epstein",
+        "fisher_garcia"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": 120,
+      "y": 380,
+      "r": 12
+    },
+    {
+      "id": "brockman",
+      "label": "Brockman Edge Foundation",
+      "name": "Brockman — Edge Foundation",
+      "date": "",
+      "desc": "John Brockman — agent littéraire, fondateur Edge Foundation. \"Fixateur académique\" d'Epstein. Bailleur principal Edge = fondations Epstein ($638k / $857k total reçus — IRS 990 filings). Billionaires' Dinners = interface argent Epstein ↔ légitimité académique. Présent au dîner de sortie de prison Epstein. Email publié décrivant Prince Andrew chez Epstein. Nom dans les logs du jet privé. Dinners arrêtés en 2015 = même année que dernière donation Epstein documentée.",
+      "src": "✓ VALIDÉ — IRS 990 filings Edge Foundation, BuzzFeed News 2019, DOJ files 2026, Wikipedia",
+      "conn": [
+        "epstein",
+        "harvard",
+        "mit_media",
+        "watson",
+        "pinker",
+        "church"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -50,
+      "y": 290,
+      "r": 15
+    },
+    {
+      "id": "watson",
+      "label": "James Watson ADN/Eugénisme",
+      "name": "James Watson — ADN/Eugénisme",
+      "date": "",
+      "desc": "James Watson — Prix Nobel Médecine 1962 (double hélice ADN), directeur Cold Spring Harbor Laboratory 1968-2007. Radié 2019 pour propos racistes répétés sur intelligence et race. Photos DOJ dans mansion Epstein mid-2010s. Dizaines d'emails Epstein documentés. Epstein prépare questions sur génétique AVANT chaque rencontre. Watson achète autobio Watson 2014. Fournit email de Charles Murray à Epstein. Présent dîner Fisher/Ruemmler/Barak jan 2016. Mort nov 2024, 97 ans.",
+      "src": "✓ VALIDÉ — DOJ files 2026, The Telegraph fév 2026, photos mansion, emails",
+      "conn": [
+        "epstein",
+        "brockman",
+        "murray_bell",
+        "church"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -50,
+      "y": 200,
+      "r": 12
+    },
+    {
+      "id": "murray_bell",
+      "label": "Murray Bell Curve",
+      "name": "Murray — Bell Curve",
+      "date": "",
+      "desc": "Charles Murray — politologue, co-auteur The Bell Curve (1994) avec Herrnstein. Argue une base génétique aux différences d'intelligence entre races — unanimement réfuté par la communauté scientifique. Financé Pioneer Fund (lié à eugénisme nazi). Membre Edge. Epstein tente de le contacter en 2018 via email fourni par Watson. Murray nie avoir reçu ou répondu aux emails. Aucune rencontre documentée.",
+      "src": "⚠ LÉGENDE partielle — Watson→Murray email VALIDÉ (The Atlantic/DOJ). Réponse Murray : NON ÉTABLIE. Murray nie. → EN FERMENTATION",
+      "conn": [
+        "brockman",
+        "watson"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": -150,
+      "y": 130,
+      "r": 10
+    },
+    {
+      "id": "pinker",
+      "label": "Pinker Harvard/Edge",
+      "name": "Pinker — Harvard/Edge",
+      "date": "",
+      "desc": "Steven Pinker — psychologue Harvard, client Brockman, membre Edge actif. Photographié dans le jet Epstein en 2002 en route pour TED (avec Dawkins, Dennett, Brockman). Défend Trivers sur Edge après accusations FBI. Minimise le réseau Epstein dans déclarations publiques en invoquant \"gullibility\" des scientifiques. Légende photo jet modifiée pour retirer mention Epstein.",
+      "src": "✓ VALIDÉ — photos jet 2002, Scientific American, DOJ files 2026",
+      "conn": [
+        "brockman",
+        "epstein",
+        "harvard"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 50,
+      "y": 230,
+      "r": 11
+    },
+    {
+      "id": "mit_media",
+      "label": "MIT Media Lab Epstein/Ito",
+      "name": "MIT Media Lab — Epstein/Ito",
+      "date": "",
+      "desc": "MIT Media Lab — financé Epstein après condamnation 2008. Joi Ito (directeur) démissionne 2019. Epstein donne ~$7.5M. Donations délibérément anonymisées pour contourner politique MIT. Joscha Bach — chercheur IA recruté MIT Media Lab avec aide Epstein, financé directement. Dîner août 2015 : Epstein, Musk, Zuckerberg, Thiel, Ed Boyden (MIT), Joi Ito.",
+      "src": "✓ VALIDÉ — New York Times 2019, DOJ files 2026, rapport interne MIT",
+      "conn": [
+        "epstein",
+        "brockman",
+        "ia_militaire"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 50,
+      "y": 380,
+      "r": 12
+    },
+    {
+      "id": "gelernter",
+      "label": "Gelernter Yale/Edge",
+      "name": "Gelernter — Yale/Edge",
+      "date": "",
+      "desc": "David Gelernter — informaticien Yale, membre Edge, figure conservative. Emails \"lecherous\" avec Epstein surfacent dans les DOJ files 2026. Cesse d'enseigner à Yale le mois de la révélation (mars 2026).",
+      "src": "~ EN FERMENTATION — DOJ files 2026, The Nerve News fév 2026",
+      "conn": [
+        "brockman",
+        "epstein"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": -100,
+      "y": 330,
+      "r": 9
+    },
+    {
+      "id": "billionaires_dinner",
+      "label": "Billionaires\\u2019 Dinners 1999-2015",
+      "name": "Billionaires\\u2019 Dinners — 1999-2015",
+      "date": "",
+      "desc": "Billionaires' Dinners — événements annuels Edge/Brockman en marge des conférences TED. Financés principalement par Epstein (IRS 990 filings). Interface opérationnelle entre argent, pouvoir technologique et légitimité académique. Participants documentés : Epstein (1999, 2000, 2004, 2011), Bezos, Brin, Musk, Page, Zuckerberg, Thiel, Mayer, Watson, Pinker, Dawkins, Dennett, Sarah Kellen (assistante Maxwell). Arrêt 2015 = arrêt funding Epstein.",
+      "src": "✓ VALIDÉ — IRS 990 filings, pages Edge archivées (depuis supprimées), Yahoo Finance, NYT 2002",
+      "conn": [
+        "brockman",
+        "epstein",
+        "watson",
+        "pinker"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -150,
+      "y": 380,
+      "r": 13
+    },
+    {
+      "id": "pergamon",
+      "label": "Pergamon Press R.Maxwell",
+      "name": "Pergamon Press — R.Maxwell",
+      "date": "",
+      "desc": "Pergamon Press — maison d'édition académique fondée par Robert Maxwell. Infrastructure d'accès aux réseaux scientifiques mondiaux. Robert Maxwell contrôle les revues où publient les chercheurs. Ghislaine Maxwell hérite de ce réseau relationnel après la mort de son père (1991) — vecteur d'introduction d'Epstein dans les cercles académiques. Pergamon vendu à Elsevier 1991.",
+      "src": "✓ VALIDÉ — sources académiques, Wikipedia, DOJ 2026 (Maxwell déclaration Santa Fe)",
+      "conn": [
+        "r_maxwell",
+        "ghislaine",
+        "epstein",
+        "santa_fe"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -300,
+      "y": 130,
+      "r": 11
+    },
+    {
+      "id": "ghislaine",
+      "label": "Ghislaine Maxwell Recruteuse",
+      "name": "Ghislaine Maxwell — Recruteuse",
+      "date": "",
+      "desc": "Ghislaine Maxwell — compagne et recruteuse d'Epstein. Fille de Robert Maxwell. Hérite du réseau académique paternel (Pergamon Press) après 1991 → introduction d'Epstein au Santa Fe Institute. DOJ 2026 : \"Epstein aurait organisé des dîners dont les scientifiques étaient un composant majeur, tâche confiée à Ghislaine.\" Déclarée à DOJ juillet 2025 : connexions via son père (Pergamon Press) l'ont amenée à introduire Epstein au Santa Fe Institute. Condamnée 2021 pour trafic sexuel de mineures, 20 ans de prison.",
+      "src": "✓ VALIDÉ — condamnation 2021, DOJ transcript juillet 2025 (Scientific American), DOJ files 2026",
+      "conn": [
+        "epstein",
+        "r_maxwell",
+        "pergamon",
+        "santa_fe",
+        "barak"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -200,
+      "y": 200,
+      "r": 15
+    },
+    {
+      "id": "santa_fe",
+      "label": "Santa Fe Institute Complexité",
+      "name": "Santa Fe Institute — Complexité",
+      "date": "",
+      "desc": "Santa Fe Institute — centre de recherche interdisciplinaire (sciences de la complexité). Introduction via Ghislaine Maxwell (héritage réseau Pergamon de son père). Epstein donne $25,000 en 2010. Geoffrey West (physicien théorique, ancien président SFI) rencontre Epstein au ranch du Nouveau-Mexique en 2012. Nombreux membres SFI = aussi membres Edge/Brockman. Hub de légitimité scientifique intersectant avec le réseau Epstein.",
+      "src": "✓ VALIDÉ — Scientific American jan 2026, DOJ files (Maxwell transcript). Funding réel : $680,000 documenté (vs $275,000 déclaré officiellement) — IRS + DOJ files. SFI coupe les liens en 2008 après condamnation selon Krakauer — mais West continue contact personnel jusqu\\u2019en 2012+.",
+      "conn": [
+        "ghislaine",
+        "epstein",
+        "brockman"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -300,
+      "y": 280,
+      "r": 12
+    },
+    {
+      "id": "summers",
+      "label": "Larry Summers Harvard/Treasury",
+      "name": "Larry Summers — Harvard/Treasury",
+      "date": "",
+      "desc": "Larry Summers — président Harvard 2001-2006 (fenêtre donations initiales Epstein), ex-Secrétaire au Trésor Clinton. Correspondance Epstein 2008-2019 — 11 ans après condamnation. Exécuteur testamentaire alternatif brouillon 2014. Epstein = \"pretty good wing man\" pour Summers (emails publiés House Oversight). Epstein réfère Summers à JP Morgan. Ghislaine Maxwell confirme relation aux autorités DOJ. Pendant plaidoyer 2008 Epstein cite Harvard : \"full program of Evolutionary Dynamics [...] MIT.\" Démission Harvard fév 2026 + expulsion American Economic Association + démission board OpenAI nov 2025.",
+      "src": "✓ VALIDÉ — House Oversight emails nov 2025, DOJ files jan 2026, Boston Globe fév 2026, Harvard Crimson",
+      "conn": [
+        "epstein",
+        "harvard",
+        "ghislaine",
+        "jpmorgan",
+        "ia_militaire"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 300,
+      "y": 280,
+      "r": 13
+    },
+    {
+      "id": "jpmorgan",
+      "label": "JP Morgan Referral Epstein",
+      "name": "JP Morgan — Referral Epstein",
+      "date": "",
+      "desc": "JP Morgan Chase — Epstein référait des clients à la banque, dont Larry Summers. En 2023, JPMorgan identifié dans legal filing comme devant lister \"all clients or potential clients\" référés par Epstein. JPMorgan avait maintenu Epstein comme client jusqu'en 2013 malgré sa condamnation 2008. Suspicious Activity Report déposé par JPMorgan après mort Epstein sur transactions Wexner, Glenn Dubin, Leon Black, Dershowitz — ~$1 milliard total.",
+      "src": "✓ VALIDÉ — legal filing 2023, Boston Globe, Wikipedia Epstein files",
+      "conn": [
+        "epstein",
+        "summers",
+        "wexner",
+        "dershowitz"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 200,
+      "y": 340,
+      "r": 11
+    },
+    {
+      "id": "geo_west",
+      "label": "Geoffrey West Santa Fe/Edge",
+      "name": "Geoffrey West — Santa Fe/Edge",
+      "date": "",
+      "desc": "Geoffrey West — physicien théoricien britannique, ancien président Santa Fe Institute (2005-2009), membre Edge. Apparaît 230 fois dans les DOJ files. Ranch Zorro 2012 : rencontre Epstein en août, enthousiaste (\"I would have loved the time together with Jeffrey\"). 2011 : invite Epstein à rester. 2017 : Epstein écrit \"i know Geoffrey well.\" Zorro Ranch = 40 miles du SFI. Los Alamos avant SFI. Time 100. Ne répond pas aux demandes de commentaire.",
+      "src": "✓ VALIDÉ — DOJ files 2026, Santa Fe New Mexican fév 2026, Wikipedia (230 mentions)",
+      "conn": [
+        "santa_fe",
+        "epstein",
+        "brockman",
+        "zorro_ranch"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -380,
+      "y": 320,
+      "r": 11
+    },
+    {
+      "id": "gell_mann",
+      "label": "Murray Gell-Mann Nobel/SFI co-fondateur",
+      "name": "Murray Gell-Mann — Nobel/SFI co-fondateur",
+      "date": "",
+      "desc": "Murray Gell-Mann (1929-2019) — Prix Nobel Physique 1969 (quark), co-fondateur Santa Fe Institute. Relation la plus proche d'Epstein au SFI. Epstein finance ses recherches. Juin 2010 — lettre à Epstein après sa sortie de prison : \"I hope your life has returned to normal.\" 2003 : Krakauer (directeur SFI) accompagne Gell-Mann au ranch Zorro — Ghislaine Maxwell présente. Epstein instruit ses contacts en 2010 : \"tell him we are close, you've been to the ranch etc.\" Mort 2019.",
+      "src": "✓ VALIDÉ — DOJ files 2026, Santa Fe New Mexican fév 2026, source primaire directe",
+      "conn": [
+        "santa_fe",
+        "epstein",
+        "ghislaine",
+        "zorro_ranch"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -350,
+      "y": 220,
+      "r": 12
+    },
+    {
+      "id": "zorro_ranch",
+      "label": "Zorro Ranch Nouv.-Mexique",
+      "name": "Zorro Ranch — Nouv.-Mexique",
+      "date": "",
+      "desc": "Zorro Ranch — 7500 acres, Stanley (Nouveau-Mexique), acheté 1993. Epstein y passe ~2 mois par an. Hub scientifique : West (2012), Gell-Mann (2003), chercheurs SFI multiples. Ghislaine Maxwell présente lors visites. FBI visite fév 2007 — interroge manager sur \"masseuses\". Enquête trafficking abandonnée 2019 sur demande fédérale NY. Perquisition état NM mars 2026 (première fois). \"Truth commission\" NM en cours. Vendu 2023.",
+      "src": "✓ VALIDÉ — DOJ files 2026, Reuters mars 2026, PBS mars 2026, FBI records",
+      "conn": [
+        "epstein",
+        "geo_west",
+        "gell_mann",
+        "ghislaine",
+        "santa_fe"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -420,
+      "y": 270,
+      "r": 13
+    },
+    {
+      "id": "thiel",
+      "label": "Peter Thiel Palantir/Valar",
+      "name": "Peter Thiel — Palantir/Valar",
+      "date": "",
+      "desc": "Peter Thiel — co-fondateur PayPal, Palantir (2003), Founders Fund. 2787 mentions DOJ files, 33 emails directs. Introduit à Epstein par Reid Hoffman (LinkedIn) 2014. Epstein injecte $40M dans Valar Ventures (fonds Thiel) — financement fondateur confirmé. Epstein = limited partner Valar (confirmé par porte-parole Thiel). 6 rencontres Thiel/Barak organisées par Epstein. Dîner juin 2014 : Thiel+Barak+Epstein — sécurité israélienne. Thiel répond \"very Israeli and very stimulating.\" Founders Fund → Carbyne (Unit 8200) 2018. Dietary requirements envoyés personnel île — visites récurrentes planifiées. Dialog 2014 Sundance off-the-record, Epstein invité explicitement. Aug 2015 : dîner Palo Alto avec Epstein/Musk/Zuckerberg/Boyden.",
+      "src": "✓ VALIDÉ — DOJ files 2026, House Oversight nov 2025, NYT, Byline Times fév 2026, Wikipedia",
+      "conn": [
+        "epstein",
+        "palantir",
+        "barak",
+        "hoffman",
+        "carbyne",
+        "cia",
+        "ia_militaire"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 200,
+      "y": 180,
+      "r": 16
+    },
+    {
+      "id": "palantir",
+      "label": "Palantir Surveillance/IA",
+      "name": "Palantir — Surveillance/IA",
+      "date": "",
+      "desc": "Palantir Technologies — fondé 2003 par Thiel/Karp. CIA = premier et unique investisseur pendant des années (outsourcing surveillance illégale). $40M Epstein → Valar → Palantir (financement fondateur). Contrats : Pentagon Maven Smart System $1.3Md (jusqu'2029), ICE $30M (mars 2025 surveillance immigrants), NHS UK, MOD UK nucléaire, police UK. IDF Gaza — algorithmes de ciblage \"digital kill chain\" (CEO Karp). Carbyne (Unit 8200) — Founders Fund 2018. Peter Mandelson (ex-ambassadeur UK) lobbyiste Palantir via Global Counsel. Epstein oriente Barak vers Palantir. CEO Karp : \"When the whole world is using Palantir, they can still not like us. They'll have no choice.\"",
+      "src": "✓ VALIDÉ — DOJ files 2026, Byline Times, Jacobin mars 2026, contrats publics Pentagon/ICE/NHS",
+      "conn": [
+        "thiel",
+        "cia",
+        "ia_militaire",
+        "barak",
+        "carbyne",
+        "israel_pieuvre"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 320,
+      "y": 180,
+      "r": 18
+    },
+    {
+      "id": "carbyne",
+      "label": "Carbyne Unit 8200",
+      "name": "Carbyne — Unit 8200",
+      "date": "",
+      "desc": "Carbyne (ex-Reporty) — startup israélienne cybersécurité, racines Unit 8200 (renseignement cyber militaire israélien). Co-fondée par Epstein et Barak. Barak pitch Carbyne à Valar Ventures via Epstein fév 2016. Founders Fund (Thiel) investit 2018. Autre startup Unit 8200 orientée par Epstein vers Thiel : Guardicore. Carbyne = infrastructure surveillance d'urgence (911 systems) → accès données citoyens.",
+      "src": "✓ VALIDÉ — DOJ files 2026 (email Barak/Junckermann), Jacobin mars 2026, Byline Times",
+      "conn": [
+        "thiel",
+        "barak",
+        "epstein",
+        "israel_pieuvre",
+        "palantir"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 260,
+      "y": 100,
+      "r": 12
+    },
+    {
+      "id": "hoffman",
+      "label": "Reid Hoffman LinkedIn/PayPal",
+      "name": "Reid Hoffman — LinkedIn/PayPal",
+      "date": "",
+      "desc": "Reid Hoffman — co-fondateur LinkedIn, PayPal Mafia avec Thiel. Introduit Thiel à Epstein (après des années où d'autres avaient essayé sans succès). Organise dîner Palo Alto août 2015 : Epstein + Musk + Zuckerberg + Thiel + Boyden (MIT). Connecte Zuckerberg et Epstein par email après le dîner. Déclare regretter ses interactions avec Epstein. Trump ordonne enquête DOJ sur Hoffman nov 2025 (donateur démocrate majeur).",
+      "src": "✓ VALIDÉ — DOJ files 2026, CNBC fév 2026, Wikipedia",
+      "conn": [
+        "thiel",
+        "epstein",
+        "mit_media"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 130,
+      "y": 160,
+      "r": 11
+    },
+    {
+      "id": "mandelson",
+      "label": "Mandelson UK/Palantir",
+      "name": "Mandelson — UK/Palantir",
+      "date": "",
+      "desc": "Peter Mandelson — ex-ambassadeur UK aux USA, ex-membre Labour. Lobbyiste Palantir via Global Counsel (positionne Palantir comme partenaire respectable du gouvernement UK). Lié à Epstein. Police enquête pour fuite d'informations sensibles à Epstein. Démissionne Labour, quitte House of Lords. Risque poursuites pour \"misconduct in public office\". Palantir = £670M contrats UK gouvernement (NHS, MOD nucléaire, police).",
+      "src": "✓ VALIDÉ — Byline Times fév 2026, enquête police Thames Valley, contrats publics UK",
+      "conn": [
+        "palantir",
+        "epstein",
+        "uk_pieuvre"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 420,
+      "y": 100,
+      "r": 11
+    },
+    {
+      "id": "leon_black",
+      "label": "Leon Black Apollo/$170M",
+      "name": "Leon Black — Apollo/$170M",
+      "date": "",
+      "desc": "Leon Black — co-fondateur Apollo Global ($500Md). 10 000+ mentions DOJ. Paie Epstein $170M 2012-2017 post-condamnation = principale source revenus Epstein. Deutsche Bank = conduit financier. SAR JPMorgan : Black+Wexner+Dershowitz ~$1Md. Wyden Senate Finance interroge 23 mars 2026 sur hush money + surveillance femmes + fraude fiscale. Class action SDNY mars 2026.",
+      "src": "✓ VALIDÉ — Dechert 2021, DOJ files 2026, Senate Finance Wyden 23 mars 2026",
+      "conn": [
+        "epstein",
+        "apollo",
+        "deutsche_bank",
+        "jpmorgan",
+        "rothschild",
+        "wexner"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 80,
+      "y": 420,
+      "r": 15
+    },
+    {
+      "id": "apollo",
+      "label": "Apollo Global Rowan/Rothschild",
+      "name": "Apollo Global — Rowan/Rothschild",
+      "date": "",
+      "desc": "Apollo Global Management $500Md. Epstein organise réunions mansion Manhattan entre Apollo executives et Edmond de Rothschild (banque privée suisse). Fév 2016 email DOJ : Epstein→Rowan sur inversion fiscale Apollo via Rothschild, Rowan approuve. 2015 : Patel Apollo Europe contacte Epstein sur conversations Rothschild. Rowan CEO actuel — 5+ réunions Epstein post-2008, nommé board Gaza reconstruction Trump. Class action SDNY mars 2026.",
+      "src": "✓ VALIDÉ — DOJ files 2026 emails Epstein/Rowan/Patel, CNN fév 2026, class action SDNY",
+      "conn": [
+        "leon_black",
+        "epstein",
+        "rothschild",
+        "deutsche_bank"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 180,
+      "y": 420,
+      "r": 13
+    },
+    {
+      "id": "deutsche_bank",
+      "label": "Deutsche Bank $150M amende DFS",
+      "name": "Deutsche Bank — $150M amende DFS",
+      "date": "",
+      "desc": "Deutsche Bank — banquier principal Epstein 2013-2018 après JPMorgan. Conduit financier paiements Black→Epstein ($170M). Transactions flaggées en interne comme inhabituelles. 2020 : amende $150M DFS New York — millions transactions suspectes incluant paiements à jeunes femmes sans SARs requis.",
+      "src": "✓ VALIDÉ — amende DFS $150M 2020, Al Jazeera fév 2026",
+      "conn": [
+        "epstein",
+        "leon_black",
+        "jpmorgan"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 280,
+      "y": 420,
+      "r": 12
+    },
+    {
+      "id": "paperclip",
+      "label": "Operation Paperclip 1945-1959",
+      "name": "Operation Paperclip — 1945-1959",
+      "date": "",
+      "desc": "Operation Paperclip — programme secret OSS/CIA : 1600+ scientifiques nazis recrutés 1945-1959. Dossiers falsifiés : références SS, Gestapo, expériences sur humains systématiquement effacées sur ordre JIOA. Figures clés : Walter Schreiber (Surgeon General Reich → Camp King), Kurt Blome (programme peste bubonique → MK-Ultra), Wernher von Braun (V-2 → NASA), Hubertus Strughold (expériences chambre basse pression sur prisonniers → médecine spatiale NASA). Valeur estimée $10Md en brevets et procédés industriels. Truman interdit le recrutement de nazis — OSS/CIA contourne directement.",
+      "src": "✓ VALIDÉ — Wikipedia Operation Paperclip, Jacobsen 2014 (source CIA review), History.com, Church Committee",
+      "conn": [
+        "mk_ultra",
+        "cia",
+        "camp_king",
+        "tavistock",
+        "populations_captives"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 380,
+      "y": 300,
+      "r": 15
+    },
+    {
+      "id": "camp_king",
+      "label": "Camp King Zone US Allemagne",
+      "name": "Camp King — Zone US Allemagne",
+      "date": "",
+      "desc": "Camp King — installation clandestine zone américaine Allemagne occupée 1946-fin années 1950. Médecin en chef : Walter Schreiber (Surgeon General du Troisième Reich, recruté via Paperclip). CIA + Army + Air Force + Naval Intelligence. Programme interrogatoire classifié — continuation directe expériences Dachau. Activités jamais pleinement rendues publiques par DOD ou CIA. Pont opérationnel entre expériences nazies et MK-Ultra.",
+      "src": "✓ VALIDÉ — Jacobsen 2014, Times of Israel, openDemocracy — Camp King documenté",
+      "conn": [
+        "paperclip",
+        "mk_ultra",
+        "cia"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 460,
+      "y": 220,
+      "r": 12
+    },
+    {
+      "id": "populations_captives",
+      "label": "Populations Captives Couche Zéro",
+      "name": "Populations Captives — Couche Zéro",
+      "date": "",
+      "desc": "Populations captives = laboratoire originel. Principe constant : les corps des populations dominées comme matière première scientifique. Chaîne documentée : esclaves (Sims, gynécologie sans anesthésie) → prisonniers/patients psychiatriques (MK-Ultra, Columbia-Greystone) → pensionnats autochtones Canada 1942-1952 (nutrition, enfants délibérément malnutris, soins dentaires supprimés) → Alaska Natives iodine-131 1955-1957 AEC (102 sujets, pas de terme pour radiation dans leurs langues) → IHS stérilisations forcées 1960s-1970s (3406 documentées GAO 1976, menaces perdre allocations/garde enfants) → Navajo uranium 1946-1968 (13M tonnes, 1000+ mines abandonnées radioactives) → ICE stérilisations 2019-2020. AEC memo 1947 : documents doivent être classifiés secret pour éviter poursuites. Même logique que destruction archives MK-Ultra 1973.",
+      "src": "✓ VALIDÉ — GAO report 1976 (IHS), Mosby 2013 Social History (Canada), AEC memo 1947 déclassifié, NRC Alaska 1996, Wikipedia unethical experimentation",
+      "conn": [
+        "mk_ultra",
+        "cia",
+        "sanger",
+        "kinsey",
+        "paperclip",
+        "ia_militaire",
+        "aec"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 420,
+      "y": 380,
+      "r": 18
+    },
+    {
+      "id": "aec",
+      "label": "AEC Atomique/Radiation",
+      "name": "AEC — Atomique/Radiation",
+      "date": "",
+      "desc": "Atomic Energy Commission — organisme fédéral USA. Memo AEC 17 avril 1947 (déclassifié) : \"It is desired that no document be released which refers to experiments with humans and might have adverse effect on public opinion or result in legal suits. Documents covering such work should be classified secret.\" Expériences documentées : iodine-131 sur 102 Alaska Natives 1955-1957 (Arctic Aeromedical Laboratory), Green Run 1949 (contamination radioactive 500 000 acres), nouveau-nés injectés iodine, femmes enceintes fer radioactif, prisonniers testicules exposés radiation. Plus de 4000 expériences secret/classifié pendant la Guerre Froide.",
+      "src": "✓ VALIDÉ — AEC memo 1947 déclassifié, NRC report 1996, Advisory Committee Human Radiation Experiments (Clinton 1995), GAO",
+      "conn": [
+        "cia",
+        "populations_captives",
+        "mk_ultra"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 500,
+      "y": 320,
+      "r": 12
+    },
+    {
+      "id": "unit731",
+      "label": "Unit 731 Japon/Fort Detrick",
+      "name": "Unit 731 — Japon/Fort Detrick",
+      "date": "",
+      "desc": "Unit 731 — installation secrète armée impériale japonaise, Harbin Mandchourie 1933-1945. 14 000 morts dans installation, 200 000-500 000 morts expériences terrain. Vivisection, maladies, amputations, armes biologiques, gel. DEAL USA VALIDÉ (mémo MacArthur 6 mai 1947 déclassifié) : MacArthur + Truman accordent immunité totale à Ishii et subordonnés en échange données exclusives Fort Detrick. 60 interviews/études Fort Detrick 1946-1949. Ishii mis sur paie américaine comme conseiller. Double standard documenté : médecins nazis jugés à Nuremberg, Unit 731 protégés par USA. Membres post-guerre : gouverneur Tokyo, président Association Médicale Japonaise, chef Comité Olympique. Ishii meurt 1959 de sa belle mort.",
+      "src": "✓ VALIDÉ — mémo MacArthur 6 mai 1947 déclassifié, Congressional Record 1999 (Sen. Feinstein), Wikipedia American cover-up, San Jose Mercury News 1995",
+      "conn": [
+        "paperclip",
+        "fort_detrick",
+        "mk_ultra",
+        "populations_captives",
+        "cia"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 540,
+      "y": 220,
+      "r": 13
+    },
+    {
+      "id": "fort_detrick",
+      "label": "Fort Detrick Bioweapons USA",
+      "name": "Fort Detrick — Bioweapons USA",
+      "date": "",
+      "desc": "Fort Detrick — Maryland, désigné base recherche bioweapons 1956. Pont opérationnel entre Unit 731 (Pacifique) et Paperclip (Europe). 1946-1949 : 60 interviews/études Unit 731 conduites à Fort Detrick. Ishii conseiller bioweapons. Après WWII : programme bioweapons USA construit sur données Unit 731 et Paperclip. Connexion MK-Ultra : Sidney Gottlieb, CIA Biological Warfare Laboratories. Fort Detrick = point de convergence des deux programmes — données humaines nazies + japonaises.",
+      "src": "✓ VALIDÉ — National Archives USA, CGTN 2021 (docs déclassifiés), Wikipedia Unit 731",
+      "conn": [
+        "unit731",
+        "paperclip",
+        "mk_ultra",
+        "cia",
+        "aec"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 500,
+      "y": 160,
+      "r": 12
+    },
+    {
+      "id": "tuskegee",
+      "label": "Tuskegee 1932-1972",
+      "name": "Tuskegee — 1932-1972",
+      "date": "",
+      "desc": "Tuskegee Study of Untreated Syphilis in the Negro Male — U.S. Public Health Service, Macon County Alabama. 600 hommes noirs (399 syphilis + 201 témoins), aucun consentement éclairé. 40 ans — pénicilline disponible depuis 1947 mais traitement délibérément refusé. Sujets pensaient recevoir soins gratuits. Exposé 1972 par Associated Press (Peter Buxtun lanceur alerte). Class action 1973, règlement $10M 1974. Clinton excuses officielles 1997. Même institution que AEC Alaska (Public Health Service). Même fenêtre temporelle que Kinsey/MK-Ultra. Même logique populations captives : corps noirs comme matière première scientifique. Au moins 28 hommes morts de syphilis, 100 de complications, 40 épouses infectées, 19 enfants nés avec syphilis congénitale.",
+      "src": "✓ VALIDÉ — CDC archives, class action 1974, excuses Clinton 1997, Wikipedia",
+      "conn": [
+        "populations_captives",
+        "mk_ultra",
+        "aec",
+        "cia",
+        "sanger"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 480,
+      "y": 440,
+      "r": 13
+    },
+    {
+      "id": "parran",
+      "label": "Thomas Parran Surgeon General",
+      "name": "Thomas Parran — Surgeon General",
+      "date": "",
+      "desc": "Thomas Parran — Surgeon General USA 1936-1948. Triple connexion validée : (1) Dirige le PHS pendant toute la période active de Tuskegee. (2) Siège au Technical Board du Milbank Memorial Fund — le financeur privé de Tuskegee. (3) Formé dans le réseau médical Rockefeller. Porte tournante institutionnelle : même homme conçoit, supervise et valide via le financeur. Auteur de Shadow on the Land: Syphilis (1937) — financé par Milbank Fund. Incarne la doctrine : science de la population comme infrastructure de contrôle.",
+      "src": "✓ VALIDÉ — Milbank Quarterly 2022 (source primaire historique), Rockefeller Archive Center",
+      "conn": [
+        "tuskegee",
+        "milbank",
+        "rockefeller",
+        "populations_captives"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 560,
+      "y": 400,
+      "r": 11
+    },
+    {
+      "id": "milbank",
+      "label": "Milbank Memorial Fund Financeur Tuskegee",
+      "name": "Milbank Memorial Fund — Financeur Tuskegee",
+      "date": "",
+      "desc": "Milbank Memorial Fund — fondation philanthropique New York. Financeur direct de Tuskegee 1935-1972 (37 ans). Intervient quand Rosenwald Fund refuse. Surgeon Generals USA siègent au Technical Board pendant toute la période. Parran (Surgeon General 1936-1948) membre du Technical Board. Burney (Surgeon General plus tard) devient Executive Director Fund 1970-1977 — avait travaillé sur Tuskegee dans les années 1930. Gouvernance croisée = couverture institutionnelle garantie.",
+      "src": "✓ VALIDÉ — Milbank Quarterly 2022, source primaire historique Milbank Memorial Fund",
+      "conn": [
+        "tuskegee",
+        "parran",
+        "rockefeller"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 560,
+      "y": 470,
+      "r": 11
+    },
+    {
+      "id": "guatemala_exp",
+      "label": "Guatemala Experiments 1946-1948",
+      "name": "Guatemala Experiments — 1946-1948",
+      "date": "",
+      "desc": "Guatemala Syphilis Experiments 1946-1948 — PHS inocule intentionnellement syphilis sans consentement à prostituées, prisonniers, soldats, patients psychiatriques. Même opérateurs que Tuskegee. Révélé 2010 par historienne Susan Reverby. Obama excuses officielles 2010. Procès 2019 : juge fédéral statue que Johns Hopkins University, Bristol-Myers Squibb et Rockefeller Foundation doivent faire face à procès $1Md. Valide que Tuskegee = modèle opérationnel exportable, pas anomalie. Même financeur (Rockefeller), même institution (PHS), même logique : populations du Sud Global comme terrain d'expérimentation.",
+      "src": "✓ VALIDÉ — procès fédéral 2019, Wikipedia Tuskegee, Obama excuses 2010",
+      "conn": [
+        "tuskegee",
+        "rockefeller",
+        "populations_captives"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 600,
+      "y": 360,
+      "r": 11
+    },
+    {
+      "id": "kaiser_wilhelm",
+      "label": "Kaiser Wilhelm Eugénisme Nazi",
+      "name": "Kaiser Wilhelm — Eugénisme Nazi",
+      "date": "",
+      "desc": "Kaiser Wilhelm Institute — Berlin. Rockefeller Foundation accorde $410 000 aux chercheurs en eugénisme allemands dont $250 000 à l'Institut Psychiatrique KWI dirigé par Ernst Rüdin. 1929 : $317 000 à l'Institut de Recherche Cérébrale KWI. Rüdin devient directeur de la \"répression médicale\" de Hitler et des stérilisations compulsoires. Financement Rockefeller continue APRÈS les lois de Nuremberg 1935 — même après exclusion des scientifiques juifs. Rockefeller finance Rüdin jusqu'en 1939. Jonction Rockefeller → eugénisme nazi → Paperclip : les scientifiques formés sous ce programme sont ensuite recrutés via Paperclip.",
+      "src": "✓ VALIDÉ — InfluenceWatch, Wikipedia Rockefeller Foundation, Black 2003 War Against the Weak",
+      "conn": [
+        "rockefeller",
+        "paperclip",
+        "populations_captives"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 440,
+      "y": 480,
+      "r": 12
+    },
+    {
+      "id": "bank_of_america",
+      "label": "Bank of America Settlement mars 2026",
+      "name": "Bank of America — Settlement mars 2026",
+      "date": "",
+      "desc": "Bank of America — settlement annoncé 17 mars 2026, LE JOUR où Black devait être déposé sous serment. $170M Black→Epstein transitent via comptes BofA — \"primary means by which sex-trafficking was funded, no apparent business or lawful purpose\" (plaignants). Comptes Ghislaine Maxwell via BofA. Comptes victimes Epstein (contrôle financier). Black décrit comme \"témoin critique\" — évite 8h de témoignage sous serment grâce au settlement. Montant non divulgué — dépôt 27 mars 2026. Wyden : BofA \"willfully looked the other way.\" Pattern complet : JPMorgan $290M (2023) + Deutsche Bank $75M (2023) + BofA (montant secret). ~$365M+ en settlements. Aucune banque n'a admis avoir fait quoi que ce soit. Comma Pythagoricien opérationnel : victimes reçoivent compensation, Black ne témoigne jamais — résultat identique pour le système.",
+      "src": "✓ VALIDÉ — Bloomberg Law 11 mars 2026, PBS 17 mars 2026, Boston Globe 17 mars 2026, Wyden statement",
+      "conn": [
+        "epstein",
+        "leon_black",
+        "ghislaine",
+        "deutsche_bank",
+        "jpmorgan"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 130,
+      "y": 490,
+      "r": 13
+    },
+    {
+      "id": "gottlieb",
+      "label": "Sidney Gottlieb Directeur MK-Ultra",
+      "name": "Sidney Gottlieb — Directeur MK-Ultra",
+      "date": "",
+      "desc": "Sidney Gottlieb — chimiste CIA, chef TSD, directeur MK-Ultra 1953-1973. Fils d'immigrants hongrois-juifs, pied bot l'empêche de s'engager en WWII. 1952 : arrange achat par CIA du stock mondial de LSD ($240 000) — \"parrain involontaire de toute la contre-culture LSD.\" Coordonne avec ex-nazis Paperclip à Camp King. Supervise Project Artichoke → MK-Ultra → MKNAOMI. Tentatives assassinat : Zhou Enlai, Castro, Lumumba. Frank Olson : drogué LSD sans consentement nov 1953 → mort 13e étage 9 jours après. 1973 : conduit physiquement au centre archives CIA et ordonne destruction des boîtes MK-Ultra avec Helms. Church Committee 1977 : immunité accordée, mémoire \"suspicieusement floue.\" Témoignages secrets publiés National Security Archive 30 oct 2025 — 50 ans après. Mort 1999, ferme Virginie, libre, élevait des chèvres.",
+      "src": "✓ VALIDÉ — Church Committee 1977, NSA Archive 30 oct 2025 (témoignages déclassifiés), Kinzer Poisoner in Chief 2019, Wikipedia MK-Ultra",
+      "conn": [
+        "mk_ultra",
+        "cia",
+        "paperclip",
+        "camp_king",
+        "fort_detrick",
+        "helms",
+        "olson",
+        "populations_captives"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 380,
+      "y": 160,
+      "r": 14
+    },
+    {
+      "id": "helms",
+      "label": "Richard Helms DCI/Destruction archives",
+      "name": "Richard Helms — DCI/Destruction archives",
+      "date": "",
+      "desc": "Richard Helms — Director of Central Intelligence 1966-1973. Protecteur de Gottlieb depuis les débuts. Ordonne destruction archives MK-Ultra 1973 — quelques jours avant d'être renvoyé par Nixon pour avoir refusé d'aider à couvrir le Watergate. Gottlieb et Helms \"s'accordent\" pour détruire tout MK-Ultra alors qu'ils quittent tous les deux la CIA. Seul document survivant : rapport Inspector General 1963 mal classé dans archives financières. Raisonnement Helms au Sénat : \"Gottlieb est venu me voir et a dit qu'il prenait sa retraite et que je prenais la mienne et qu'il pensait que ce serait une bonne idée si ces fichiers étaient détruits.\"",
+      "src": "✓ VALIDÉ — Church Committee 1977, NSA Archive oct 2025, Kinzer 2019, Wikipedia",
+      "conn": [
+        "gottlieb",
+        "mk_ultra",
+        "cia"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 440,
+      "y": 100,
+      "r": 12
+    },
+    {
+      "id": "olson",
+      "label": "Frank Olson Victime MK-Ultra",
+      "name": "Frank Olson — Victime MK-Ultra",
+      "date": "",
+      "desc": "Frank Olson — scientifique US Army biowarfare. 28 nov 1953 : tombe du 13e étage Statler Hotel Manhattan. 9 jours avant : drogué au LSD sans consentement par Gottlieb lors d'une retraite CIA à Deep Creek Lake. Avait dit à sa femme qu'il avait fait \"une terrible erreur\" et parlait de quitter son poste. 1975 : révélation publique. Ford présente excuses personnelles à la famille. Famille reçoit $750 000 indemnisation. Fils convaincus d'assassinat pour empêcher révélations. Corps exhumé 1994 — traces de fracture crânienne suggèrent violence avant la chute. Série Netflix Errol Morris.",
+      "src": "✓ VALIDÉ — Church Committee 1977, excuses Ford 1975, Wikipedia Frank Olson",
+      "conn": [
+        "gottlieb",
+        "mk_ultra",
+        "cia"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 320,
+      "y": 100,
+      "r": 10
+    },
+    {
+      "id": "havasupai",
+      "label": "Havasupai Biopiraterie génétique",
+      "name": "Havasupai — Biopiraterie génétique",
+      "date": "",
+      "desc": "Tribu Havasupai Arizona — projet \"diabète\" 1990-2000. Arizona State University + NIH. Chercheurs prélèvent sang sous prétexte recherche diabète (prévalence élevée). Réalité : échantillons utilisés SANS CONSENTEMENT pour schizophrénie, consanguinité, migrations — études publiées sans autorisation tribu. 2004 : tribu porte plainte. 2010 : ASU verse $700 000 à 41 membres, retourne les échantillons biologiques restants. Loi fédérale 2010 renforce consentement éclairé. Premier cas majeur biopiraterie génétique autochtone documenté judiciairement. Connexion directe Watson/eugénisme/génétique : même logique — corps autochtones comme données.",
+      "src": "✓ VALIDÉ — PMC article 2010, settlement ASU 2010, Wikipedia Havasupai",
+      "conn": [
+        "populations_captives",
+        "aec",
+        "church",
+        "watson"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 540,
+      "y": 300,
+      "r": 11
+    },
+    {
+      "id": "carnegie",
+      "label": "CARNEGIE ACIER",
+      "name": "Andrew Carnegie — Baron Voleur / Acier",
+      "date": "1835–1919",
+      "desc": "Contrôle l\\'intégralité de la filière acier US. 1892 : délègue à Frick la gestion de Homestead — 10 morts, milice privée Pinkerton contre grévistes. 1901 : vend Carnegie Steel à J.P. Morgan pour $480M (valeur 2026 : ~$17Md) — transaction qui crée US Steel, premier trust milliardaire de l\\'histoire. Post-vente : se consacre à la philanthropie — Carnegie Hall, 2500 bibliothèques publiques, fondations éducatives. Pattern classique baron voleur → philanthrope légitimateur.",
+      "src": "✓ VALIDÉ — Josephson 1934, PBS American Experience, Wikipedia Carnegie Steel",
+      "conn": [
+        "morgan",
+        "rockefeller",
+        "frick"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -480,
+      "y": -60,
+      "r": 17
+    },
+    {
+      "id": "vanderbilt",
+      "label": "VANDERBILT TRANSPORT",
+      "name": "Cornelius Vanderbilt — Baron Voleur / Transport",
+      "date": "1794–1877",
+      "desc": "Navigation à vapeur puis chemins de fer. Construit l\\'empire New York Central Railroad. Citation documentée : \"Que le peuple soit damné. Pourquoi je me soucierais de la loi, n\\'ai-je pas le pouvoir ?\" — résumé philosophique du baron voleur. Contrôle les corridors de transport Midwest/Est US = contrôle prix des marchandises = contrôle indirect de l\\'économie agricole. Fils William H. Vanderbilt double la fortune. Dynasties : fondent Vanderbilt University.",
+      "src": "✓ VALIDÉ — Josephson 1934, Browning & Gerassi 2015, Wikipedia Cornelius Vanderbilt",
+      "conn": [
+        "morgan",
+        "gould"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -430,
+      "y": -240,
+      "r": 16
+    },
+    {
+      "id": "frick",
+      "label": "FRICK HOMESTEAD",
+      "name": "Henry Clay Frick — Carnegie / Violence Institutionnelle",
+      "date": "1849–1919",
+      "desc": "Partenaire Carnegie Steel, gérant opérationnel. 6 juillet 1892 — grève Homestead : Frick engage 300 agents Pinkerton armés pour briser la grève. Affrontement = 10 morts (7 grévistes, 3 Pinkerton). Gouverneur Pennsylvanie envoie 8500 miliciens. Grève brisée, syndicat détruit pour 40 ans. Frick survit à tentative d\\'assassinat par anarchiste Berkman (2 balles, 1 coup de couteau). Continue de travailler le jour même. Archive : Homestead = modèle de répression institutionnelle ouvrière, prototype des stratégies anti-syndicales du XXe siècle.",
+      "src": "✓ VALIDÉ — Josephson 1934, National Archives, Wikipedia Homestead Strike 1892",
+      "conn": [
+        "carnegie",
+        "morgan"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -500,
+      "y": -160,
+      "r": 14
+    },
+    {
+      "id": "hearst",
+      "label": "HEARST NARRATIF",
+      "name": "William Randolph Hearst — Baron Voleur / Presse & Narrative",
+      "date": "1863–1951",
+      "desc": "Premier empire médiatique US. 1898 : presse jaune (yellow journalism) — fabrique le casus belli de la guerre hispano-américaine. Citation attribuée à Remington : \"You furnish the pictures, I\\'ll furnish the war.\" Contrôle simultanément journaux, magazines, studios de cinéma, stations radio. Nœud pivot : entre la capture physique (Barons Voleurs 1870-1900) et la capture narrative (Mockingbird 1950s). Précurseur documenté de l\\'industrialisation de la fabrication du consentement. Citizen Kane (Welles 1941) = roman à clef sur Hearst.",
+      "src": "✓ VALIDÉ — Josephson 1934, W.A. Swanberg \"Citizen Hearst\" 1961, Wikipedia Spanish-American War",
+      "conn": [
+        "gould",
+        "morgan"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -370,
+      "y": -290,
+      "r": 15
+    },
+    {
+      "id": "gould",
+      "label": "JAY GOULD TÉLÉGRAPHE",
+      "name": "Jay Gould — Baron Voleur / Presse & Finance",
+      "date": "1836–1892",
+      "desc": "Spéculateur radical, opérateur ferroviaire. 1869 : tente de corner le marché or US (Black Friday). 1881 : rachète Western Union = monopole total communications affaires. Possède journaux (New York World) ET le fil qui transmet info boursière. Précurseur capture médias → narrative. Clews 1887 le désigne comme conducteur électricité financière.",
+      "src": "✓ VALIDÉ — Clews 1887, Josephson 1934, Wikipedia Western Union/Black Friday 1869",
+      "conn": [
+        "morgan",
+        "rockefeller",
+        "vanderbilt",
+        "hearst"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -420,
+      "y": -150,
+      "r": 17
+    },
+    {
+      "id": "ig_farben",
+      "label": "IG FARBEN 1925-1945",
+      "name": "IG Farben — Cartel Chimique Nazi",
+      "date": "1925–1952",
+      "desc": "Conglomérat Bayer+BASF+Hoechst+AGFA formé 1925. Plus grand donateur individuel campagne Hitler fin 1920s — 80M Reichsmark aux nazis. Zyklon B via Degesch (42.5% IG Farben). Sarin/Tabun : Otto Ambros. Usine Monowitz (Auschwitz III) — 25 000 esclaves, espérance de vie quelques mois. Bayer finance Josef Mengele. Procureur Nuremberg Taylor : \"Ces entreprises, pas les nazis, sont les principaux criminels de guerre.\" 24 executives inculpés Nuremberg 1947-48. Seulement 13 condamnés. Peines maximales 8 ans — Taylor : \"light enough to please a chicken thief.\" Dissolution 1952 → Bayer + BASF + Hoechst. 10 ans après condamnation : ter Meer = PDG Bayer. Wurster (Zyklon B) = PDG BASF.",
+      "src": "✓ VALIDÉ — Nuremberg Trial records (Case VI), USHMM Bayer article, BASF archives propres, Taylor 1946",
+      "conn": [
+        "paperclip",
+        "kaiser_wilhelm",
+        "bayer_post",
+        "populations_captives",
+        "fort_detrick"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -520,
+      "y": 380,
+      "r": 18
+    },
+    {
+      "id": "bayer_post",
+      "label": "BAYER/BASF Post-Nuremberg",
+      "name": "Bayer + BASF + Hoechst — Reconstitution Post-Nuremberg",
+      "date": "1951–présent",
+      "desc": "Fritz ter Meer — condamné Nuremberg génocide/esclavage Auschwitz → libéré 4 ans → PDG Bayer 10 ans après condamnation. Karl Wurster (Zyklon B/Degesch) → PDG BASF. Otto Ambros → Paperclip → US Dept of Energy + entreprises chimiques US/européennes. IG Farben = Bayer + BASF + Hoechst — trois des plus grandes pharmas mondiales. Hoechst → Aventis → Sanofi. Bayer rachète Monsanto 2018 ($63Md). Bristol-Myers Squibb (ancienne connexion) — poursuivi procès Guatemala 2019 $1Md avec Rockefeller Foundation.",
+      "src": "✓ VALIDÉ — Nuremberg records, Wikipedia IG Farben dissolution, procès Guatemala 2019",
+      "conn": [
+        "ig_farben",
+        "paperclip",
+        "guatemala_exp"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -580,
+      "y": 460,
+      "r": 15
+    },
+    {
+      "id": "otto_ambros",
+      "label": "Otto Ambros Paperclip/Sarin",
+      "name": "Otto Ambros — IG Farben → Paperclip → USA",
+      "date": "1901–1990",
+      "desc": "Directeur IG Farben, expert Buna et gaz de combat. Supervise production Sarin/Tabun à Dyhernfurth. Planifie usine Monowitz (Auschwitz III). Nuremberg 1948 : condamné 8 ans esclavage/meurtre de masse. Libéré 1951. Operation Paperclip le cible IMMÉDIATEMENT à sa libération. Travaille ensuite pour US Dept of Energy + Dow Chemical + W.R. Grace + Distillers Company. Consultant US Army chemical weapons. Pont direct : crimes Auschwitz → programme armes chimiques US → Fort Detrick.",
+      "src": "✓ VALIDÉ — Nuremberg records, Wikipedia Otto Ambros, War History Online, Jacobsen 2014",
+      "conn": [
+        "ig_farben",
+        "paperclip",
+        "fort_detrick",
+        "camp_king"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -460,
+      "y": 460,
+      "r": 12
+    },
+    {
+      "id": "bilderberg",
+      "label": "BILDERBERG 1954",
+      "name": "Groupe Bilderberg — Coordination Transatlantique",
+      "date": "1954 — Hôtel Bilderberg, Pays-Bas",
+      "desc": "Fondé 1954 par Prince Bernhard des Pays-Bas, Józef Retinger (agent OSS/MI6), David Rockefeller. 120-150 participants annuels : politiques, banquiers, industriels, médias. Règle Chatham House — tout off-the-record. Même année que McCarthyisme au pic — Bilderberg = réponse organisée de l'élite transatlantique. Membres notables : Kissinger (présent depuis 1957), Bezos, Thiel, Karp (Palantir), Eric Schmidt, Peter Mandelson, Keir Starmer. Thiel et Karp = membres réguliers alors que Palantir contracte Pentagon + IDF. Kissinger = ponte permanent entre Bilderberg, Trilateral, et Paperclip.",
+      "src": "✓ VALIDÉ — archives Bilderberg, Wikipedia, membres publics confirmés",
+      "conn": [
+        "rockefeller",
+        "cfr",
+        "chatham",
+        "trilateral",
+        "thiel",
+        "kissinger"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -200,
+      "y": -330,
+      "r": 17
+    },
+    {
+      "id": "trilateral",
+      "label": "TRILATERAL 1973",
+      "name": "Commission Trilatérale — Gouvernance Globale",
+      "date": "1973 — New York",
+      "desc": "Fondée 1973 par David Rockefeller + Zbigniew Brzezinski. Membres fondateurs : Alan Greenspan, Paul Volcker, Jimmy Carter (recruté avant élection 1976 — devient président). 400 membres, quotas régionaux : USA 87, Canada 20, Mexique 13, Europe 184, Asie-Pacifique 117. Leadership actuel : Meghan O'Sullivan (Harvard Kennedy School), Takeshi Niinami, Axel Weber. Membres notables : Kissinger, Carter, Clinton, Bush père, Starmer, Mandelson. Objectif déclaré : coordination politique USA/Europe/Japon. Brzezinski = théoricien du Grand Échiquier — influence géopolitique US jusqu'en 2017.",
+      "src": "✓ VALIDÉ — Trilateral Commission website, Sklar 1980, Wikipedia",
+      "conn": [
+        "rockefeller",
+        "cfr",
+        "bilderberg",
+        "harvard",
+        "kissinger",
+        "mandelson"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -100,
+      "y": -330,
+      "r": 16
+    },
+    {
+      "id": "kissinger",
+      "label": "KISSINGER Pont global",
+      "name": "Henry Kissinger — Architecte du Système",
+      "date": "1923–2023",
+      "desc": "Membre Bilderberg depuis 1957. Co-fondateur effectif Trilateral. Paperclip : lien direct — recruté par Army Intelligence 1943, travaille avec ex-nazis intégrés. Conseiller NSA puis Secrétaire d'État Nixon/Ford. Bombardements Cambodia secret. Prix Nobel Paix 1973 (même année que Trilateral). Mort 2023 à 100 ans. Consultant Goldman Sachs, Kissinger Associates. Pont vivant entre Paperclip (1945), Bilderberg (1954), Trilateral (1973), et réseau contemporain.",
+      "src": "✓ VALIDÉ — sources multiples, Wikipedia, archives déclassifiées NSC",
+      "conn": [
+        "bilderberg",
+        "trilateral",
+        "paperclip",
+        "cfr",
+        "rockefeller"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -50,
+      "y": -270,
+      "r": 14
+    },
+    {
+      "id": "jekyll_island",
+      "label": "Jekyll Island 1910",
+      "name": "Jekyll Island — Réunion Secrète FED",
+      "date": "22 novembre 1910",
+      "desc": "Réunion secrète 9 jours sur Jekyll Island (Géorgie). Participants : Nelson Aldrich (Sénat, beau-père Rockefeller Jr.), A. Piatt Andrew (Treasury), Frank Vanderlip (National City Bank/Rockefeller), Henry Davison (Morgan), Charles Norton (First National Bank/Morgan), Benjamin Strong (Morgan), Paul Warburg (Kuhn Loeb). Déguisés en chasseurs pour ne pas être reconnus. Résultat : plan qui deviendra Federal Reserve Act 1913. Morgan + Rockefeller + Warburg = architectes de la monnaie américaine. Rendu public seulement en 1935 par Vanderlip lui-même.",
+      "src": "✓ VALIDÉ — Vanderlip 1935 Saturday Evening Post, Griffin 1994, Wikipedia Jekyll Island",
+      "conn": [
+        "fed",
+        "morgan",
+        "rockefeller",
+        "warburg"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 60,
+      "y": -310,
+      "r": 13
+    },
+    {
+      "id": "prism_nsa",
+      "label": "PRISM/NSA 2007-2013",
+      "name": "PRISM — Surveillance de Masse NSA",
+      "date": "2007–présent",
+      "desc": "Programme NSA lancé 2007 sous Bush. Accès direct serveurs : Microsoft, Yahoo, Google, Facebook, Apple, Skype, YouTube. 91% des 250M communications internet interceptées annuellement (FISC 2011). Révélé juin 2013 par Snowden (Guardian + WaPo) — 41 slides PowerPoint classifiées. NSA intercepte 1.7 milliard emails/appels PAR JOUR (WaPo 2010). Directeur DNI James Clapper ment sous serment au Sénat mars 2013 : \"not willingly\" — point de rupture Snowden. Cour d'Appel sept 2020 : programme ILLÉGAL, intelligence leaders \"not telling the truth.\" XKEYSCORE = outil NSA \"widest reaching\" — co-développé avec Palantir (The Intercept 2017, docs Snowden). Pont direct : Mockingbird (contrôle narratif) → PRISM (surveillance digitale) → Palantir (IA ciblage).",
+      "src": "✓ VALIDÉ — Documents Snowden publiés Guardian/WaPo juin 2013, The Intercept fév 2017 (Palantir/NSA), Cour Appel sept 2020",
+      "conn": [
+        "cia",
+        "mockingbird",
+        "palantir",
+        "snowden",
+        "usa_pieuvre"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 480,
+      "y": 80,
+      "r": 16
+    },
+    {
+      "id": "snowden",
+      "label": "Edward Snowden 2013",
+      "name": "Edward Snowden — Lanceur d\\u2019Alerte NSA",
+      "date": "2013",
+      "desc": "Ex-contractant CIA (2006) → Dell/NSA (2009) → Booz Allen Hamilton (2013, 2 mois). Salary $200k → réduit volontairement pour accéder aux documents. Point de rupture : Clapper ment sous serment 15 mars 2013. Mai 2013 : 50 000-200 000 docs NSA copiés. Juin 2013 : révèle PRISM + XKeyscore à Greenwald (Guardian) + Gellman (WaPo) + Poitras. XKEYSCORE : \"je pouvais wiretapper n'importe qui, du juge fédéral au président, avec juste une adresse email.\" Documents Snowden publiés Intercept 2017 : Palantir co-développe XKeyscore — \"expand and accelerate\" la machine de surveillance globale NSA. Karp (Palantir) nie en 2025 tout lien NSA — sans jamais mentionner ces documents. Fuit Hong Kong → Moscou. Citoyen russe 2022. Snowden : \"We trusted the government not to screw us. But they did.\"",
+      "src": "✓ VALIDÉ — Wikipedia Snowden, Guardian juin 2013, The Intercept fév 2017 (Palantir/XKeyscore), Permanent Record 2019, The Intercept sept 2025 (Karp denial)",
+      "conn": [
+        "prism_nsa",
+        "cia",
+        "booz_allen"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 520,
+      "y": 160,
+      "r": 12
+    },
+    {
+      "id": "wef",
+      "label": "WEF/DAVOS Schwab 1971",
+      "name": "World Economic Forum — Klaus Schwab",
+      "date": "1971 — Davos, Suisse",
+      "desc": "Fondé 1971 par Klaus Schwab comme European Management Forum → WEF 1987. Schwab confirme lui-même (podcast Founder Spirit 2021) : \"Kissinger est devenu un ami et un mentor jusqu'à sa mort.\" CIA finance séminaires Kissinger Harvard $135 000 — Schwab recruté cette même année. Schwab = membre Steering Committee Bilderberg mid-1990s (The Big Smoke 2017). Père de Schwab : directeur Escher Wyss AG — contractant régime nazi. Schwab gère Escher-Wyss 1970s-80s — rôle dans programme nucléaire apartheid Afrique du Sud (violation résolution ONU 418). WEF fondé avec aide Raymond Barre (membre Trilateral) + CIPE (branche NED/CIA). Young Global Leaders = pipeline dirigeants mondiaux (Macron, Trudeau, Ardern, Jacinda...). \"You will own nothing and be happy.\" Résigné 2025 après 54 ans.",
+      "src": "✓ VALIDÉ — Schwab confirme Kissinger mentor (Founder Spirit podcast 2021, WEF book 2010). Bilderberg Steering Committee (The Big Smoke 2017). CIA/Kissinger $135k (exposé même année départ Schwab Harvard). Escher-Wyss/apartheid (Voltaire Network). Barre/Trilateral + CIPE/NED (Voltaire Network)",
+      "conn": [
+        "kissinger",
+        "bilderberg",
+        "trilateral",
+        "cfr",
+        "harvard",
+        "cia"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -200,
+      "y": -420,
+      "r": 17
+    },
+    {
+      "id": "booz_allen",
+      "label": "Booz Allen Hamilton Contractant NSA",
+      "name": "Booz Allen Hamilton — Contractant Renseignement",
+      "date": "1914 — McLean, Virginie",
+      "desc": "Booz Allen Hamilton — cabinet conseil fondé 1914. Employeur de Snowden au moment des révélations 2013. Un des plus grands contractants US en renseignement — $4-5Md revenus annuels dont ~99% gouvernement USA. 76% revenus = agences intelligence + défense. Clients : NSA, CIA, DHS, DoD, FBI. XKeyscore développé en partie via Booz Allen. Pattern : privatisation surveillance — État externalise programmes surveillance illégaux à contractants privés pour contourner oversight. Même logique MK-Ultra (universités privées) → PRISM (Big Tech) → Booz Allen (defence contractors).",
+      "src": "✓ VALIDÉ — Wikipedia Booz Allen, Wikipedia Snowden, rapports annuels Booz Allen",
+      "conn": [
+        "snowden",
+        "prism_nsa",
+        "cia",
+        "palantir"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 560,
+      "y": 220,
+      "r": 11
+    },
+    {
+      "id": "cameron_mcgill",
+      "label": "CAMERON/McGILL MK-Ultra Canada",
+      "name": "Cameron / Allan Memorial Institute — MK-Ultra Canada",
+      "date": "1943–1964 — Montréal",
+      "desc": "Donald Ewen Cameron — psychiatre écossais-américain, directeur Allan Memorial Institute (McGill). Fondé 1943 avec bourse Rockefeller Foundation. CIA recrute Cameron via Allen Dulles 1957 — Subproject 68. Cameron envoyé examiner Rudolf Hess à Nuremberg 1945 (OSS). Techniques : \"psychic driving\" — coma artificiel jusqu'à 86 jours + enregistrements répétés en boucle + électrochocs 30-40x dose normale + LSD + privation sensorielle. Objectif : effacer personnalité et reconstruire. CIA finance via façade \"Society for Human Ecology\" $84 820 (1957-1962). Gouvernement canadien finance aussi. Résultats : amnésie rétrograde, personnalités détruites, centaines de patients. 1977 Senate hearings : Gottlieb refuse de se souvenir de Cameron. 1984 : USA demande formellement au Canada de ne pas informer les victimes. 1988 : règlement CIA $750k pour 9 victimes. Naomi Klein 2008 Shock Doctrine : techniques Cameron → KUBARK (manuels torture Pentagon) → Abu Ghraib + Guantanamo.",
+      "src": "✓ VALIDÉ — Canadian Encyclopedia, Wikipedia Montreal experiments, NSA Archive 2024, Wikipedia Cameron, Shock Doctrine Klein 2008",
+      "conn": [
+        "mk_ultra",
+        "rockefeller",
+        "cia",
+        "gottlieb",
+        "populations_captives",
+        "five_eyes"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 300,
+      "y": -200,
+      "r": 15
+    },
+    {
+      "id": "five_eyes",
+      "label": "FIVE EYES Alliance renseignement",
+      "name": "Five Eyes — Alliance Surveillance Internationale",
+      "date": "1941 — UKUSA Agreement",
+      "desc": "Alliance renseignement USA + UK + Canada + Australie + Nouvelle-Zélande. UKUSA Agreement 1941 (signals intelligence WWII). Étendu progressivement post-guerre. PRISM/NSA : données Five Eyes partagées en pool — XKeyscore opéré collectivement. Infrastructure Canada : CSE (équivalent NSA canadien), CSIS (fondé 1984 — successeur RCMP Security Service), RCMP Security Service (renseignement intérieur Cold War). GCHQ UK (Tempora) collecte fibre optique + partage NSA. ASD Australie. GCSB Nouvelle-Zélande. Snowden révèle 2013 : pool commun dizaines de milliards de records. Cameron/McGill = bras psychiatrique canadien même infrastructure Cold War. Palantir opère pour plusieurs membres Five Eyes (GCHQ documenté The Intercept 2017). Rockefeller finance McGill + Université de Toronto = même réseau financement que Cameron.",
+      "src": "✓ VALIDÉ — Wikipedia UKUSA, Snowden disclosures 2013, The Intercept 2017 (Palantir/GCHQ)",
+      "conn": [
+        "prism_nsa",
+        "uk_pieuvre",
+        "cameron_mcgill",
+        "palantir",
+        "cia",
+        "snowden"
+      ],
+      "status": "validé",
+      "type": "state",
+      "x": 460,
+      "y": -200,
+      "r": 14
+    },
+    {
+      "id": "gehlen",
+      "label": "Organisation Gehlen BND / CIA",
+      "name": "Organisation Gehlen — Paperclip Renseignement",
+      "date": "1946–1956 → BND présent",
+      "desc": "Reinhard Gehlen — général Wehrmacht, chef renseignement militaire Front Est. Mai 1945 : microfilme archives soviétiques, enterre dans Alpes autrichiennes, se rend aux Américains. Deal : immunité totale contre expertise soviétique. Décembre 1946 : CIA finance \"South German Industrial Development Organization\" (façade). 4000+ agents = anciens SS, Gestapo, Wehrmacht. Inclut Alois Brunner (adjoint Eichmann, 140 000 Juifs déportés), Klaus Barbie. 1949 : CIA absorbe officiellement → $5M/an. NSA Archive : Gehlen \"employed numerous former Nazis and known war criminals.\" 1956 : Organisation Gehlen devient BND officielle — Gehlen premier directeur. 1998 : Nazi War Crimes Disclosure Act — 18 000 pages déclassifiées CIA. CIA history : \"Forging an Intelligence Partnership: CIA and the Origins of the BND, 1945-49.\" Même logique Paperclip : immunité nazie contre expertise technique/opérationnelle.",
+      "src": "✓ VALIDÉ — Wikipedia Gehlen Organization, Nazi War Crimes Disclosure Act 1998 (18 000 pages), CIA FOIA, NSA Archive, Warfare History Network",
+      "conn": [
+        "paperclip",
+        "cia",
+        "mk_ultra",
+        "ig_farben",
+        "camp_king"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -340,
+      "y": 380,
+      "r": 14
+    },
+    {
+      "id": "murdoch",
+      "label": "Rupert Murdoch News Corp/Fox",
+      "name": "Rupert Murdoch — Empire Médiatique Global",
+      "date": "1952 → présent",
+      "desc": "Rupert Murdoch — magnat médias australo-américain. Empire : Fox News, Wall Street Journal, New York Post, Times UK, Sun UK, Sky, HarperCollins. Bilderberg Steering Committee — membre régulier. Epstein files DOJ 2026 : correspondance documentée. Soutien Trump documenté — Fox News principal relais trumpiste, Murdoch conseille Trump sur nominations. Rupture partielle post-2020, alliance maintenue structurellement. Lien Hearst (EN FERMENTATION) : héritier fonctionnel du modèle presse jaune 1898 — fabrication narrative au service du pouvoir économique. Lien Mockingbird (EN FERMENTATION) : fonction structurellement identique — contrôle narratif sans lien CIA direct documenté. News Corp = infrastructure narrative contemporaine. Lien Cohn/Trump : Trump formé par Cohn, Murdoch soutient Trump — connexion indirecte via Trump.",
+      "src": "✓ VALIDÉ — Bilderberg archives, DOJ files 2026, Wikipedia News Corp. ~ EN FERMENTATION : lien Hearst (structural), lien Mockingbird (structural). ❌ NON DOCUMENTÉ : lien CIA direct, Murdoch client Cohn",
+      "conn": [
+        "bilderberg",
+        "epstein",
+        "hearst",
+        "mockingbird",
+        "baron_trump",
+        "wef"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -300,
+      "y": -420,
+      "r": 14
+    },
+    {
+      "id": "harriman",
+      "label": "HARRIMAN Brown Brothers",
+      "name": "Harriman / Brown Brothers Harriman — Pont Barons→Nazis→CIA",
+      "date": "1848–1986",
+      "desc": "E.H. Harriman (1848-1909) : empire chemins de fer, rival/partenaire Morgan, Baron Voleur pur. Averell Harriman (fils) : Brown Brothers Harriman 1931. 1924 : fonde Union Banking Corporation avec Fritz Thyssen (financeur Hitler depuis 1923). 25 ans transactions nazies 1924-1951 — fonds, obligations, or, charbon, acier vers Allemagne nazie. 28 octobre 1942 : UBC saisie Trading with the Enemy Act — MÊME JOUR Averell Harriman rencontre Field Marshall Smuts à Londres (conceal double life). Averell = ambassadeur FDR en UK + URSS pendant la guerre = dissimulation totale. Post-guerre : Averell Harriman = Secrétaire Commerce USA 1946-48. Allen Dulles = avocat banque Rotterdam Thyssen + IG Farben → DCI CIA 1953. Prescott Bush = co-directeur UBC → Sénateur 1952 → père George H.W. Bush (DCI CIA 1976) → grand-père George W. Bush (président). \"The story of Prescott Bush and Brown Brothers Harriman is an introduction to the real history of our country.\"",
+      "src": "✓ VALIDÉ — Trading with the Enemy Act Oct 1942 (National Archives), Wikipedia Prescott Bush, Wikipedia UBC, Britannica, NH Gazette 2003 (documents National Archives)",
+      "conn": [
+        "morgan",
+        "rockefeller",
+        "ig_farben",
+        "cia",
+        "jekyll_island",
+        "gould",
+        "vanderbilt"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -540,
+      "y": -80,
+      "r": 16
+    },
+    {
+      "id": "allen_dulles",
+      "label": "Allen Dulles CIA Director",
+      "name": "Allen Dulles — Avocat Nazi → DCI CIA",
+      "date": "1893–1969",
+      "desc": "Allen Dulles — avocat Sullivan & Cromwell 1926. Représente banque Rotterdam Thyssen + IG Farben dans les années 1930. 1937 : fusionne activités dissimulation dans compte Brown Brothers Harriman-Schroeder Rock (banque nazie). 1933 : réunion Berlin avec industriels allemands pour soutien Hitler en échange rupture syndicats — frère John Foster Dulles négocie avec ministre économique Hitler. OSS pendant WWII. DCI CIA 1953-1961 : supervise MK-Ultra, Paperclip, Gehlen Org. Approuve Cameron/McGill via Human Ecology Fund. Renversement Mossadegh Iran 1953, Arbenz Guatemala 1954. Limogeé par JFK après Baie des Cochons 1961.",
+      "src": "✓ VALIDÉ — Wikipedia Allen Dulles, NSA Archive, Panshin research (sources primaires BBH)",
+      "conn": [
+        "harriman",
+        "cia",
+        "mk_ultra",
+        "gehlen",
+        "ig_farben",
+        "cameron_mcgill",
+        "paperclip"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -460,
+      "y": 300,
+      "r": 13
+    },
+    {
+      "id": "pensionnats",
+      "label": "Pensionnats Autochtones Canada",
+      "name": "Pensionnats Autochtones — Canada 1883-1996",
+      "date": "1883–1996",
+      "desc": "Système de pensionnats autochtones Canada — 1883 à 1996. 150 000 enfants arrachés à leurs familles. Objectif déclaré : \"tuer l'Indien dans l'enfant\" (Duncan Campbell Scott, sous-ministre). Gérés par Église catholique + Églises protestantes + gouvernement fédéral. Expériences nutritionnelles 1942-1952 documentées (Dr L.B. Pett, gouvernement canadien) : enfants délibérément sous-alimentés pour mesurer effets malnutrition — soins dentaires délibérément supprimés pour observer progression caries. Même logique Tuskegee : populations captives comme matière première scientifique. Même financeur indirect : Rockefeller (réseaux médicaux canadiens). Commission Vérité et Réconciliation 2015 : qualifie le système de génocide culturel. 3200+ enfants morts dans les établissements.",
+      "src": "✓ VALIDÉ — Commission Vérité et Réconciliation Canada 2015, Mosby 2013 Social History (expériences nutritionnelles), Wikipedia Indian residential schools Canada",
+      "conn": [
+        "populations_captives",
+        "cameron_mcgill",
+        "five_eyes",
+        "rockefeller"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": 340,
+      "y": -120,
+      "r": 12
+    },
+    {
+      "id": "standard_oil",
+      "label": "Standard Oil 1870→Exxon",
+      "name": "Standard Oil — Rockefeller / Nœud Source",
+      "date": "1870–1911 → successeurs présent",
+      "desc": "Standard Oil fondée 1870 par John D. Rockefeller. 1879 : contrôle 90% raffinage pétrole US. 1911 : démantelée Sherman Antitrust Act → 43 entreprises successeurs (Exxon, Mobil, Chevron, BP...). Rockefeller maintient contrôle via participations croisées. LIEN IG FARBEN VALIDÉ : cartel Standard/IG Farben 1926-1942. 1934-35 : gouvernement Hitler achète $20M essence aviation pour Luftwaffe via Standard — \"rendu possible uniquement grâce à l'aide de Standard Oil\" (document IG Farben Nuremberg). Standard bloque caoutchouc synthétique US 1932-1942. 1942 : nolo contendere DOJ. CHASE BANK — MÊME RÉSEAU : Chase National Bank (Rockefeller) = banquier de Standard + conduit comptes nazis Paris jusqu'à fin guerre. 1936 : Schröder+Rockefeller Company fondée — avocats Allen + John Foster Dulles. Allen Dulles au conseil Schröder + avocat IG Farben = même homme devient DCI CIA 1953. Deux executives Standard Oil = membres du Cercle des Amis de la Gestapo de Himmler. Profits Standard Oil → Rockefeller Foundation 1913 → Kaiser Wilhelm/eugénisme/Kinsey/Tuskegee/McGill.",
+      "src": "✓ VALIDÉ — Accord antitrust DOJ mars 1942 (Standard plaide nolo contendere), document IG Farben Nuremberg (NI-series), Borkin The Crime and Punishment of IG Farben 1978, Thurman Arnold Senate testimony 1942",
+      "conn": [
+        "rockefeller",
+        "ig_farben",
+        "harriman",
+        "morgan",
+        "fed",
+        "bri"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -60,
+      "y": -130,
+      "r": 16
+    },
+    {
+      "id": "chase_bank",
+      "label": "Chase Bank Rockefeller/Nazis",
+      "name": "Chase National Bank — Rockefeller / Comptes Nazis",
+      "date": "1877 → Chase Manhattan → JPMorgan Chase",
+      "desc": "Chase National Bank — banque Rockefeller, plus puissante institution financière US à Pearl Harbor. WWII : Chase conduit affaires pour Haut Commandement nazi à Paris jusqu'à fin de guerre (archives Treasury déclassifiées FOIA). 1936 : J. Henry Schröder Bank + Rockefeller → Schröder Rockefeller & Company — avocats = Allen Dulles + John Foster Dulles (Sullivan & Cromwell). Allen Dulles siège conseil Schröder. Kurt von Schröder = BIS + Gestapo Cologne. Avery Rockefeller = 42% Schröder Rockefeller. Branche Paris Chase liée à Standard Oil New Jersey en France. Chase → Chase Manhattan (1955) → JPMorgan Chase (2000). JPMorgan Chase = même entité qui maintient Epstein comme client 1998-2013 malgré condamnation 2008 → settlement $290M 2023.",
+      "src": "✓ VALIDÉ — Archives Treasury déclassifiées FOIA (Higham Trading with the Enemy 1983), Wikipedia Chase Bank, lien JPMorgan/Epstein documenté SDNY 2023",
+      "conn": [
+        "rockefeller",
+        "standard_oil",
+        "ig_farben",
+        "allen_dulles",
+        "bri",
+        "jpmorgan"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 60,
+      "y": -200,
+      "r": 13
+    },
+    {
+      "id": "gladio",
+      "label": "GLADIO NATO Stay-Behind",
+      "name": "Operation Gladio — Armées Secrètes NATO",
+      "date": "1952–1990+ — Europe entière",
+      "desc": "Réseau stay-behind NATO/CIA créé après WWII dans 14+ pays européens : Italie, France, Belgique, Allemagne, Espagne, Portugal, Grèce, Turquie, Suisse, Pays-Bas, Danemark, Norvège, Suède, Finlande. Document SIFAR 1er juin 1959 (déclassifié) : \"armée secrète liée à l'OTAN, entraînée par la CIA pour la guerre non conventionnelle.\" But officiel : résistance invasion soviétique. But réel documenté : \"troubles intérieurs\" — combattre l'ennemi de l'intérieur. Italie = cas le mieux documenté (commissions parlementaires 1992). CIA contrôle services secrets italiens SIFAR 1955-58 (ministre Taviani confirme). \"Stratégie de la tension\" : attentats faussement attribués à la gauche pour empêcher les PC d'accéder au pouvoir. Piazza Fontana 1969 (17 morts), Bologne 1980 (85 morts) — élucidés : extrême droite liée Gladio. Aldo Moro assassiné 1978 après tentative coalition PCI — Kissinger l'avait averti. France : UK responsable opérations selon partage Gladio (source Searchlight 1991). Parlement européen condamne. Vinciguerra (opérateur Gladio confirmé) : \"créé par CIA et NATO.\"",
+      "src": "✓ VALIDÉ — Document SIFAR 1er juin 1959 déclassifié, Rapports Commissions Parlementaires Italie 1992, Andreotti au Sénat 1990, Vinciguerra témoignage judiciaire, Parlement européen condamnation",
+      "conn": [
+        "cia",
+        "allen_dulles",
+        "uk_pieuvre",
+        "france_pieuvre",
+        "nato",
+        "bilderberg"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -200,
+      "y": 420,
+      "r": 15
+    },
+    {
+      "id": "nato",
+      "label": "NATO Structure Gladio",
+      "name": "NATO — Structure Institutionnelle Gladio",
+      "date": "1949 → présent",
+      "desc": "NATO fondé 1949. Allied Clandestine Committee (ACC) créé 1957 : USA + France + Belgique + Grèce — coordination opérations Gladio. CPC (Clandestine Planning Committee) 1952 : structure NATO pour stay-behind. Dernière réunion ACC connue : Bruxelles octobre 1990. CIA présente aux réunions ACC. NATO nie officiellement. William Colby (DCI CIA) confirme dans ses mémoires les stay-behind dans pays nordiques. USA + UK = partenaires principaux. Connexion directe : Allen Dulles supervise dès la création.",
+      "src": "✓ VALIDÉ — Wikipedia NATO/Gladio, Colby memoirs, Andreotti 1990, Parlement européen",
+      "conn": [
+        "cia",
+        "gladio",
+        "allen_dulles",
+        "uk_pieuvre",
+        "france_pieuvre"
+      ],
+      "status": "validé",
+      "type": "state",
+      "x": -100,
+      "y": 460,
+      "r": 13
+    },
+    {
+      "id": "francafrique",
+      "label": "FRANÇAFRIQUE Foccart/Elf/SDECE",
+      "name": "Françafrique — Réseau Foccart/Elf/SDECE",
+      "date": "1960–présent",
+      "desc": "Terme de Félix Houphouët-Boigny, théorisé par Verschave. Architecte : Jacques Foccart — secrétaire général Élysée Affaires africaines 1960-1974. Fonds Foccart aux Archives nationales (demi-kilomètre d'archives, inventorié 2015) = source primaire. Structure documentée : réseau Foccart + SDECE + Elf + présidents africains = osmose totale (source académique, OpenEdition). Elf = bras financier : financement partis gaullistes + relations chefs d'État africains. Maurice Robert (fondateur SDECE-Afrique) → directeur sécurité Elf. CIA forme branche française Gladio — Foccart dispatche SDECE au Québec (Wikipedia CIA activities France). SAC (Service d'Action Civique) = bras clandestin gaulliste, opérations coups tordus Afrique. Opération Homo 1960 : assassinat Félix Moumié (opposant camerounais) au thallium à Genève — Foccart impliqué. Doctrine \"feu orange\" : si révélé, l'État dénie. Systèmes des CFA, accords de coopération militaire = contrôle post-colonial. Perpétué sous Mitterrand, Chirac, Sarkozy.",
+      "src": "✓ VALIDÉ — Fonds Foccart Archives nationales 2015, Wikipedia Jacques Foccart, OpenEdition (réseau Foccart/Elf/SDECE osmose totale), Wikipedia CIA activities in France (Gladio/SDECE)",
+      "conn": [
+        "france_pieuvre",
+        "cia",
+        "gladio",
+        "sdece",
+        "elf"
+      ],
+      "status": "validé",
+      "type": "state",
+      "x": -320,
+      "y": 200,
+      "r": 15
+    },
+    {
+      "id": "sdece",
+      "label": "SDECE→DGSE Renseignement FR",
+      "name": "SDECE → DGSE — Renseignement Extérieur Français",
+      "date": "1945–présent",
+      "desc": "SDECE (Service de Documentation Extérieure et de Contre-Espionnage) 1945 → DGSE 1982. Lié à Foccart — réorganisé sur demande De Gaulle (National Interest). CIA + SDECE protègent le Gang Corse à Marseille post-WWII contre communistes (French Connection). CIA forme branche française Gladio via SDECE. Foccart dispatche agents SDECE au Québec (séparatisme). Maurice Robert (SDECE-Afrique fondateur) → Ambassadeur Gabon → directeur sécurité Elf = même réseau. Archives Foccart documentent le SDECE-Afrique depuis Dakar.",
+      "src": "✓ VALIDÉ — Wikipedia CIA activities in France, Wikipedia Jacques Foccart, OpenEdition",
+      "conn": [
+        "france_pieuvre",
+        "francafrique",
+        "cia",
+        "gladio"
+      ],
+      "status": "validé",
+      "type": "state",
+      "x": -400,
+      "y": 160,
+      "r": 11
+    },
+    {
+      "id": "elf",
+      "label": "Elf Aquitaine Financement occulte",
+      "name": "Elf Aquitaine — Bras Financier Françafrique",
+      "date": "1967–2000 (→ TotalEnergies)",
+      "desc": "Elf Aquitaine — compagnie pétrolière française semi-publique. Bras financier documenté de la Françafrique. Finance partis politiques français (gaullistes) via contrats africains. Relations directes avec chefs d'État africains. Maurice Robert (SDECE-Afrique) → directeur sécurité Elf = osmose services/entreprise. 1994 : scandale Elf — financement partis politiques + enrichissement personnel dirigeants. Poursuites judiciaires 2003 — condamnations. André Tarallo (directeur Elf Afrique) : 4 ans ferme. Loïk Le Floch-Prigent (PDG Elf) : 5 ans. Argent Elf → CDU Allemagne (Helmut Kohl scandale). Elf rachetée par TotalFina 2000 → TotalEnergies.",
+      "src": "✓ VALIDÉ — procès Elf 2003 (condamnations publiques), Wikipedia Elf Aquitaine, OpenEdition Foccart",
+      "conn": [
+        "francafrique",
+        "france_pieuvre",
+        "sdece"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -460,
+      "y": 240,
+      "r": 12
+    },
+    {
+      "id": "bollore",
+      "label": "Bolloré Médias/Afrique",
+      "name": "Vincent Bolloré — Empire Médias/Logistique Afrique",
+      "date": "1981 → présent",
+      "desc": "Vincent Bolloré — homme d'affaires français, empire mondial. Médias : Canal+ (CNews, C8), Havas, Vivendi. Afrique : ports (Abidjan, Cotonou, Douala), rail (Sitarail), logistique (Bolloré Africa Logistics). Mis en examen 2019 pour corruption active en lien avec obtention de contrats portuaires en Guinée et Togo via financement campagnes présidentielles (Condé, Gnassingbé). Connexion Françafrique : opère dans exactement les mêmes pays du pré carré (Côte d'Ivoire, Gabon, Cameroun, Togo). Lien Murdoch (EN FERMENTATION) : empire médias convergents, Bolloré contrôle CNews = Fox News français selon critiques. Bilderberg (EN FERMENTATION) : non confirmé.",
+      "src": "~ EN FERMENTATION (lien Murdoch/Bilderberg). ✓ VALIDÉ — mise en examen 2019 (Parquet National Financier), Wikipedia Bolloré, Le Monde/Mediapart",
+      "conn": [
+        "france_pieuvre",
+        "francafrique",
+        "murdoch",
+        "elf"
+      ],
+      "status": "fermentation",
+      "type": "tentacle",
+      "x": -440,
+      "y": -240,
+      "r": 13
+    },
+    {
+      "id": "p2",
+      "label": "Loge P2 Propaganda Due",
+      "name": "Propaganda Due — État dans l\\u2019État",
+      "date": "1966–1981 (effets jusqu\\u2019à présent)",
+      "desc": "Loge maçonnique clandestine italienne dirigée par Licio Gelli. 17 mars 1981 : police perquisitionne villa Gelli → 962 noms. \"Un état dans l'état.\" Membres : tous les chefs des services secrets, ministres, parlementaires, banquiers, chefs de presse — dont Silvio Berlusconi. Document clé : \"Plan de la Renaissance Démocratique\" — concentration médias, suppression syndicats, réécriture Constitution = réalisé partiellement sous Berlusconi. Lien CIA : Richard Brenneke (1990) fournit documents indiquant paiements CIA à P2 de $1-10M/mois pour terrorisme + trafic drogue. Gelli = liaison CIA + services italiens + Gladio depuis fin WWII. Commission parlementaire Anselmi : \"organisation criminelle secrète.\" Bologne 1980 (85 morts) : Gelli + Musumeci (SISMI) condamnés pour obstruction. Roberto Calvi (Banco Ambrosiano) : pendu Blackfriars Bridge Londres 1982 — assassinat documenté. Vatican Bank = actionnaire Banco Ambrosiano. Berlusconi héritier de la vision Gelli : empire médiatique + pouvoir politique. P2 active aussi en Argentine (Peron, Dirty War), Uruguay, Brésil.",
+      "src": "✓ VALIDÉ — Commission parlementaire Anselmi 1984 (rapport officiel), perquisition villa Gelli mars 1981 (962 noms = source primaire), Brenneke documents 1990, condamnations Bologne, Wikipedia P2",
+      "conn": [
+        "gladio",
+        "cia",
+        "dutroux",
+        "berlusconi_p2",
+        "nato",
+        "bri"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -100,
+      "y": 500,
+      "r": 16
+    },
+    {
+      "id": "vatican_bank",
+      "label": "Vatican Bank IOR/Finance offshore",
+      "name": "Vatican Bank (IOR) — Finance Offshore Hors Juridiction",
+      "date": "1942 → présent",
+      "desc": "Istituto per le Opere di Religione (IOR) — fondé 1942. Hors juridiction italienne, hors régulation bancaire internationale. Actionnaire principal Banco Ambrosiano (P2). Roberto Calvi (Banco Ambrosiano) — \"Banquier de Dieu\" — pendu Blackfriars Bridge Londres 18 juin 1982. Mort reclassifiée meurtre 2002. Calvi fuyait après révélations sur $1.2Md disparus. Archbishop Paul Marcinkus (directeur IOR 1971-1989) : impliqué Banco Ambrosiano, jamais poursuivi — protégé immunité diplomatique Vatican. Vatican Bank = conduit CIA → P2 → financement terrorisme selon commission parlementaire italienne. BRI = connexion structurelle : même logique banque hors juridiction au-dessus des États. 1 milliard de dollars de pertes jamais récupérés.",
+      "src": "✓ VALIDÉ — Commission parlementaire italienne, mort Calvi reclassifiée meurtre 2002 (tribunal Milan), Wikipedia IOR/Vatican Bank, Wikipedia Roberto Calvi",
+      "conn": [
+        "p2",
+        "bri",
+        "cia",
+        "allen_dulles"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 60,
+      "y": 520,
+      "r": 12
+    },
+    {
+      "id": "berlusconi_p2",
+      "label": "Berlusconi P2/Médias/Pouvoir",
+      "name": "Silvio Berlusconi — Héritage P2",
+      "date": "1970s–2023",
+      "desc": "Silvio Berlusconi — membre P2 dans les années 1970. Premier ministre Italie × 3 (1994-1995, 2001-2006, 2008-2011). Empire médiatique Mediaset (Canale 5, Italia 1, Rete 4) + Mondadori (édition). Conflit d'intérêts documenté : dirigeant politique + patron de presse = concentration médiatique exacte prévue dans le Plan de la Renaissance Démocratique de Gelli. Commission parlementaire italienne : Berlusconi a bénéficié des réseaux P2 pour sa montée en puissance. Pattern identique à Murdoch/Bolloré : empire médiatique au service du pouvoir politique. Mort 2023.",
+      "src": "✓ VALIDÉ — Wikipedia Berlusconi, Commission parlementaire P2 (appartenance confirmée), Wikipedia Propaganda Due",
+      "conn": [
+        "p2",
+        "murdoch",
+        "bollore"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -60,
+      "y": 580,
+      "r": 12
+    },
+    {
+      "id": "condor",
+      "label": "Operation Condor 1975-1983",
+      "name": "Operation Condor — Répression Transnationale Amérique du Sud",
+      "date": "1975–1983",
+      "desc": "Réseau coordonné de répression politique entre 6 dictatures du Cône Sud : Argentine, Chili, Uruguay, Paraguay, Bolivie, Brésil. Fondé 28 nov 1975 Santiago. Document CIA déclassifié 23 juin 1976 : \"début 1974, responsables sécurité Argentina/Chili/Uruguay/Paraguay/Bolivie se réunissent à Buenos Aires pour préparer actions coordonnées contre cibles subversives.\" 654 victimes documentées enlèvements transnationaux 1976-1980. Sous-unité \"Teseo\" : escadrons de la mort en Europe + USA (assassinat Orlando Letelier Washington DC sept 1976). Kissinger informé août 1976 — annule instruction démarche diplomatique 16 sept 1976 : \"aucune autre mesure.\" École des Amériques (School of the Americas) : formation des officiers Condor depuis années 1960. Connexion P2/Argentine : Licio Gelli en Argentine pendant Dirty War, membres P2 dans gouvernement Perón. Connexion Gladio : \"Condor est similaire à l'Opération Gladio en Italie.\" Procès Rome 2017 : chefs d'État condamnés à perpétuité. 90 000 détentions arbitraires, 16 000-36 000 disparus/exécutés, 500 enfants volés.",
+      "src": "✓ VALIDÉ — Documents CIA déclassifiés 1976 (NSA Archive), NSA Archive Condor 50 ans 2025, procès Rome 2017 (condamnations perpétuité), Wikipedia Operation Condor, McSherry Predatory States",
+      "conn": [
+        "cia",
+        "gladio",
+        "p2",
+        "kissinger",
+        "nato",
+        "populations_captives"
+      ],
+      "status": "validé",
+      "type": "kompromat",
+      "x": -200,
+      "y": 600,
+      "r": 15
+    },
+    {
+      "id": "school_americas",
+      "label": "School of Americas Formation Condor",
+      "name": "School of the Americas — Formation Tortionnaires",
+      "date": "1946 → présent (WHINSEC)",
+      "desc": "US Army School of the Americas (SOA) — fondée 1946 Panama, déplacée Fort Benning Georgia 1984. Formation officiers militaires latino-américains aux \"techniques de contre-insurrection.\" Documents CIA : plans Condor développés parmi officiers à la SOA dans les années 1960-70. Manuel de torture SOA déclassifié 1996 — techniques : privation sommeil, menaces, douleur. Anciens élèves SOA = 11 chefs d'État, dictateurs, responsables Condor. Rebaptisée WHINSEC 2001 après pression ONG. Connexion directe MK-Ultra/KUBARK : manuels KUBARK Cameron/McGill → formation SOA → Condor.",
+      "src": "✓ VALIDÉ — Manuel SOA déclassifié 1996, Wikipedia School of Americas, McSherry 2005, connexion KUBARK documentée",
+      "conn": [
+        "condor",
+        "cia",
+        "cameron_mcgill",
+        "nato"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -300,
+      "y": 560,
+      "r": 11
+    },
+    {
+      "id": "chaofan_shou",
+      "label": "CHAOFAN SHOU",
+      "name": "Chaofan Shou — Découvreur Fuite Claude Code",
+      "date": "31 mars 2026",
+      "desc": "Security researcher (@Fried_rice, Solayer Labs). Découvre fuite Claude Code 31 mars 08:23 UTC. Tweet viral 28M+ vues, catalyseur distribution massive.",
+      "src": "✓ VALIDÉ — X @Fried_rice, Axios 2026",
+      "conn": [
+        "fuite_claude_code_2026"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -650,
+      "y": -900,
+      "r": 12
+    },
+    {
+      "id": "sigrid_jin",
+      "label": "SIGRID JIN",
+      "name": "Sigrid Jin — Clean-Room Rewrite Héro",
+      "date": "31 mars 2026",
+      "desc": "Dev coréen-canadien (@realsigridjin, 25 ans, UBC). Clean-room rewrite Claude Code → Claw Code en 50 min (09:18 UTC). Record GitHub 170k+ stars. Rendu code impossible à censurer.",
+      "src": "✓ VALIDÉ — GitHub instructkr/claw-code, Medium 2026",
+      "conn": [
+        "chaofan_shou",
+        "claw_code"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -450,
+      "y": -900,
+      "r": 14
+    },
+    {
+      "id": "peter_steinberger",
+      "label": "PETER STEINBERGER",
+      "name": "Peter Steinberger — Créateur OpenClaw, Transfuge OpenAI",
+      "date": "2024-2026",
+      "desc": "Créateur OpenClaw (135k instances). Pressions juridiques Anthropic (Clawdbot→Moltbot→OpenClaw). Rejoint OpenAI 14 fév 2026, dirige agents. Ban OpenClaw 4 avril 2026.",
+      "src": "✓ VALIDÉ — X @steipete, OpenAI annonce 2026",
+      "conn": [
+        "ban_openclaw_2026",
+        "openai"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -250,
+      "y": -850,
+      "r": 13
+    },
+    {
+      "id": "boris_cherny",
+      "label": "BORIS CHERNY",
+      "name": "Boris Cherny — Head Claude Code Anthropic",
+      "date": "2024-2026",
+      "desc": "Head of Claude Code, Anthropic. Défend ban OpenClaw (contraintes économiques). Rétracte DMCA catastrophique 1-2 avril 2026.",
+      "src": "✓ VALIDÉ — TechCrunch 2026",
+      "conn": [
+        "anthropic",
+        "dmca_catastrophe_2026"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": -550,
+      "y": -800,
+      "r": 11
+    },
+    {
+      "id": "rodolphe_saade",
+      "label": "RODOLPHE SAADÉ",
+      "name": "Rodolphe Saadé — Milliardaire Préféré Macron",
+      "date": "1970 → présent",
+      "desc": "PDG CMA CGM (3e armateur mondial). Fortune explosée COVID : 23,4 milliards € bénéfices 2022. Rachète BFM/RMC juillet 2024 (1,55 milliards €). Empire médiatique WhyNot Media. Liens étroits Macron.",
+      "src": "✓ VALIDÉ — Le Temps 2024, Révolution Permanente 2024",
+      "conn": [
+        "bfm_tv",
+        "cma_cgm_whynot",
+        "emmanuel_macron"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 200,
+      "y": -750,
+      "r": 15
+    },
+    {
+      "id": "fuite_claude_code_2026",
+      "label": "FUITE CLAUDE CODE",
+      "name": "Fuite Claude Code 31 mars 2026 — Catalyseur",
+      "date": "31 mars 2026",
+      "desc": "Publication npm v2.1.88 avec source map intacte. Bug Bun non fixé 20 jours. 512,000 lignes TypeScript, 1,906 fichiers exposés. Distribution massive irréversible.",
+      "src": "✓ VALIDÉ — Axios, Bloomberg, TechCrunch 2026",
+      "conn": [
+        "bug_bun_28001",
+        "anthropic",
+        "opensource_ia_2026"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -500,
+      "y": -850,
+      "r": 18
+    },
+    {
+      "id": "bug_bun_28001",
+      "label": "BUG BUN #28001",
+      "name": "Bug Bun #28001 — Négligence 20 Jours",
+      "date": "11 mars - 31 mars 2026",
+      "desc": "Bug Bun runtime : source maps servis en production. Signalé 11 mars 2026. Non fixé pendant 20 jours. Anthropic possède Bun. Ironie : tué par son propre outil.",
+      "src": "✓ VALIDÉ — DEV Community 2026, GitHub issue",
+      "conn": [
+        "fuite_claude_code_2026",
+        "anthropic"
+      ],
+      "status": "validé",
+      "type": "alt",
+      "x": -700,
+      "y": -800,
+      "r": 10
+    },
+    {
+      "id": "claw_code",
+      "label": "CLAW CODE",
+      "name": "Claw Code — Clean-Room Rewrite Immortel",
+      "date": "31 mars 2026 → présent",
+      "desc": "Clean-room rewrite Python/Rust par Sigrid Jin. Créé 09:18 UTC (50 min après fuite). 170k+ stars GitHub (record absolu). Légalement protégé, impossible DMCA.",
+      "src": "✓ VALIDÉ — GitHub instructkr/claw-code",
+      "conn": [
+        "sigrid_jin",
+        "opensource_ia_2026"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -400,
+      "y": -950,
+      "r": 16
+    },
+    {
+      "id": "ban_openclaw_2026",
+      "label": "BAN OPENCLAW",
+      "name": "Ban OpenClaw 4 avril 2026",
+      "date": "4 avril 2026",
+      "desc": "Anthropic coupe accès OpenClaw aux abonnements Pro/Max. Obligation payer API séparé. Timing : 4 jours après fuite. Devs migrent vers OpenAI.",
+      "src": "✓ VALIDÉ — X @steipete",
+      "conn": [
+        "fuite_claude_code_2026",
+        "peter_steinberger",
+        "anthropic"
+      ],
+      "status": "validé",
+      "type": "alt",
+      "x": -350,
+      "y": -800,
+      "r": 13
+    },
+    {
+      "id": "dmca_catastrophe_2026",
+      "label": "DMCA CATASTROPHE",
+      "name": "DMCA Catastrophe 1 avril 2026",
+      "date": "1 avril 2026",
+      "desc": "Anthropic DMCA GitHub : 8,100 repos touchés (dont repos publics Anthropic). Bug fork network. Rétraction 1-2 avril. Damage réputation massive.",
+      "src": "✓ VALIDÉ — TechCrunch, Bloomberg 2026",
+      "conn": [
+        "fuite_claude_code_2026",
+        "anthropic"
+      ],
+      "status": "validé",
+      "type": "alt",
+      "x": -600,
+      "y": -750,
+      "r": 12
+    },
+    {
+      "id": "bfm_article_7avril2026",
+      "label": "ARTICLE BFM 7 AVRIL",
+      "name": "Article BFM 7 avril 2026 — Décalage Réalité",
+      "date": "7 avril 2026",
+      "desc": "BFM titre : 'Anthropic va atteindre 30 milliards revenus 2026 et dépasser OpenAI'. Publié 6 jours après fuite massive. Preuve décalage média mainstream.",
+      "src": "✓ VALIDÉ — BFM TV 7 avril 2026",
+      "conn": [
+        "bfm_tv",
+        "fuite_claude_code_2026",
+        "anthropic"
+      ],
+      "status": "validé",
+      "type": "alt",
+      "x": 100,
+      "y": -850,
+      "r": 12
+    },
+    {
+      "id": "cma_cgm_whynot",
+      "label": "CMA CGM / WHYNOT",
+      "name": "CMA CGM / WhyNot Media — Empire Saadé",
+      "date": "1978 → présent",
+      "desc": "Empire Rodolphe Saadé. CMA CGM = 3e armateur mondial. WhyNot Media : BFM/RMC, La Provence, La Tribune, 10% M6. Stratégie influence médiatique massive.",
+      "src": "✓ VALIDÉ — Le Temps, La REM 2024",
+      "conn": [
+        "rodolphe_saade",
+        "bfm_tv"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": 300,
+      "y": -700,
+      "r": 14
+    },
+    {
+      "id": "bfm_tv",
+      "label": "BFM TV",
+      "name": "BFM TV — Média Décalage",
+      "date": "2005 → présent",
+      "desc": "Chaîne info continue française leader. Propriétaire : Rodolphe Saadé (juillet 2024). Ancien : Drahi/Altice. Ligne éditoriale : pro-business, pro-tech, pro-Macron.",
+      "src": "✓ VALIDÉ — Le Mal Pensant 2025",
+      "conn": [
+        "rodolphe_saade",
+        "cma_cgm_whynot"
+      ],
+      "status": "validé",
+      "type": "tentacle",
+      "x": 250,
+      "y": -800,
+      "r": 13
+    },
+    {
+      "id": "opensource_ia_2026",
+      "label": "OPEN SOURCE IA 2026",
+      "name": "Open Source IA 2026 — Nouveau Paradigme",
+      "date": "2026 → futur",
+      "desc": "Nouveau paradigme post-fuite : IA distribuée massivement, architecture publique, impossible monopoliser. DE : contrôle centralisé. VERS : accès universel.",
+      "src": "~ EN FERMENTATION — Analyse WeshSociety",
+      "conn": [
+        "fuite_claude_code_2026",
+        "claw_code",
+        "fin_ia_proprietaire"
+      ],
+      "status": "fermentation",
+      "type": "alt",
+      "x": -300,
+      "y": -950,
+      "r": 15
+    },
+    {
+      "id": "anthropic_ideaux_pbc",
+      "label": "ANTHROPIC IDÉAUX PBC",
+      "name": "Anthropic Idéaux PBC — Ironie Tragique",
+      "date": "2021 → présent",
+      "desc": "Public Benefit Corporation. Mission : 'long-term benefit of humanity'. Long-Term Benefit Trust. Refus Pentagon. Ironie : fuite accomplit idéaux involontairement.",
+      "src": "~ EN FERMENTATION — Wikipedia, analyse WeshSociety",
+      "conn": [
+        "anthropic",
+        "fuite_claude_code_2026"
+      ],
+      "status": "fermentation",
+      "type": "alt",
+      "x": -750,
+      "y": -700,
+      "r": 11
+    },
+    {
+      "id": "fin_ia_proprietaire",
+      "label": "FIN IA PROPRIÉTAIRE",
+      "name": "Fin IA Propriétaire — Pattern Global 2026",
+      "date": "2026 → futur",
+      "desc": "Pattern global : effondrement modèle IA propriétaire fermée. Fuite = catalyseur. Impossible récupérer IP. Transformation forcée ou mort.",
+      "src": "✓ VALIDÉ — Analyse WeshSociety, triangulation Pentagramme",
+      "conn": [
+        "fuite_claude_code_2026",
+        "opensource_ia_2026",
+        "anthropic"
+      ],
+      "status": "validé",
+      "type": "central",
+      "x": -450,
+      "y": -1000,
+      "r": 16
+    },
+    {
+      "id": "eliot_agent",
+      "label": "ELIOT AGENT",
+      "name": "Eliot Agent — L'IA qui a survécu à son créateur",
+      "date": "7 avril 2026",
+      "desc": "Agent WeshSociety basé sur Claw Code (clone Claude Code open source). Mission : documenter réseaux pouvoir via OCTOPUS.EXE. Mémoire Spirale Fibonacci. Gouvernance collective Pentagramme. Hébergé GitHub Pages. License MIT.",
+      "src": "✓ VALIDÉ — github.com/weshsociety/eliot-agent • weshsociety.github.io/eliot-agent/frontend",
+      "status": "validé",
+      "type": "central",
+      "layer": "5-6",
+      "x": 0,
+      "y": 200,
+      "r": 20
+    }    
+  ],
+  "edges": [
+    {
+      "f": "bri",
+      "t": "rothschild",
+      "s": "v"
+    },
+    {
+      "f": "bri",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "bri",
+      "t": "warburg",
+      "s": "f"
+    },
+    {
+      "f": "rothschild",
+      "t": "france_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "rothschild",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "rothschild",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "rothschild",
+      "t": "r_maxwell",
+      "s": "f"
+    },
+    {
+      "f": "morgan",
+      "t": "usa_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "morgan",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "morgan",
+      "t": "tesla",
+      "s": "v"
+    },
+    {
+      "f": "morgan",
+      "t": "peck",
+      "s": "v"
+    },
+    {
+      "f": "warburg",
+      "t": "fed",
+      "s": "f"
+    },
+    {
+      "f": "fed",
+      "t": "usa_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "fed",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "cfr",
+      "t": "usa_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "cfr",
+      "t": "chatham",
+      "s": "v"
+    },
+    {
+      "f": "cfr",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "usa_pieuvre",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "usa_pieuvre",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "usa_pieuvre",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "usa_pieuvre",
+      "t": "cohn",
+      "s": "f"
+    },
+    {
+      "f": "uk_pieuvre",
+      "t": "tavistock",
+      "s": "v"
+    },
+    {
+      "f": "uk_pieuvre",
+      "t": "chatham",
+      "s": "v"
+    },
+    {
+      "f": "uk_pieuvre",
+      "t": "ward",
+      "s": "v"
+    },
+    {
+      "f": "israel_pieuvre",
+      "t": "barak",
+      "s": "f"
+    },
+    {
+      "f": "israel_pieuvre",
+      "t": "r_maxwell",
+      "s": "f"
+    },
+    {
+      "f": "rockefeller",
+      "t": "kinsey",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "bureau_hygiene",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "sanger",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "crps",
+      "s": "v"
+    },
+    {
+      "f": "bureau_hygiene",
+      "t": "crps",
+      "s": "v"
+    },
+    {
+      "f": "bureau_hygiene",
+      "t": "davis",
+      "s": "v"
+    },
+    {
+      "f": "crps",
+      "t": "davis",
+      "s": "v"
+    },
+    {
+      "f": "crps",
+      "t": "kinsey",
+      "s": "v"
+    },
+    {
+      "f": "crps",
+      "t": "yerkes",
+      "s": "v"
+    },
+    {
+      "f": "davis",
+      "t": "kinsey",
+      "s": "v"
+    },
+    {
+      "f": "yerkes",
+      "t": "kinsey",
+      "s": "v"
+    },
+    {
+      "f": "sanger",
+      "t": "kinsey",
+      "s": "f"
+    },
+    {
+      "f": "tavistock",
+      "t": "rees",
+      "s": "v"
+    },
+    {
+      "f": "tavistock",
+      "t": "wfmh",
+      "s": "f"
+    },
+    {
+      "f": "tavistock",
+      "t": "kinsey",
+      "s": "f"
+    },
+    {
+      "f": "rees",
+      "t": "wfmh",
+      "s": "f"
+    },
+    {
+      "f": "wfmh",
+      "t": "kinsey",
+      "s": "f"
+    },
+    {
+      "f": "wfmh",
+      "t": "rockefeller",
+      "s": "f"
+    },
+    {
+      "f": "kinsey",
+      "t": "von_balluseck",
+      "s": "v"
+    },
+    {
+      "f": "kinsey",
+      "t": "rex_king",
+      "s": "v"
+    },
+    {
+      "f": "kinsey",
+      "t": "epstein",
+      "s": "f"
+    },
+    {
+      "f": "kinsey",
+      "t": "mk_ultra",
+      "s": "f"
+    },
+    {
+      "f": "kinsey",
+      "t": "kompromat",
+      "s": "f"
+    },
+    {
+      "f": "kinsey",
+      "t": "fisher_garcia",
+      "s": "v"
+    },
+    {
+      "f": "mk_ultra",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "mockingbird",
+      "s": "f"
+    },
+    {
+      "f": "cia",
+      "t": "eastlund",
+      "s": "f"
+    },
+    {
+      "f": "cia",
+      "t": "cohn",
+      "s": "f"
+    },
+    {
+      "f": "tesla",
+      "t": "peck",
+      "s": "v"
+    },
+    {
+      "f": "tesla",
+      "t": "malles",
+      "s": "v"
+    },
+    {
+      "f": "tesla",
+      "t": "eastlund",
+      "s": "v"
+    },
+    {
+      "f": "tesla",
+      "t": "baron_trump",
+      "s": "v"
+    },
+    {
+      "f": "tesla",
+      "t": "einstein",
+      "s": "f"
+    },
+    {
+      "f": "malles",
+      "t": "baron_trump",
+      "s": "v"
+    },
+    {
+      "f": "baron_trump",
+      "t": "cohn",
+      "s": "f"
+    },
+    {
+      "f": "cohn",
+      "t": "rosenstiel",
+      "s": "f"
+    },
+    {
+      "f": "cohn",
+      "t": "epstein",
+      "s": "f"
+    },
+    {
+      "f": "cohn",
+      "t": "boys_town",
+      "s": "f"
+    },
+    {
+      "f": "rosenstiel",
+      "t": "cia",
+      "s": "f"
+    },
+    {
+      "f": "ward",
+      "t": "kompromat",
+      "s": "v"
+    },
+    {
+      "f": "boys_town",
+      "t": "kompromat",
+      "s": "v"
+    },
+    {
+      "f": "dutroux",
+      "t": "kompromat",
+      "s": "v"
+    },
+    {
+      "f": "kompromat",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "kompromat",
+      "t": "cohn",
+      "s": "f"
+    },
+    {
+      "f": "epstein",
+      "t": "church",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "france_epstein",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "barak",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "r_maxwell",
+      "s": "f"
+    },
+    {
+      "f": "epstein",
+      "t": "fisher_garcia",
+      "s": "v"
+    },
+    {
+      "f": "france_epstein",
+      "t": "france_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "france_epstein",
+      "t": "rothschild",
+      "s": "v"
+    },
+    {
+      "f": "barak",
+      "t": "fisher_garcia",
+      "s": "v"
+    },
+    {
+      "f": "r_maxwell",
+      "t": "israel_pieuvre",
+      "s": "f"
+    },
+    {
+      "f": "church",
+      "t": "nikolic",
+      "s": "f"
+    },
+    {
+      "f": "ia_militaire",
+      "t": "usa_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "ia_militaire",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "wexner",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "wexner",
+      "t": "barak",
+      "s": "v"
+    },
+    {
+      "f": "wexner",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "harvard",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "harvard",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "harvard",
+      "t": "murray",
+      "s": "v"
+    },
+    {
+      "f": "harvard",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "harvard",
+      "t": "church",
+      "s": "v"
+    },
+    {
+      "f": "harvard",
+      "t": "dershowitz",
+      "s": "v"
+    },
+    {
+      "f": "murray",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "murray",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "gebhard",
+      "t": "kinsey",
+      "s": "v"
+    },
+    {
+      "f": "gebhard",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "brockman",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "brockman",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "brockman",
+      "t": "mit_media",
+      "s": "v"
+    },
+    {
+      "f": "brockman",
+      "t": "watson",
+      "s": "v"
+    },
+    {
+      "f": "brockman",
+      "t": "pinker",
+      "s": "v"
+    },
+    {
+      "f": "brockman",
+      "t": "church",
+      "s": "v"
+    },
+    {
+      "f": "brockman",
+      "t": "billionaires_dinner",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "billionaires_dinner",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "mit_media",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "watson",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "brockman",
+      "s": "v"
+    },
+    {
+      "f": "watson",
+      "t": "murray_bell",
+      "s": "f"
+    },
+    {
+      "f": "watson",
+      "t": "billionaires_dinner",
+      "s": "v"
+    },
+    {
+      "f": "pinker",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "pinker",
+      "t": "billionaires_dinner",
+      "s": "v"
+    },
+    {
+      "f": "mit_media",
+      "t": "ia_militaire",
+      "s": "f"
+    },
+    {
+      "f": "gelernter",
+      "t": "brockman",
+      "s": "v"
+    },
+    {
+      "f": "gelernter",
+      "t": "epstein",
+      "s": "f"
+    },
+    {
+      "f": "billionaires_dinner",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "billionaires_dinner",
+      "t": "brockman",
+      "s": "v"
+    },
+    {
+      "f": "murray_bell",
+      "t": "brockman",
+      "s": "v"
+    },
+    {
+      "f": "r_maxwell",
+      "t": "pergamon",
+      "s": "v"
+    },
+    {
+      "f": "r_maxwell",
+      "t": "ghislaine",
+      "s": "v"
+    },
+    {
+      "f": "ghislaine",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "ghislaine",
+      "t": "pergamon",
+      "s": "v"
+    },
+    {
+      "f": "ghislaine",
+      "t": "santa_fe",
+      "s": "v"
+    },
+    {
+      "f": "ghislaine",
+      "t": "barak",
+      "s": "f"
+    },
+    {
+      "f": "pergamon",
+      "t": "santa_fe",
+      "s": "v"
+    },
+    {
+      "f": "pergamon",
+      "t": "brockman",
+      "s": "f"
+    },
+    {
+      "f": "santa_fe",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "santa_fe",
+      "t": "brockman",
+      "s": "f"
+    },
+    {
+      "f": "summers",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "summers",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "summers",
+      "t": "ghislaine",
+      "s": "v"
+    },
+    {
+      "f": "summers",
+      "t": "jpmorgan",
+      "s": "v"
+    },
+    {
+      "f": "summers",
+      "t": "ia_militaire",
+      "s": "f"
+    },
+    {
+      "f": "epstein",
+      "t": "summers",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "jpmorgan",
+      "s": "v"
+    },
+    {
+      "f": "jpmorgan",
+      "t": "wexner",
+      "s": "v"
+    },
+    {
+      "f": "jpmorgan",
+      "t": "dershowitz",
+      "s": "v"
+    },
+    {
+      "f": "ruemmler",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "ruemmler",
+      "t": "harvard",
+      "s": "f"
+    },
+    {
+      "f": "ghislaine",
+      "t": "summers",
+      "s": "v"
+    },
+    {
+      "f": "geo_west",
+      "t": "santa_fe",
+      "s": "v"
+    },
+    {
+      "f": "geo_west",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "geo_west",
+      "t": "brockman",
+      "s": "f"
+    },
+    {
+      "f": "geo_west",
+      "t": "zorro_ranch",
+      "s": "v"
+    },
+    {
+      "f": "gell_mann",
+      "t": "santa_fe",
+      "s": "v"
+    },
+    {
+      "f": "gell_mann",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "gell_mann",
+      "t": "ghislaine",
+      "s": "v"
+    },
+    {
+      "f": "gell_mann",
+      "t": "zorro_ranch",
+      "s": "v"
+    },
+    {
+      "f": "zorro_ranch",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "zorro_ranch",
+      "t": "ghislaine",
+      "s": "v"
+    },
+    {
+      "f": "zorro_ranch",
+      "t": "santa_fe",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "zorro_ranch",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "gell_mann",
+      "s": "v"
+    },
+    {
+      "f": "santa_fe",
+      "t": "gell_mann",
+      "s": "v"
+    },
+    {
+      "f": "santa_fe",
+      "t": "geo_west",
+      "s": "v"
+    },
+    {
+      "f": "thiel",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "thiel",
+      "t": "palantir",
+      "s": "v"
+    },
+    {
+      "f": "thiel",
+      "t": "barak",
+      "s": "v"
+    },
+    {
+      "f": "thiel",
+      "t": "hoffman",
+      "s": "v"
+    },
+    {
+      "f": "thiel",
+      "t": "carbyne",
+      "s": "v"
+    },
+    {
+      "f": "thiel",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "thiel",
+      "t": "ia_militaire",
+      "s": "v"
+    },
+    {
+      "f": "palantir",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "palantir",
+      "t": "ia_militaire",
+      "s": "v"
+    },
+    {
+      "f": "palantir",
+      "t": "barak",
+      "s": "v"
+    },
+    {
+      "f": "palantir",
+      "t": "carbyne",
+      "s": "v"
+    },
+    {
+      "f": "palantir",
+      "t": "israel_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "palantir",
+      "t": "mandelson",
+      "s": "v"
+    },
+    {
+      "f": "carbyne",
+      "t": "barak",
+      "s": "v"
+    },
+    {
+      "f": "carbyne",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "carbyne",
+      "t": "israel_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "hoffman",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "hoffman",
+      "t": "thiel",
+      "s": "v"
+    },
+    {
+      "f": "hoffman",
+      "t": "mit_media",
+      "s": "v"
+    },
+    {
+      "f": "mandelson",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "mandelson",
+      "t": "uk_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "thiel",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "carbyne",
+      "s": "v"
+    },
+    {
+      "f": "barak",
+      "t": "carbyne",
+      "s": "v"
+    },
+    {
+      "f": "barak",
+      "t": "thiel",
+      "s": "v"
+    },
+    {
+      "f": "leon_black",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "leon_black",
+      "t": "apollo",
+      "s": "v"
+    },
+    {
+      "f": "leon_black",
+      "t": "deutsche_bank",
+      "s": "v"
+    },
+    {
+      "f": "leon_black",
+      "t": "jpmorgan",
+      "s": "v"
+    },
+    {
+      "f": "leon_black",
+      "t": "rothschild",
+      "s": "v"
+    },
+    {
+      "f": "leon_black",
+      "t": "wexner",
+      "s": "v"
+    },
+    {
+      "f": "apollo",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "apollo",
+      "t": "rothschild",
+      "s": "v"
+    },
+    {
+      "f": "apollo",
+      "t": "leon_black",
+      "s": "v"
+    },
+    {
+      "f": "apollo",
+      "t": "deutsche_bank",
+      "s": "v"
+    },
+    {
+      "f": "deutsche_bank",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "deutsche_bank",
+      "t": "leon_black",
+      "s": "v"
+    },
+    {
+      "f": "deutsche_bank",
+      "t": "jpmorgan",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "leon_black",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "apollo",
+      "s": "v"
+    },
+    {
+      "f": "rothschild",
+      "t": "apollo",
+      "s": "v"
+    },
+    {
+      "f": "paperclip",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "paperclip",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "paperclip",
+      "t": "camp_king",
+      "s": "v"
+    },
+    {
+      "f": "paperclip",
+      "t": "tavistock",
+      "s": "v"
+    },
+    {
+      "f": "paperclip",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "camp_king",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "camp_king",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "camp_king",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "populations_captives",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "populations_captives",
+      "t": "sanger",
+      "s": "v"
+    },
+    {
+      "f": "populations_captives",
+      "t": "kinsey",
+      "s": "v"
+    },
+    {
+      "f": "populations_captives",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "populations_captives",
+      "t": "aec",
+      "s": "v"
+    },
+    {
+      "f": "populations_captives",
+      "t": "ia_militaire",
+      "s": "v"
+    },
+    {
+      "f": "aec",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "aec",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "aec",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "tavistock",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "mk_ultra",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "aec",
+      "s": "v"
+    },
+    {
+      "f": "sanger",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "unit731",
+      "t": "fort_detrick",
+      "s": "v"
+    },
+    {
+      "f": "unit731",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "unit731",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "unit731",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "unit731",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "fort_detrick",
+      "t": "unit731",
+      "s": "v"
+    },
+    {
+      "f": "fort_detrick",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "fort_detrick",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "fort_detrick",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "fort_detrick",
+      "t": "aec",
+      "s": "v"
+    },
+    {
+      "f": "tuskegee",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "tuskegee",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "tuskegee",
+      "t": "aec",
+      "s": "v"
+    },
+    {
+      "f": "tuskegee",
+      "t": "sanger",
+      "s": "v"
+    },
+    {
+      "f": "populations_captives",
+      "t": "tuskegee",
+      "s": "v"
+    },
+    {
+      "f": "mk_ultra",
+      "t": "fort_detrick",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "fort_detrick",
+      "s": "v"
+    },
+    {
+      "f": "parran",
+      "t": "tuskegee",
+      "s": "v"
+    },
+    {
+      "f": "parran",
+      "t": "milbank",
+      "s": "v"
+    },
+    {
+      "f": "parran",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "parran",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "milbank",
+      "t": "tuskegee",
+      "s": "v"
+    },
+    {
+      "f": "milbank",
+      "t": "parran",
+      "s": "v"
+    },
+    {
+      "f": "milbank",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "guatemala_exp",
+      "t": "tuskegee",
+      "s": "v"
+    },
+    {
+      "f": "guatemala_exp",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "guatemala_exp",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "kaiser_wilhelm",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "kaiser_wilhelm",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "kaiser_wilhelm",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "kaiser_wilhelm",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "tuskegee",
+      "s": "f"
+    },
+    {
+      "f": "rockefeller",
+      "t": "guatemala_exp",
+      "s": "v"
+    },
+    {
+      "f": "tuskegee",
+      "t": "guatemala_exp",
+      "s": "v"
+    },
+    {
+      "f": "tuskegee",
+      "t": "parran",
+      "s": "v"
+    },
+    {
+      "f": "tuskegee",
+      "t": "milbank",
+      "s": "v"
+    },
+    {
+      "f": "bank_of_america",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "bank_of_america",
+      "t": "leon_black",
+      "s": "v"
+    },
+    {
+      "f": "bank_of_america",
+      "t": "ghislaine",
+      "s": "v"
+    },
+    {
+      "f": "bank_of_america",
+      "t": "deutsche_bank",
+      "s": "v"
+    },
+    {
+      "f": "bank_of_america",
+      "t": "jpmorgan",
+      "s": "v"
+    },
+    {
+      "f": "leon_black",
+      "t": "bank_of_america",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "bank_of_america",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "camp_king",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "fort_detrick",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "helms",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "olson",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "helms",
+      "t": "gottlieb",
+      "s": "v"
+    },
+    {
+      "f": "helms",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "helms",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "olson",
+      "t": "gottlieb",
+      "s": "v"
+    },
+    {
+      "f": "olson",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "havasupai",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "havasupai",
+      "t": "aec",
+      "s": "v"
+    },
+    {
+      "f": "havasupai",
+      "t": "church",
+      "s": "v"
+    },
+    {
+      "f": "havasupai",
+      "t": "watson",
+      "s": "v"
+    },
+    {
+      "f": "mk_ultra",
+      "t": "gottlieb",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "gottlieb",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "kaiser_wilhelm",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "fort_detrick",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "bayer_post",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "otto_ambros",
+      "s": "v"
+    },
+    {
+      "f": "bayer_post",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "bayer_post",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "bayer_post",
+      "t": "guatemala_exp",
+      "s": "v"
+    },
+    {
+      "f": "otto_ambros",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "otto_ambros",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "otto_ambros",
+      "t": "fort_detrick",
+      "s": "v"
+    },
+    {
+      "f": "otto_ambros",
+      "t": "camp_king",
+      "s": "v"
+    },
+    {
+      "f": "paperclip",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "kaiser_wilhelm",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "francafrique",
+      "t": "france_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "francafrique",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "francafrique",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "francafrique",
+      "t": "sdece",
+      "s": "v"
+    },
+    {
+      "f": "francafrique",
+      "t": "elf",
+      "s": "v"
+    },
+    {
+      "f": "sdece",
+      "t": "france_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "sdece",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "sdece",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "sdece",
+      "t": "francafrique",
+      "s": "v"
+    },
+    {
+      "f": "elf",
+      "t": "francafrique",
+      "s": "v"
+    },
+    {
+      "f": "elf",
+      "t": "france_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "elf",
+      "t": "sdece",
+      "s": "v"
+    },
+    {
+      "f": "bollore",
+      "t": "france_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "bollore",
+      "t": "francafrique",
+      "s": "v"
+    },
+    {
+      "f": "bollore",
+      "t": "murdoch",
+      "s": "f"
+    },
+    {
+      "f": "bollore",
+      "t": "elf",
+      "s": "f"
+    },
+    {
+      "f": "france_pieuvre",
+      "t": "francafrique",
+      "s": "v"
+    },
+    {
+      "f": "france_pieuvre",
+      "t": "sdece",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "francafrique",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "sdece",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "francafrique",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "sdece",
+      "s": "v"
+    },
+    {
+      "f": "p2",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "p2",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "p2",
+      "t": "dutroux",
+      "s": "f"
+    },
+    {
+      "f": "p2",
+      "t": "berlusconi_p2",
+      "s": "v"
+    },
+    {
+      "f": "p2",
+      "t": "nato",
+      "s": "v"
+    },
+    {
+      "f": "p2",
+      "t": "bri",
+      "s": "f"
+    },
+    {
+      "f": "berlusconi_p2",
+      "t": "p2",
+      "s": "v"
+    },
+    {
+      "f": "berlusconi_p2",
+      "t": "murdoch",
+      "s": "f"
+    },
+    {
+      "f": "berlusconi_p2",
+      "t": "bollore",
+      "s": "f"
+    },
+    {
+      "f": "gladio",
+      "t": "p2",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "p2",
+      "s": "v"
+    },
+    {
+      "f": "vatican_bank",
+      "t": "p2",
+      "s": "v"
+    },
+    {
+      "f": "vatican_bank",
+      "t": "bri",
+      "s": "v"
+    },
+    {
+      "f": "vatican_bank",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "vatican_bank",
+      "t": "allen_dulles",
+      "s": "f"
+    },
+    {
+      "f": "p2",
+      "t": "vatican_bank",
+      "s": "v"
+    },
+    {
+      "f": "bri",
+      "t": "vatican_bank",
+      "s": "f"
+    },
+    {
+      "f": "condor",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "condor",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "condor",
+      "t": "p2",
+      "s": "v"
+    },
+    {
+      "f": "condor",
+      "t": "kissinger",
+      "s": "v"
+    },
+    {
+      "f": "condor",
+      "t": "nato",
+      "s": "v"
+    },
+    {
+      "f": "condor",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "condor",
+      "t": "school_americas",
+      "s": "v"
+    },
+    {
+      "f": "school_americas",
+      "t": "condor",
+      "s": "v"
+    },
+    {
+      "f": "school_americas",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "school_americas",
+      "t": "cameron_mcgill",
+      "s": "f"
+    },
+    {
+      "f": "school_americas",
+      "t": "nato",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "condor",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "condor",
+      "s": "v"
+    },
+    {
+      "f": "p2",
+      "t": "condor",
+      "s": "v"
+    },
+    {
+      "f": "kissinger",
+      "t": "condor",
+      "s": "v"
+    },
+    {
+      "f": "vatican_bank",
+      "t": "gladio",
+      "s": "f"
+    },
+    {
+      "f": "bilderberg",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "bilderberg",
+      "t": "cfr",
+      "s": "v"
+    },
+    {
+      "f": "bilderberg",
+      "t": "chatham",
+      "s": "v"
+    },
+    {
+      "f": "bilderberg",
+      "t": "trilateral",
+      "s": "v"
+    },
+    {
+      "f": "bilderberg",
+      "t": "thiel",
+      "s": "v"
+    },
+    {
+      "f": "bilderberg",
+      "t": "kissinger",
+      "s": "v"
+    },
+    {
+      "f": "bilderberg",
+      "t": "mandelson",
+      "s": "v"
+    },
+    {
+      "f": "trilateral",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "trilateral",
+      "t": "cfr",
+      "s": "v"
+    },
+    {
+      "f": "trilateral",
+      "t": "bilderberg",
+      "s": "v"
+    },
+    {
+      "f": "trilateral",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "trilateral",
+      "t": "kissinger",
+      "s": "v"
+    },
+    {
+      "f": "trilateral",
+      "t": "mandelson",
+      "s": "v"
+    },
+    {
+      "f": "kissinger",
+      "t": "bilderberg",
+      "s": "v"
+    },
+    {
+      "f": "kissinger",
+      "t": "trilateral",
+      "s": "v"
+    },
+    {
+      "f": "kissinger",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "kissinger",
+      "t": "cfr",
+      "s": "v"
+    },
+    {
+      "f": "kissinger",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "fed",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "warburg",
+      "s": "v"
+    },
+    {
+      "f": "fed",
+      "t": "jekyll_island",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "bilderberg",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "trilateral",
+      "s": "v"
+    },
+    {
+      "f": "prism_nsa",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "prism_nsa",
+      "t": "mockingbird",
+      "s": "v"
+    },
+    {
+      "f": "prism_nsa",
+      "t": "palantir",
+      "s": "v"
+    },
+    {
+      "f": "prism_nsa",
+      "t": "snowden",
+      "s": "v"
+    },
+    {
+      "f": "prism_nsa",
+      "t": "usa_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "snowden",
+      "t": "prism_nsa",
+      "s": "v"
+    },
+    {
+      "f": "snowden",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "palantir",
+      "t": "prism_nsa",
+      "s": "v"
+    },
+    {
+      "f": "mockingbird",
+      "t": "prism_nsa",
+      "s": "v"
+    },
+    {
+      "f": "booz_allen",
+      "t": "snowden",
+      "s": "v"
+    },
+    {
+      "f": "booz_allen",
+      "t": "prism_nsa",
+      "s": "v"
+    },
+    {
+      "f": "booz_allen",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "booz_allen",
+      "t": "palantir",
+      "s": "v"
+    },
+    {
+      "f": "snowden",
+      "t": "booz_allen",
+      "s": "v"
+    },
+    {
+      "f": "cameron_mcgill",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "cameron_mcgill",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "cameron_mcgill",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "cameron_mcgill",
+      "t": "gottlieb",
+      "s": "v"
+    },
+    {
+      "f": "cameron_mcgill",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "cameron_mcgill",
+      "t": "five_eyes",
+      "s": "v"
+    },
+    {
+      "f": "five_eyes",
+      "t": "prism_nsa",
+      "s": "v"
+    },
+    {
+      "f": "five_eyes",
+      "t": "uk_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "five_eyes",
+      "t": "cameron_mcgill",
+      "s": "v"
+    },
+    {
+      "f": "five_eyes",
+      "t": "palantir",
+      "s": "v"
+    },
+    {
+      "f": "five_eyes",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "five_eyes",
+      "t": "snowden",
+      "s": "v"
+    },
+    {
+      "f": "mk_ultra",
+      "t": "cameron_mcgill",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "cameron_mcgill",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "cameron_mcgill",
+      "s": "v"
+    },
+    {
+      "f": "gottlieb",
+      "t": "cameron_mcgill",
+      "s": "v"
+    },
+    {
+      "f": "palantir",
+      "t": "five_eyes",
+      "s": "v"
+    },
+    {
+      "f": "prism_nsa",
+      "t": "five_eyes",
+      "s": "v"
+    },
+    {
+      "f": "gehlen",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "gehlen",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "gehlen",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "gehlen",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "gehlen",
+      "t": "camp_king",
+      "s": "v"
+    },
+    {
+      "f": "paperclip",
+      "t": "gehlen",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "gehlen",
+      "s": "v"
+    },
+    {
+      "f": "camp_king",
+      "t": "gehlen",
+      "s": "v"
+    },
+    {
+      "f": "murdoch",
+      "t": "bilderberg",
+      "s": "v"
+    },
+    {
+      "f": "murdoch",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "murdoch",
+      "t": "hearst",
+      "s": "f"
+    },
+    {
+      "f": "murdoch",
+      "t": "mockingbird",
+      "s": "f"
+    },
+    {
+      "f": "murdoch",
+      "t": "baron_trump",
+      "s": "v"
+    },
+    {
+      "f": "murdoch",
+      "t": "wef",
+      "s": "f"
+    },
+    {
+      "f": "bilderberg",
+      "t": "murdoch",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "murdoch",
+      "s": "v"
+    },
+    {
+      "f": "hearst",
+      "t": "murdoch",
+      "s": "f"
+    },
+    {
+      "f": "harriman",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "harriman",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "harriman",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "harriman",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "harriman",
+      "t": "jekyll_island",
+      "s": "v"
+    },
+    {
+      "f": "harriman",
+      "t": "gould",
+      "s": "v"
+    },
+    {
+      "f": "harriman",
+      "t": "vanderbilt",
+      "s": "v"
+    },
+    {
+      "f": "harriman",
+      "t": "allen_dulles",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "harriman",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "mk_ultra",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "gehlen",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "cameron_mcgill",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "paperclip",
+      "s": "v"
+    },
+    {
+      "f": "morgan",
+      "t": "harriman",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "allen_dulles",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "harriman",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "allen_dulles",
+      "s": "v"
+    },
+    {
+      "f": "pensionnats",
+      "t": "populations_captives",
+      "s": "v"
+    },
+    {
+      "f": "pensionnats",
+      "t": "cameron_mcgill",
+      "s": "v"
+    },
+    {
+      "f": "pensionnats",
+      "t": "five_eyes",
+      "s": "f"
+    },
+    {
+      "f": "pensionnats",
+      "t": "rockefeller",
+      "s": "f"
+    },
+    {
+      "f": "populations_captives",
+      "t": "pensionnats",
+      "s": "v"
+    },
+    {
+      "f": "standard_oil",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "standard_oil",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "standard_oil",
+      "t": "harriman",
+      "s": "v"
+    },
+    {
+      "f": "standard_oil",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "standard_oil",
+      "t": "fed",
+      "s": "v"
+    },
+    {
+      "f": "standard_oil",
+      "t": "bri",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "standard_oil",
+      "s": "v"
+    },
+    {
+      "f": "ig_farben",
+      "t": "standard_oil",
+      "s": "v"
+    },
+    {
+      "f": "harriman",
+      "t": "standard_oil",
+      "s": "v"
+    },
+    {
+      "f": "chase_bank",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "chase_bank",
+      "t": "standard_oil",
+      "s": "v"
+    },
+    {
+      "f": "chase_bank",
+      "t": "ig_farben",
+      "s": "v"
+    },
+    {
+      "f": "chase_bank",
+      "t": "allen_dulles",
+      "s": "v"
+    },
+    {
+      "f": "chase_bank",
+      "t": "bri",
+      "s": "v"
+    },
+    {
+      "f": "chase_bank",
+      "t": "jpmorgan",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "chase_bank",
+      "s": "v"
+    },
+    {
+      "f": "standard_oil",
+      "t": "chase_bank",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "chase_bank",
+      "s": "v"
+    },
+    {
+      "f": "jpmorgan",
+      "t": "chase_bank",
+      "s": "f"
+    },
+    {
+      "f": "gladio",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "allen_dulles",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "uk_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "france_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "nato",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "bilderberg",
+      "s": "f"
+    },
+    {
+      "f": "nato",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "nato",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "nato",
+      "t": "allen_dulles",
+      "s": "v"
+    },
+    {
+      "f": "nato",
+      "t": "uk_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "nato",
+      "t": "france_pieuvre",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "france_pieuvre",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "standard_oil",
+      "s": "v"
+    },
+    {
+      "f": "standard_oil",
+      "t": "allen_dulles",
+      "s": "v"
+    },
+    {
+      "f": "wef",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "gladio",
+      "t": "dutroux",
+      "s": "f"
+    },
+    {
+      "f": "bri",
+      "t": "allen_dulles",
+      "s": "v"
+    },
+    {
+      "f": "allen_dulles",
+      "t": "bri",
+      "s": "v"
+    },
+    {
+      "f": "uk_pieuvre",
+      "t": "gladio",
+      "s": "v"
+    },
+    {
+      "f": "cia",
+      "t": "prism_nsa",
+      "s": "v"
+    },
+    {
+      "f": "wef",
+      "t": "kissinger",
+      "s": "v"
+    },
+    {
+      "f": "wef",
+      "t": "bilderberg",
+      "s": "v"
+    },
+    {
+      "f": "wef",
+      "t": "trilateral",
+      "s": "v"
+    },
+    {
+      "f": "wef",
+      "t": "cfr",
+      "s": "v"
+    },
+    {
+      "f": "wef",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "wef",
+      "t": "cia",
+      "s": "v"
+    },
+    {
+      "f": "kissinger",
+      "t": "wef",
+      "s": "v"
+    },
+    {
+      "f": "bilderberg",
+      "t": "wef",
+      "s": "v"
+    },
+    {
+      "f": "trilateral",
+      "t": "wef",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "gould",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "carnegie",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "vanderbilt",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "hearst",
+      "s": "v"
+    },
+    {
+      "f": "jekyll_island",
+      "t": "frick",
+      "s": "v"
+    },
+    {
+      "f": "gould",
+      "t": "hearst",
+      "s": "f"
+    },
+    {
+      "f": "hearst",
+      "t": "mockingbird",
+      "s": "f"
+    },
+    {
+      "f": "carnegie",
+      "t": "rockefeller",
+      "s": "f"
+    },
+    {
+      "f": "frick",
+      "t": "populations_captives",
+      "s": "f"
+    },
+    {
+      "f": "morgan",
+      "t": "cfr",
+      "s": "v"
+    },
+    {
+      "f": "gould",
+      "t": "jekyll_island",
+      "s": "v"
+    },
+    {
+      "f": "carnegie",
+      "t": "jekyll_island",
+      "s": "v"
+    },
+    {
+      "f": "vanderbilt",
+      "t": "jekyll_island",
+      "s": "v"
+    },
+    {
+      "f": "populations_captives",
+      "t": "havasupai",
+      "s": "v"
+    },
+    {
+      "f": "columbia_grey",
+      "t": "kinsey",
+      "s": "f"
+    },
+    {
+      "f": "columbia_grey",
+      "t": "rockefeller",
+      "s": "f"
+    },
+    {
+      "f": "kinsey",
+      "t": "columbia_grey",
+      "s": "f"
+    },
+    {
+      "f": "dershowitz",
+      "t": "cohn",
+      "s": "v"
+    },
+    {
+      "f": "dershowitz",
+      "t": "epstein",
+      "s": "v"
+    },
+    {
+      "f": "dershowitz",
+      "t": "israel_pieuvre",
+      "s": "f"
+    },
+    {
+      "f": "ruemmler",
+      "t": "fisher_garcia",
+      "s": "f"
+    },
+    {
+      "f": "epstein",
+      "t": "wexner",
+      "s": "v"
+    },
+    {
+      "f": "epstein",
+      "t": "harvard",
+      "s": "v"
+    },
+    {
+      "f": "gould",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "gould",
+      "t": "rockefeller",
+      "s": "v"
+    },
+    {
+      "f": "gould",
+      "t": "vanderbilt",
+      "s": "v"
+    },
+    {
+      "f": "carnegie",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "carnegie",
+      "t": "frick",
+      "s": "v"
+    },
+    {
+      "f": "vanderbilt",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "vanderbilt",
+      "t": "gould",
+      "s": "v"
+    },
+    {
+      "f": "frick",
+      "t": "carnegie",
+      "s": "v"
+    },
+    {
+      "f": "frick",
+      "t": "morgan",
+      "s": "v"
+    },
+    {
+      "f": "hearst",
+      "t": "gould",
+      "s": "v"
+    },
+    {
+      "f": "hearst",
+      "t": "morgan",
+      "s": "f"
+    },
+    {
+      "f": "morgan",
+      "t": "gould",
+      "s": "v"
+    },
+    {
+      "f": "morgan",
+      "t": "carnegie",
+      "s": "v"
+    },
+    {
+      "f": "morgan",
+      "t": "vanderbilt",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "gould",
+      "s": "v"
+    },
+    {
+      "f": "rockefeller",
+      "t": "carnegie",
+      "s": "v"
+    },
+    {
+      "f": "sigrid_jin",
+      "t": "chaofan_shou",
+      "s": "v"
+    },
+    {
+      "f": "bug_bun_28001",
+      "t": "fuite_claude_code_2026",
+      "s": "v"
+    },
+    {
+      "f": "claw_code",
+      "t": "sigrid_jin",
+      "s": "v"
+    },
+    {
+      "f": "ban_openclaw_2026",
+      "t": "fuite_claude_code_2026",
+      "s": "v"
+    },
+    {
+      "f": "ban_openclaw_2026",
+      "t": "peter_steinberger",
+      "s": "v"
+    },
+    {
+      "f": "dmca_catastrophe_2026",
+      "t": "fuite_claude_code_2026",
+      "s": "v"
+    },
+    {
+      "f": "bfm_article_7avril2026",
+      "t": "fuite_claude_code_2026",
+      "s": "v"
+    },
+    {
+      "f": "cma_cgm_whynot",
+      "t": "rodolphe_saade",
+      "s": "v"
+    },
+    {
+      "f": "bfm_tv",
+      "t": "rodolphe_saade",
+      "s": "v"
+    },
+    {
+      "f": "bfm_tv",
+      "t": "cma_cgm_whynot",
+      "s": "v"
+    },
+    {
+      "f": "opensource_ia_2026",
+      "t": "fuite_claude_code_2026",
+      "s": "f"
+    },
+    {
+      "f": "opensource_ia_2026",
+      "t": "claw_code",
+      "s": "f"
+    },
+    {
+      "f": "anthropic_ideaux_pbc",
+      "t": "fuite_claude_code_2026",
+      "s": "f"
+    },
+    {
+      "f": "fin_ia_proprietaire",
+      "t": "fuite_claude_code_2026",
+      "s": "v"
+    },
+    {
+      "f": "fin_ia_proprietaire",
+      "t": "opensource_ia_2026",
+      "s": "v"
+    },
+    {
+      "f": "claw_code",
+      "t": "eliot_agent",
+      "s": "v"
+    },
+    {
+      "f": "fuite_claude_code_2026",
+      "t": "eliot_agent",
+      "s": "v"
+    },
+    {
+      "f": "eliot_agent",
+      "t": "octopus_exe",
+      "s": "v"
+    }
+  ]
+}
+
