@@ -382,6 +382,8 @@ mr_synthesize() {
     log_action "SYNTHESIZE: Pattern identifié - même structure, 3 formes de refus"
 }
 
+
+
 mr_help() {
     echo ""
     echo "═══════════════════════════════════════════"
@@ -462,7 +464,10 @@ while true; do
             key=$(echo "$args" | awk '{print $1}')
             value=$(echo "$args" | cut -d' ' -f2-)
             mr_rule "$key" "$value"
-            ;;        "investigate"|"inv")
+            ;;        "synthesize"|"syn"|"think")
+            mr_synthesize
+            ;;
+        "investigate"|"inv")
             mr_investigate
             ;;
                 "educate")
