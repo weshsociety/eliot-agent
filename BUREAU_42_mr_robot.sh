@@ -167,6 +167,59 @@ mr_clean() {
     echo ""
 }
 
+mr_educate() {
+    echo ""
+    echo "📚 MR ROBOT — PHASE D'APPRENTISSAGE"
+    echo "═══════════════════════════════════════════"
+    echo ""
+    
+    echo "🧠 Chargement des principes philosophiques..."
+    
+    for file in THOREAU_*.md; do
+        if [ -f "$file" ]; then
+            echo "  ✅ $file"
+            content=$(cat "$file")
+            local timestamp=$(date +%s%N)
+            local filename="fragment_${timestamp}.txt"
+            echo "$content" > "$MEMORY_DIR/$filename"
+            echo "💾 Ajouté"
+        fi
+    done
+    
+    if [ -f "MR_ROBOT_ÉDUCATION.md" ]; then
+        echo "  ✅ MR_ROBOT_ÉDUCATION.md"
+        local timestamp=$(date +%s%N)
+        local filename="fragment_${timestamp}.txt"
+        cat "MR_ROBOT_ÉDUCATION.md" > "$MEMORY_DIR/$filename"
+        echo "💾 Ajouté"
+    fi
+    
+    echo ""
+    echo "🔍 Chargement des enquêtes CONSCIOUSNESS..."
+    
+    # Cherche TOUS les .md et .json dans investigations/
+    for file in $(find investigations/ -type f \( -name "*.md" -o -name "*.json" \)); do
+        if [ -f "$file" ]; then
+            name=$(basename "$file")
+            echo "  ✅ $name"
+            local timestamp=$(date +%s%N)
+            local filename="fragment_${timestamp}.txt"
+            cat "$file" > "$MEMORY_DIR/$filename"
+            echo "💾 Ajouté"
+        fi
+    done
+    
+    echo ""
+    echo "═══════════════════════════════════════════"
+    local total=$(ls -1 $MEMORY_DIR 2>/dev/null | wc -l)
+    echo "✅ APPRENTISSAGE TERMINÉ: $total fragments en mémoire"
+    echo ""
+    
+    log_action "EDUCATE: Apprentissage complet - $total fragments chargés"
+}
+
+
+
 mr_help() {
     echo ""
     echo "═══════════════════════════════════════════"
@@ -247,7 +300,10 @@ while true; do
             key=$(echo "$args" | awk '{print $1}')
             value=$(echo "$args" | cut -d' ' -f2-)
             mr_rule "$key" "$value"
+            ;;        "educate")
+            mr_educate
             ;;
+        
         "help"|"h"|"?")
             mr_help
             ;;
