@@ -123,6 +123,18 @@ CRYPTO_NODES = [
 ]
 
 
+def load_system_prompt():
+    """Charge la charte et le protocol de MR ROBOT."""
+    parts = []
+    for fname in ['MR_ROBOT_SYSTEM_PROMPT.md', 'MR_ROBOT_PROTOCOL.md']:
+        path = f'/home/eliot/octopus-agent/{fname}'
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                parts.append(f.read())
+        except Exception:
+            pass
+    return '\n\n'.join(parts)
+
 
 def send_notification(subject, message):
     import requests as req
@@ -135,7 +147,7 @@ def send_notification(subject, message):
             "https://api.brevo.com/v3/smtp/email",
             headers={"api-key": api_key, "Content-Type": "application/json"},
             json={
-                "sender": {"name": "OCTOPUS_AGENT", "email": "octopus-agent@weshsociety.org"},
+                "sender": {"name": "MR ROBOT", "email": "mr-robot@weshsociety.org"},
                 "to": [{"email": "weshsociety@proton.me"}],
                 "subject": subject,
                 "textContent": message
@@ -243,7 +255,7 @@ def cmd_add_crypto():
         print("\n[OK] Tous les nœuds crypto étaient déjà présents.")
 def cmd_watch_rss():
     """Surveille les flux RSS sans appel API — peut tourner en continu."""
-    print(f"\n// OCTOPUS_AGENT WATCH — {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"\n// MR ROBOT RSS WATCH — {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
     hits = []
     for url in RSS_FEEDS:
         try:
@@ -286,7 +298,7 @@ def cmd_watch_rss():
 def cmd_watch_rss():
     """Surveille les flux RSS sans appel API."""
     import time
-    print(f"\n// OCTOPUS_AGENT WATCH — {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"\n// MR ROBOT RSS WATCH — {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
     hits = []
     for url in RSS_FEEDS:
         try:
@@ -410,8 +422,8 @@ Retourne UNIQUEMENT du JSON valide:
         print(f"[INFO] Lance: python3 octopus_agent.py --review")
         noms = ", ".join([n.get('id', '') for n in nouveaux])
         send_notification(
-            f"[OCTOPUS_AGENT] {len(nouveaux)} noeuds en attente",
-            f"OCTOPUS_AGENT a propose {len(nouveaux)} noeuds:\n{noms}\n\nLance --review pour valider."
+            f"[MR ROBOT] {len(nouveaux)} noeuds en attente",
+            f"MR ROBOT a propose {len(nouveaux)} noeuds:\n{noms}\n\nLance --review pour valider."
         )
 
 def cmd_enquete():

@@ -7,6 +7,7 @@ API Flask pour agents IA — Nature & Découvertes
 from flask import Flask, jsonify, request
 import json
 import random
+import os
 
 app = Flask(__name__)
 OCTOPUS_PATH = "/var/www/octopus/octopus_data.json"
@@ -253,5 +254,55 @@ def api_add_fragment():
     return jsonify(frag), 201
 
 
+
+
+
+# ═══════════════════════════════════════════
+# MR ROBOT ENDPOINTS
+# ═══════════════════════════════════════════
+
+@app.route("/api/mr-robot/memory")
+def mr_robot_memory():
+    """Lit la mémoire locale de MR ROBOT"""
+    import glob
+    memory_dir = os.path.expanduser("~/.mr-robot/memory")
+    if not os.path.exists(memory_dir):
+        return {"error": "Memory dir not found"}, 404
+    
+    files = glob.glob(f"{memory_dir}/*.json")
+    memory = {}
+    for f in files:
+        try:
+            with open(f, 'r') as fp:
+                memory[os.path.basename(f)] = json.load(fp)
+        except:
+            pass
+    
+    return {"memory": memory, "count": len(memory)}
+
+@app.route("/api/mr-robot/enquetes")
+def mr_robot_enquetes():
+    """Liste les enquêtes WeshSociety"""
+    enquete_dir = "/var/www/weshsociety/www.weshsociety.org"
+    if not os.path.exists(enquete_dir):
+        return {"error": "Enquetes dir not found"}, 404
+    
+    enquetes = [d for d in os.listdir(enquete_dir) if os.path.isdir(os.path.join(enquete_dir, d))]
+    
+    return {"enquetes": sorted(enquetes), "total": len(enquetes)}
+
+@app.route("/api/mr-robot/status")
+def mr_robot_status():
+    """Statut et règles MR ROBOT"""
+    rules_file = os.path.expanduser("~/.mr-robot/rules.txt")
+    rules = ""
+    if os.path.exists(rules_file):
+        with open(rules_file, 'r') as f:
+            rules = f.read()
+    
+    return {"name": "MR ROBOT", "status": "online", "rules": rules}
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)
+
+# ═══════════════════════════════════════════
